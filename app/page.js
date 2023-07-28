@@ -1,18 +1,17 @@
-import Banner from "@/components/Banner";
-import Navbar from "@/components/Navbar";
-
+import React from "react";
+import Link from 'next/link';
+import Navbar from "../components/Navbar";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
-    
-      <main>
+    <main>
       <div className="w-full bg-banner-bg bg-center">
         <div className="w-full text-white">
-          <Navbar />
+          <Navbar activeRoute="/" />
           <Banner />
         </div>
       </div>
-      </main>
-    
+    </main>
   );
 }
