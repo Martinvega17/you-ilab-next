@@ -24,7 +24,7 @@ const Navbar = ({ activeRoute }) => {
             alt="Logo"
             style={{ maxWidth: '120px' }}
           />
-          <h1 className="text-2xl uppercase font-bold text-black text-blue-800">You i-Lab</h1>
+          <h1 className="text-2xl uppercase font-regular text-blue-800">You i-Lab</h1>
         </div>
         {/* Mobile Hamburger Button */}
         <div className="-mr-2 flex md:hidden ml-auto">
@@ -46,18 +46,18 @@ const Navbar = ({ activeRoute }) => {
                   Home
                 </Link>
               </li>
-              <li className={activeRoute === "/about" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/about" passHref>
+              <li className={activeRoute === "/About" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+                <Link href="/About" passHref>
                   About
                 </Link>
               </li>
-              <li className={activeRoute === "/projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/projects" passHref>
+              <li className={activeRoute === "/Projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+                <Link href="/Projects" passHref>
                   Projects
                 </Link>
               </li>
-              <li className={activeRoute === "/contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/contact" passHref>
+              <li className={activeRoute === "/Contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+                <Link href="/Contact" passHref>
                   Contact
                 </Link>
               </li>
@@ -71,17 +71,17 @@ const Navbar = ({ activeRoute }) => {
                   Home
                 </Link>
               </li>
-              <li className={activeRoute === "/about" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+              <li className={activeRoute === "/About" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
                 <Link href="/about" passHref>
                   About
                 </Link>
               </li>
-              <li className={activeRoute === "/projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+              <li className={activeRoute === "/Projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
                 <Link href="/projects" passHref>
                   Projects
                 </Link>
               </li>
-              <li className={activeRoute === "/contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
+              <li className={activeRoute === "/Contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
                 <Link href="/contact" passHref>
                   Contact
                 </Link>
