@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-import logo_you_i_lab from '../app/assets/logos/logo-you-i_lab.png';
-import logo_cns from '../app/assets/logos/logo-cns.png';
-import logo_ipicyt from '../app/assets/logos/logo-ipicyt.png';
+import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
+import logo_cns from '../assets/logos/logo-cns.png';
+import logo_ipicyt from '../assets/logos/logo-ipicyt.png';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
