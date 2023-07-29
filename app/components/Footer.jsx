@@ -1,7 +1,8 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelopeOpen, faRocket } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { BsFacebook, BsTwitter, BsTelephoneFill } from "react-icons/bs";
+import { FaLinkedinIn } from 'react-icons/fa'
 import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
 import Image from 'next/image';
 const Footer = () => {
@@ -42,38 +43,30 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faPhone} />
                         <span> +52 444 834 2000</span>
                     </p>
-                    <p className="mb-10 ">
+                    <p className="mb-10">
                         <FontAwesomeIcon icon={faEnvelopeOpen} />
                         <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
                     </p>
                     <h4 className='mt-4 text-xl text-center text-white'>REDES SOCIALES:</h4>
                     <div className='flex space-x-3 mt-4 items-center justify-center'>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon
-                                icon={faFacebook}
-                                size="xl"
-                                className="p-2 rounded-full inline-grid border-white border hover:bg-blue-400 hover:border-blue-600"
+                            <BsFacebook 
+                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
                             />
                         </a>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon
-                                icon={faTwitter}
-                                size="xl"
-                                className="p-2 rounded-full inline-grid border-white border hover:bg-blue-400 hover:border-blue-600"
+                        <BsTwitter 
+                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
                             />
                         </a>
                         <a href="#" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon
-                                icon={faLinkedin}
-                                size="xl"
-                                className="p-2 rounded-full inline-grid border-white border hover:bg-blue-400 hover:border-blue-600"
+                        <FaLinkedinIn 
+                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
                             />
                         </a>
                         <a href="tel:+1234567890">
-                            <FontAwesomeIcon
-                                icon={faPhone}
-                                size="xl"
-                                className="p-2 rounded-full inline-grid border-white border hover:bg-blue-400 hover:border-blue-600"
+                        <BsTelephoneFill 
+                            className='h-8 w-8 rounded-full inline-grid border-white hover:bg-blue-400 hover:border-blue-600'
                             />
                         </a>
                         </div>
