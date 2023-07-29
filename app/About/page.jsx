@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer';
+
 import Head from 'next/head';
 const About = () => {
     return (
@@ -9,7 +9,7 @@ const About = () => {
             </Head>
             <div className="w-full bg-banner-bg bg-center">
                 <div className="w-full text-white">
-                    <Footer />
+
                 </div>
             </div>
         </main>

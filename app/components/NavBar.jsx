@@ -6,7 +6,7 @@ import Link from "next/link";
 import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs" 
 
 const styles= {
-  navLinks: 'cursor pointer ml-10 uppercase border-b border-white hover:border-[#F6B519] text-xl',
+  navLinks: 'cursor pointer ml-10 uppercase  border-b-[0.150rem] border-blue-800 hover:border-[#F6B520] text-lg',
 };
 
 function NavBar() {
@@ -65,19 +65,19 @@ function NavBar() {
           <div className="flex-col py-4">
           <ul>
               <li onClick={() => setMenuOpen(false)}
-              className="py-4 hover:underline hover:decoration-[#F6B519]">
+              className="py-4 border-b-[0.2rem]  hover:border-blue-800">
                 <Link href='/'>Home</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-              className="py-4 hover:underline hover:decoration-[#F6B519]">
+              className="py-4 border-b-[0.2rem]  hover:border-blue-800">
                 <Link href='/About'>About</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-              className="py-4 hover:underline hover:decoration-[#F6B519]">
+              className="py-4 border-b-[0.2rem]  hover:border-blue-800">
                 <Link href='/Projects'>Projects</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-              className="py-4 hover:underline hover:decoration-[#F6B519]">
+              className="py-4 border-b-[0.2rem]  hover:border-blue-800">
                 <Link href='/Contact'>Contact</Link>
               </li>
               <li className="flex items-center py-4 text-[#F6B519]">
@@ -103,6 +103,12 @@ function NavBar() {
             height={75}
             className="cursor-pointer pt-10 mx-auto"
             />
+            <li className="flex items-center justify-center py-4 mt-[130px] ">
+                <p className="px-4 py-1  text-black">
+                &copy; 2023 You i Lab. All rights reserved.
+                Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6"></Image><br />
+                </p>
+              </li>
         </div>
       </nav>
     </header>
