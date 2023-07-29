@@ -72,17 +72,17 @@ const Navbar = ({ activeRoute }) => {
                 </Link>
               </li>
               <li className={activeRoute === "/About" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/about" passHref>
+                <Link href="/About" passHref>
                   About
                 </Link>
               </li>
               <li className={activeRoute === "/Projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/projects" passHref>
+                <Link href="/Projects" passHref>
                   Projects
                 </Link>
               </li>
               <li className={activeRoute === "/Contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/contact" passHref>
+                <Link href="/Contact" passHref>
                   Contact
                 </Link>
               </li>
