@@ -14,7 +14,7 @@ function NavBar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-navbarBlue">
+      <nav className="w-full h-24 shadow-xl bg-navbarBlue" style={{ zIndex: 100 }}>
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -28,7 +28,7 @@ function NavBar() {
           <div className="text-black hidden sm:flex">
             <ul className="hidden sm:flex">
               <li className={styles.navLinks}>
-                <Link href='/Home'>Home</Link>
+                <Link href='/'>Home</Link>
               </li>
               <li className={styles.navLinks}>
                 <Link href='/About'>About</Link>
@@ -50,7 +50,11 @@ function NavBar() {
           <BsList className="h-8 w-8 text-[#F6B519] fixed -ml-5" />
         </div>
         </div>
-        <div className={menuOpen ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"}>
+        <div className={menuOpen 
+        ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500" 
+        : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
+        }
+        style={{ zIndex: 200 }}>
           <div className="flex w-full items-center justify-end">
             <div onClick={toggleMenu}
             className="cursor-pointer">

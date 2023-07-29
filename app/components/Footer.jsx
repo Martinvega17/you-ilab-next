@@ -31,52 +31,47 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="w-full md:w-1/3">
-                    <h3 className='text-center text-xl text-white'>CONTACTO</h3>
+                    <h3 className="text-center text-xl text-white">CONTACTO</h3>
                     <div className="mx-4 text-center">
-                    <p className='mt-5 '>
-                        <FontAwesomeIcon icon={faRocket} />
-                        <span className="ml-2">
-                            Camino a la Presa de San José 2055, Lomas 4a Sección, <br />78216 San Luis Potosí, S.L.P., México.
-                        </span>
-                    </p>
-                    <p>
-                        <FontAwesomeIcon icon={faPhone} />
-                        <span> +52 444 834 2000</span>
-                    </p>
-                    <p className="mb-10">
-                        <FontAwesomeIcon icon={faEnvelopeOpen} />
-                        <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
-                    </p>
-                    <h4 className='mt-4 text-xl text-center text-white'>REDES SOCIALES:</h4>
-                    <div className='flex space-x-3 mt-4 items-center justify-center'>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <BsFacebook 
-                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
-                            />
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                        <BsTwitter 
-                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
-                            />
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedinIn 
-                            className='h-8 w-8 border-white hover:bg-blue-400 hover:border-blue-600 rounded-full inline-grid'
-                            />
-                        </a>
-                        <a href="tel:+1234567890">
-                        <BsTelephoneFill 
-                            className='h-8 w-8 rounded-full inline-grid border-white hover:bg-blue-400 hover:border-blue-600'
-                            />
-                        </a>
+                        <div className="text-center">
+                            <p className="flex items-start justify-center mt-2">
+                                <FontAwesomeIcon icon={faRocket} className="h-6 w-6 -mr-3 flex-shrink-0" />
+                                <span className="max-w-sm">
+                                    Camino a la Presa San José 2055, Lomas 4a sección San Luis Potosí, 78216 SLP, México.
+                                </span>
+                            </p>
+                            <p className="flex items-center justify-center mt-2">
+                                <FontAwesomeIcon icon={faPhone} className="h-6 w-6 mr-2 flex-shrink-0" />
+                                <span className="flex-shrink-0">+52 444 834 2000</span>
+                            </p>
+                            <p className="mb-10 flex items-center justify-center mt-2">
+                                <FontAwesomeIcon icon={faEnvelopeOpen} className="h-6 w-6 mr-2 flex-shrink-0" />
+                                <span className="flex-shrink-0">you-i.lab@ipicyt.edu.mx</span>
+                            </p>
+                        </div>
+                        <h4 className="mt-4 text-xl text-center text-white">REDES SOCIALES:</h4>
+                        <div className="flex space-x-3 mt-4 items-center justify-center">
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                                <BsFacebook className="h-8 w-8 rounded-full inline-grid" />
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                                <BsTwitter className="h-8 w-8 rounded-full inline-grid" />
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                                <FaLinkedinIn className="h-8 w-8 rounded-full inline-grid" />
+                            </a>
+                            <a href="tel:+1234567890" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                                <BsTelephoneFill className="h-8 w-8 rounded-full inline-grid" />
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
             <hr className="my-5" />
             <p className="text-center text-white">
                 &copy; 2023 You i Lab. All rights reserved.<br />
-                Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6" /> 
+                Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6" />
             </p>
         </footer>
     );
