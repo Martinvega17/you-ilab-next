@@ -1,15 +1,10 @@
-import Navbar from '@/components/NavBar';
-import Footer from '@/components/Footer';
+
 const Projects = () => {
-    return (
-        <main>
-            <div className="w-full bg-banner-bg bg-center">
-                <div className="w-full text-white">
-                    <Navbar activeRoute="/Projects" />
-                    <Footer />
-                </div>
-            </div>
-        </main>
+    return(
+        <div>
+           
+            <h1>View Projects</h1>
+        </div>
     )
 }
 export default Projects

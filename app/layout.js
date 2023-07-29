@@ -1,6 +1,7 @@
 import './globals.css'
+import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 import { Inter } from 'next/font/google'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -19,7 +20,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
         </head>
-      <body className={inter.className}>{children}</body>
+        
+      <body className={inter.className}>
+      <NavBar />
+        {children}
+        <Footer /></body>
     </html>
   )
 }

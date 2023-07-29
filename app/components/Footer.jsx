@@ -42,7 +42,7 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faPhone} />
                         <span> +52 444 834 2000</span>
                     </p>
-                    <p className="mb-10">
+                    <p className="mb-10 ">
                         <FontAwesomeIcon icon={faEnvelopeOpen} />
                         <span className="ml-2"> you-i.lab@ipicyt.edu.mx</span>
                     </p>

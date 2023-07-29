@@ -1,112 +1,108 @@
 "use client"
 import React, { useState } from "react";
+import logo_you_i_lab from "../assets/logos/logo-you-i_lab.png";
 import Image from "next/image";
-import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
-import logo_cns from '../assets/logos/logo-cns.png';
-import logo_ipicyt from '../assets/logos/logo-ipicyt.png';
-import Link from 'next/link';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import Link from "next/link";
+import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs" 
 
-const Navbar = ({ activeRoute }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const styles= {
+  navLinks: 'cursor pointer ml-10 uppercase border-b border-white hover:border-[#F6B519] text-xl',
+};
 
-  const toggleMenu = () => {
-    setIsMenuOpen(prev => !prev);
-  };
-
+function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
-    <div className="w-full h-20 lg:h-28 border-b-[1px] border-gray-500 bg-navbarBlue">
-      <div className="max-w-screen-3xl h-full mx-auto px-4 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Image
-            className="text-white text-lg py-0 font-regular h-20"
-            src={logo_you_i_lab}
-            alt="Logo"
-            style={{ maxWidth: '120px' }}
-          />
-          <h1 className="text-2xl uppercase font-regular text-blue-800">You i-Lab</h1>
-        </div>
-        {/* Mobile Hamburger Button */}
-        <div className="-mr-2 flex md:hidden ml-auto">
-          <button
-            type="button"
-            onClick={toggleMenu}
-            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-          >
-            <span className="sr-only">Open Main Menu</span>
-            {isMenuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 w-full bg-navbarBlue text-black">
-            <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <li className={activeRoute === "/" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/" passHref>
-                  Home
-                </Link>
+    <header>
+      <nav className="w-full h-24 shadow-xl bg-navbarBlue">
+        {/* Desktop Menu */}
+        <div className="flex items-center justify-between h-full px-4 w-full">
+          <Link href="/">
+            <Image
+              src={logo_you_i_lab}
+              alt="Logo You i Lab"
+              width={110}
+              height={75}
+              className="cursor-pointer" />
+          </Link>
+          <div className="text-black hidden sm:flex">
+            <ul className="hidden sm:flex">
+              <li className={styles.navLinks}>
+                <Link href='/Home'>Home</Link>
               </li>
-              <li className={activeRoute === "/About" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/About" passHref>
-                  About
-                </Link>
+              <li className={styles.navLinks}>
+                <Link href='/About'>About</Link>
               </li>
-              <li className={activeRoute === "/Projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/Projects" passHref>
-                  Projects
-                </Link>
+              <li className={styles.navLinks}>
+                <Link href='/Projects'>Projects</Link>
               </li>
-              <li className={activeRoute === "/Contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/Contact" passHref>
-                  Contact
-                </Link>
+              <li className={styles.navLinks}>
+                <Link href='/Contact'>Contact</Link>
+              </li>
+              <li className="flex items-center space-x-5 text-[#F6B519] ml-10">
+                <h3 className="cursor-pointer border border-[#F6B519] px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519] ease-in-out duration-300">Sign In</h3>
               </li>
             </ul>
           </div>
-        )}
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center space-x-4 flex-1 justify-center text-black">
-        <li className={activeRoute === "/" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/" passHref>
-                  Home
-                </Link>
-              </li>
-              <li className={activeRoute === "/About" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/About" passHref>
-                  About
-                </Link>
-              </li>
-              <li className={activeRoute === "/Projects" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/Projects" passHref>
-                  Projects
-                </Link>
-              </li>
-              <li className={activeRoute === "/Contact" ? "text-red-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium" : "text-blue-800 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-medium"}>
-                <Link href="/Contact" passHref>
-                  Contact
-                </Link>
-              </li>
-        </ul>
-
-        <div className="flex items-center">
-          <Image
-            src={logo_ipicyt}
-            alt="logo ipicyt"
-            className="h-20 w-48 mr-[-50px] md:block hidden hover:brightness-150 hover:saturate-80 hover:hue-rotate-0"
-            id="logo-ipicyt"
-            style={{ marginLeft: '-90px' }}
-          />
-
-          <Image
-            src={logo_cns}
-            alt="logo cns"
-            className="h-20 w-48 mr-[-15px] md:block hidden hover:brightness-150 hover:saturate-80 hover:hue-rotate-0"
-            id="cns"
-          />
+        {/* Mobile Menu */}
+        <div onClick={toggleMenu}
+        className="sm:hidden cursor-pointer pl-24">
+          <BsList className="h-8 w-8 text-[#F6B519] fixed -ml-5" />
         </div>
-      </div>
-    </div>
-  );
-};
+        </div>
+        <div className={menuOpen ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500" : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"}>
+          <div className="flex w-full items-center justify-end">
+            <div onClick={toggleMenu}
+            className="cursor-pointer">
+              <BsX className="h-8 w-8 text-[#F6B519]" />
+            </div>
+          </div>
+          {/* Mobile Menu Links */}
+          <div className="flex-col py-4">
+          <ul>
+              <li onClick={() => setMenuOpen(false)}
+              className="py-4 hover:underline hover:decoration-[#F6B519]">
+                <Link href='/'>Home</Link>
+              </li>
+              <li onClick={() => setMenuOpen(false)}
+              className="py-4 hover:underline hover:decoration-[#F6B519]">
+                <Link href='/About'>About</Link>
+              </li>
+              <li onClick={() => setMenuOpen(false)}
+              className="py-4 hover:underline hover:decoration-[#F6B519]">
+                <Link href='/Projects'>Projects</Link>
+              </li>
+              <li onClick={() => setMenuOpen(false)}
+              className="py-4 hover:underline hover:decoration-[#F6B519]">
+                <Link href='/Contact'>Contact</Link>
+              </li>
+              <li className="flex items-center py-4 text-[#F6B519]">
+                <p className="cursor-pointer px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519]ease-in-out duration-300">
+                  Sign In
+                </p>
+              </li>
+            </ul>
+          </div>
+            {/* Socia Media Links */}
+            <div className="flex flex-row justify-around pt-10 items-center">
+              <Link href="https://www.youtube.com/watch?v=0KLz7NMj1hc">
+                <BsYoutube size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
+              </Link>
+              <Link href="https://www.pinterest.com">
+                <BsPinterest size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
+              </Link>
+            </div>
+            <Image
+            src={logo_you_i_lab}
+            alt="logo"
+            width={205}
+            height={75}
+            className="cursor-pointer pt-10 mx-auto"
+            />
+        </div>
+      </nav>
+    </header>
+  )
+}
 
-export default Navbar;
+export default NavBar
