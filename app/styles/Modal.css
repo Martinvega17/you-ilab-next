@@ -1,0 +1,358 @@
+/*
+    Theme Name: Medixer - Youth Innovation Laboratory Page
+    Author: Authore Name
+    Support: mail@gmail.com
+    Description: Youth Innovation Laboratory Page
+    Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Estilos generales del modal
+2. Estilos del overlay
+3. Estilos del contenido del modal
+4. Estilos de la imagen del modal
+5. Estilos del título del modal
+6. Estilos del nombre del modal
+7. Estilos del texto del modal
+8. Media queries para dispositivos con ancho máximo de 480px
+9. Media queries para dispositivos con ancho máximo de 620px
+10. Media queries para dispositivos con ancho máximo de 768px
+11. Media queries para dispositivos con ancho máximo de 1400px
+*/
+
+/* Estilos generales del modal */
+
+/* Estilos generales del modal */
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0%;
+    bottom: 5%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    width: 96vw;
+    max-height: 100vh;
+    overflow: auto;
+    margin: auto;
+    z-index: 9999;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+  }
+  
+  .modal-content {
+    margin-bottom: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Estilos para el contenido dentro del modal */
+  .modal .card__content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Estilos para la imagen dentro del modal */
+  .modal .card__image {
+    width: 32em;
+    height: 32em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 3px;
+    margin-right: 2em;
+  }
+  
+  /* Estilos para los títulos dentro del modal */
+  .modal .card__title {
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 1em;
+    margin-left: 40%;
+  }
+  
+  /* Estilos para los nombres dentro del modal */
+  .modal .card__name {
+    color: var(--color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    top: 3.8em;
+    margin-left: 41%;
+  }
+  
+  /* Estilos para el texto dentro del modal */
+  .modal .card__text {
+    overflow: auto;
+    max-height: 400px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    top: 10em;
+    position: absolute;
+    margin-left: 28%;
+    margin-right: 1.5em;
+    text-align: justify;
+  }
+  
+  .modal__links-container {
+    display: flex;
+    margin-top: -26em;
+    justify-items: space-between;
+    gap: 100px;
+    margin-left: 2rem;
+    justify-content: center;
+  }
+  
+  .modal__links-container img {
+    width: 70px;
+    top: 100%;
+  }
+  
+  /* Media queries para dispositivos con ancho máximo de 1400px */
+  @media (max-width: 1400px) {
+    .modal {
+      top: 5%;
+      bottom: 5%;
+      padding: 20px;
+      max-width: 90vw;
+      max-height: 85vh;
+    }
+  
+    .modal .card__image {
+      width: 50%;
+      width: 20em;
+      height: 20em;
+      margin-right: 1em;
+    }
+  
+    .modal .card__title {
+      font-size: 1.8rem;
+      left: 10%;
+    }
+  
+    .modal .card__name {
+      font-size: 1.2rem;
+      left: 10%;
+      font-size: 1.5rem;
+      top: 13%;
+    }
+  
+    .modal .card__text {
+      overflow: auto;
+      max-height: 400px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      top: 19em;
+      position: absolute;
+      margin-left: 5%;
+      margin-right: 1.5em;
+      text-align: justify;
+    }
+  
+    .modal__links-container {
+      display: flex;
+      margin-top: -2.3em;
+      justify-items: space-between;
+      gap: 100px;
+      margin-left: 2rem;
+      justify-content: center;
+    }
+  
+    .modal__links-container img {
+      width: 70px;
+      top: 100%;
+    }
+  }
+  
+  /* Media queries para dispositivos con ancho máximo de 768px */
+  @media (max-width: 768px) {
+    .modal {
+      top: 5%;
+      bottom: 5%;
+      padding: 20px;
+      max-width: 90vw;
+      max-height: 85vh;
+    }
+  
+    .modal .card__image {
+      width: 50%;
+      width: 18em;
+      height: 18em;
+      margin-right: 1em;
+    }
+  
+    .modal .card__title {
+      font-size: 1.8rem;
+      left: 12%;
+    }
+  
+    .modal .card__name {
+      font-size: 1.5rem;
+      left: 19%;
+      top: 13%;
+    }
+  
+    .modal .card__text {
+      overflow: auto;
+      max-height: 400px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      top: 21.3em;
+      position: absolute;
+      margin-left: 5%;
+      margin-right: 1.5em;
+      text-align: justify;
+    }
+  
+    .modal__links-container {
+      display: flex;
+      margin-top: 0.1em;
+      justify-items: space-between;
+      gap: 100px;
+      margin-left: 8rem;
+      justify-content: flex-start;
+    }
+  
+    .modal__links-container img {
+      width: 70px;
+      top: 100%;
+    }
+  }
+  
+  /* Media queries para dispositivos con ancho máximo de 620px */
+  @media (max-width: 620px) {
+    .modal .card__image {
+      width: 50%;
+      max-width: 14em;
+      max-height: 14em;
+      margin: 4em auto 0;
+    }
+  
+    .modal .card__text {
+      overflow: auto;
+      max-height: 400px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-left: 5%;
+      margin-top: 8em;
+    }
+  
+    .modal .card__name {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: -3.2em auto 2em;
+      display: block;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .modal .card__title {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 10em auto 0;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      text-overflow: ellipsis;
+    }
+  
+    .modal__links-container {
+      display: flex;
+      margin-top: 7em;
+      justify-items: space-between;
+      gap: 100px;
+      margin-left: 2rem;
+      justify-content: center;
+    }
+  
+    .modal__links-container img {
+      width: 70px;
+      top: 100%;
+    }
+  }
+  
+  /* Media queries para dispositivos con ancho máximo de 480px */
+  @media (max-width: 480px) {
+    .modal {
+      top: 5%;
+      bottom: 5%;
+      padding: 20px;
+      max-width: 90vw;
+      max-height: 85vh;
+    }
+  
+    .modal .card__image {
+      width: 50%;
+      width: 12em;
+      height: 12em;
+      margin: 6em auto 0;
+    }
+  
+    .modal .card__title {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 10em auto 0;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      text-overflow: ellipsis;
+    }
+  
+    .modal .card__name {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: -3.2em auto 2em;
+      display: block;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .modal .card__text {
+      overflow: auto;
+      max-height: 800px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin: 4em 1em 0 0;
+    }
+  
+    .modal__links-container {
+      display: flex;
+      margin-top: 7em;
+      justify-items: space-between;
+      gap: 100px;
+      margin-left: 2rem;
+      justify-content: center;
+    }
+  
+    .modal__links-container img {
+      width: 70px;
+      top: 100%;
+    }
+  }
+  
+  

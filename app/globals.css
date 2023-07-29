@@ -25,3 +25,12 @@ a {
     @apply hover:text-hoverColor cursor-pointer duration-300;
   }
 }
+
+/* .about_us {
+  font-family: "Cera-Medium", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 41px;
+  color: #038cd4;
+} */
