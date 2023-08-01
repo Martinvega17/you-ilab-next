@@ -20,6 +20,11 @@ const contactSchema = new Schema({
         required: [true, "Message is required."],
     },
 
+    terms: {
+        type: String,
+        required: [true, "Terms and service is required."],
+    },
+
     date: {
         type: Date,
         default: Date.now,
