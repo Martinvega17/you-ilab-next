@@ -25,6 +25,11 @@ const contactSchema = new Schema({
         required: [true, "Terms and service is required."],
     },
 
+    ipAddress: {
+        type: String,
+        default: "Unknown", // Set a default value for ipAddress
+    },
+
     date: {
         type: Date,
         default: Date.now,
