@@ -99,14 +99,13 @@ export default function Contact() {
                             {/* Message input field */}
                             <div className="pb-4">
                                 <label className="block font-latoBold text-sm pb-2" htmlFor="message">
-                                    Message (max 60 characters)
+                                    Message (max 250 characters)
                                 </label>
                                 <textarea
                                     onChange={(e) => setMessage(e.target.value)}
                                     className="border-2 border-gray-500 rounded-md p-2 w-full focus:border-teal-500 focus:ring-teal-500"
                                     value={message}
                                     name="message"
-                                    id="my-text"
                                     placeholder="Type your message here..."
                                     maxLength={250} // Agrega el atributo maxLength
                                 />

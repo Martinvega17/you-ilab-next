@@ -23,21 +23,22 @@ function NavBar() {
               alt="Logo You i Lab"
               width={110}
               height={75}
-              className="cursor-pointer" />
+              className="cursor-pointer"
+            />
           </Link>
-          <div className="text-black hidden sm:flex">
+          <div className="text-black hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
             <ul className="hidden sm:flex">
               <li className={styles.navLinks}>
-                <Link href='/'>Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href='/About'>About</Link>
+                <Link href="/About">About</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href='/Projects'>Projects</Link>
+                <Link href="/Projects">Projects</Link>
               </li>
               <li className={styles.navLinks}>
-                <Link href='/Contact'>Contact</Link>
+                <Link href="/Contact">Contact</Link>
               </li>
               <li className="flex items-center space-x-5 text-[#F6B519] ml-10">
                 <h3 className="cursor-pointer border border-[#F6B519] px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519] ease-in-out duration-300">Sign In</h3>
