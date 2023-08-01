@@ -2,6 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Fonts */
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../public/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../public/Lato-Bold.ttf");
+}
+
 html,
 body {
   padding: 0;

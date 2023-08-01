@@ -24,7 +24,7 @@ const About = () => {
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">
                         <div className="about_content md:mr-20">
-                            <h2 className="section_title text-5xl sm:text-2xl md:text-md lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
+                            <h2 className="section_title text-5xl  lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
                                 Youth Innovation <br /> Laboratory
                             </h2>
                             <div className="about-left">

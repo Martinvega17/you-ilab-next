@@ -104,10 +104,10 @@ function NavBar() {
             height={75}
             className="cursor-pointer pt-10 mx-auto"
           />
-          <p className="mt-10">
+          {/* <p className="mt-10">
             &copy; 2023 You i Lab. All rights reserved.
             Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6"></Image>
-          </p>
+          </p> */}
 
         </div>
       </nav>
