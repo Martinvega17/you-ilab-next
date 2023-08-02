@@ -8,7 +8,7 @@ const dataDigital = [
     {
         id: 1,
         name: 'Salvador Ruíz Correa',
-        profession: 'Doctor en Ingeniería Eléctrica',
+        profession: 'Director del Youth Innovation Laboratory (You-i Lab)',
         text: 'Salvador Ruiz-Correa es un destacado investigador y académico mexicano con una formación académica sólida. Obtuvo su licenciatura y maestría en Ingeniería Eléctrica en la Universidad Nacional Autónoma de México (UNAM) y su doctorado en la Universidad de Washington en Seattle. Sus áreas de investigación se centran en aplicaciones de inteligencia artificial y computación ubicua para el bien social en el Sur Global, especialmente en México. Actualmente, Salvador es investigador en el Centro Nacional de Supercómputo (CNS) del Instituto Potosino de Investigación Científica y Tecnológica (IPICYT). Además, lidera el You-i Lab, un equipo multidisciplinario de estudiantes e investigadores asociados, cuyo objetivo es desarrollar proyectos que beneficien a la sociedad mexicana. Sus principales campos de estudio son la computación ubicua, el aprendizaje automático y las aplicaciones de visión por ordenador. Salvador también es responsable en México del consorcio WeNet de la Comunidad Europea y coordina la iniciativa de investigación CeMobili con investigadores del IDIAP Research Institute en Suiza.',
         cv: 'http://youilab.ipicyt.edu.mx/You-i.Lab/cv/src_cv.pdf',
         email: 'salvador.ruiz@ipicyt.edu.mx',

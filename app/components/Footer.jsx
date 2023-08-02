@@ -71,7 +71,7 @@ const Footer = () => {
             <hr className="my-5" />
             <p className="text-center text-white">
                 &copy; 2023 You i Lab. All rights reserved.<br />
-                Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6" />
+                Powered by <b>You I Lab </b> <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6" />
             </p>
         </footer>
     );

@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const AliadosCarousel = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         arrows: false,
         speed: 500,
@@ -30,25 +30,25 @@ const AliadosCarousel = () => {
                     slidesToShow: 5,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1040,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
                 breakpoint: 900,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -57,7 +57,7 @@ const AliadosCarousel = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -66,7 +66,16 @@ const AliadosCarousel = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 325,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
                 }
             }
         ]
@@ -118,8 +127,8 @@ const AliadosCarousel = () => {
     ];
 
     return (
-        <div className='mb-16 ml-10 mr-0 relative -z-10'>
-            <h2 className='text-center text-3xl mb-10 mt-12'>Aliados</h2>
+        <div className='mb-2 ml-10 mr-0 relative'>
+            <h2 className='text-center text-3xl mb-2 mt-2 text-black'>Aliados</h2>
             <Slider {...settings}>
                 {images.map((image) => (
                     <div key={image.id}>
