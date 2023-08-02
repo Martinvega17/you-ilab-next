@@ -7,7 +7,7 @@ import logo_you_i_lab from '../assets/logos/logo-you-i_lab.png';
 import Image from 'next/image';
 const Footer = () => {
     return (
-        <footer className="bg-footerBlue py-5">
+        <footer className="bg-footerBlue py-5 dark:bg-[#282948]">
             <div className="flex flex-col md:flex-row md:justify-between text-white ">
                 <div className="w-full md:w-1/3 mx-4 md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 container">
                     <h3 className='text-center text-xl mr-4 md:mr-10 text-white'>YOUTH INNOVATION LABORATORY</h3>

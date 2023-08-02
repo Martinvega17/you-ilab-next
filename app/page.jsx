@@ -14,19 +14,21 @@ import collaborators from './assets/team/Collage_colab_.jpg'
 
 
 // Importar LightColor from styled-components
-const LightColor = styled.div`
+/* const LightColor = styled.div`
     background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
     position: relative;
-`;
+`; */
 
 export default function Home() {
   return (
     <main>
       <div className="w-full bg-banner-bg bg-center">
         <div className="w-full text-white">
-          <LightColor>
+          {/* <LightColor> */}
+          <div className="dark:bg-[#363636] bg-gradient-to-r from-[#2d2d3a] to-[#2b2b35]">
             <Projects />
-          </LightColor>
+            </div>
+          {/* </LightColor> */}
           <AliadosCarousel />
           {/* Carousel Sponsors */}
 

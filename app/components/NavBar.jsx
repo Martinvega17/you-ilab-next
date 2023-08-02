@@ -1,9 +1,12 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo_you_i_lab from "../assets/logos/logo-you-i_lab.png";
 import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs"
+import { useTheme } from "next-themes";
+import { FiMoon } from "react-icons/fi";
+import { BsSun } from "react-icons/bs";
 
 const styles = {
   navLinks: 'cursor pointer ml-10  border-b-[0.150rem] border-blue-800 hover:border-[#F6B520] text-lg',
@@ -12,9 +15,23 @@ const styles = {
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
+
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-navbarBlue" style={{ zIndex: 100 }}>
+      <nav className="w-full h-24 shadow-xl bg-navbarBlue dark:bg-[#2C2C2C]" style={{ zIndex: 100 }}>
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -27,7 +44,7 @@ function NavBar() {
             />
           </Link>
           <div className="text-black hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
-            <ul className="hidden sm:flex">
+            <ul className="hidden sm:flex dark:text-white">
               <li className={styles.navLinks}>
                 <Link href="/">Home</Link>
               </li>
@@ -40,11 +57,15 @@ function NavBar() {
               <li className={styles.navLinks}>
                 <Link href="/Contact">Contact</Link>
               </li>
-              <li className="flex items-center space-x-5 text-[#F6B519] ml-10">
-                <h3 className="cursor-pointer border border-[#F6B519] px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519] ease-in-out duration-300">Sign In</h3>
-              </li>
             </ul>
           </div>
+          <div className="ml-auto"> {/* Agregamos la clase ml-auto para pegar el elemento al margen derecho */}
+    {theme === "dark" ? (
+      <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+    ) : (
+      <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+    )}
+  </div>
           {/* Mobile Menu */}
           <div onClick={toggleMenu}
             className="sm:hidden cursor-pointer pl-24">
@@ -52,7 +73,7 @@ function NavBar() {
           </div>
         </div>
         <div className={menuOpen
-          ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500"
+          ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
           style={{ zIndex: 200 }}>
@@ -81,12 +102,13 @@ function NavBar() {
                 className="py-4 border-b-[0.2rem]  hover:border-blue-800">
                 <Link href='/Contact'>Contact</Link>
               </li>
-              <li className="flex items-center py-4 text-[#F6B519]">
-                <p className="cursor-pointer px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519]ease-in-out duration-300">
-                  Sign In
-                </p>
-              </li>
             </ul>
+            {theme === "dark" ? (
+        <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+      ) : (
+        <FiMoon size={25} cursor="pointer" className="dark:text-black" onClick={() => setTheme("dark")} />
+      )}
+      
           </div>
           {/* Socia Media Links */}
 
