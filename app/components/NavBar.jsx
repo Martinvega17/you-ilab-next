@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import logo_you_i_lab from "../assets/logos/logo-you-i_lab.png";
 import Image from "next/image";
 import Link from "next/link";
-import ThemeSwitcher from "@/ThemeSwitcher";
 import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs"
 
 const styles = {
@@ -42,7 +41,7 @@ function NavBar() {
                 <Link href="/Contact">Contact</Link>
               </li>
               <li className="flex items-center space-x-5 text-[#F6B519] ml-10">
-                <h3 className="cursor-pointer border border-[#F6B519] px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519] ease-in-out duration-300">{ThemeSwitcher}</h3>
+                <h3 className="cursor-pointer border border-[#F6B519] px-4 py-1 rounded-full bg-[#F6B519] text-black hover:bg-black hover:text-[#F6B519] ease-in-out duration-300">Sign In</h3>
               </li>
             </ul>
           </div>
