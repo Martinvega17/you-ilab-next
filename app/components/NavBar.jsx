@@ -71,37 +71,37 @@ function NavBar() {
           {/* Mobile Menu */}
           <div onClick={toggleMenu}
             className="sm:hidden cursor-pointer pl-24">
-            <BsList className="h-8 w-8 text-[#F6B519] fixed -ml-5" />
+            <BsList className="h-8 w-8 text-white fixed -ml-5" />
           </div>
         </div>
         <div className={menuOpen
-          ? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#ecf0f3] dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
+          ? "fixed top-0 left-0 w-[100%] sm:hidden h-screen bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
           style={{ zIndex: 200 }}>
           <div className="flex w-full items-center justify-end">
             <div onClick={toggleMenu}
               className="cursor-pointer">
-              <BsX className="h-8 w-8 text-[#F6B519]" />
+              <BsX className="h-8 w-8 text-white rounded-full border-2 hover:bg-white hover:text-black" />
             </div>
           </div>
           {/* Mobile Menu Links */}
           <div className="flex-col py-4">
-            <ul>
+            <ul className="text-white justify-center text-center">
               <li onClick={() => setMenuOpen(false)}
-                className="py-4 border-b-[0.2rem]  hover:border-blue-800">
+                className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/'>Home</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-                className="py-4 border-b-[0.2rem]  hover:border-blue-800">
+                className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/About'>About</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-                className="py-4 border-b-[0.2rem]  hover:border-blue-800">
+                className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/Projects'>Projects</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
-                className="py-4 border-b-[0.2rem]  hover:border-blue-800">
+                className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/Contact'>Contact</Link>
               </li>
             </ul>
