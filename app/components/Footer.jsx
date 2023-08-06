@@ -13,14 +13,14 @@ const Footer = () => {
     return (
         <footer className="bg-footerBlue py-5 dark:bg-[#282948]">
             <div className="flex flex-col md:flex-row md:justify-between text-white">
-            <div className="w-full md:w-1/4 mx-4 md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
+            <div className="w-full md:w-1/4 md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
                     {/* Contenido de la primera columna */}
                     <h3 className={Styles.footerText + ' text-center text-xl ml-4 md:mr-10 text-white hover:underline cursor-pointer'}>YOUTH INNOVATION LABORATORY</h3>
                     <p className='mt-5 ml-0 md:ml-10 mr-10 md:mr-10 font-sans '>El You-i Lab está alojado en el Centro Nacional de Supercómputo (CNS) de San Luis Potosí, que es una instalación de investigación HPC de vanguardia que se centra en el desarrollo de proyectos industriales a gran escala. El CNS que está gestionado por el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
                 </div>
                 {/* Fin de la primera columna */}
                 {/* Contenido de la segunda columna */}
-                <div className="w-full md:w-1/4 mx-4 md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
+                <div className="w-full md:w-1/4  md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
                     <h3 className={Styles.footerText + ' text-center text-xl mr-4 md:mr-10 text-white hover:underline cursor-pointer'}>ENLACES DE INTERES</h3>
                     <ul className='md:text-center text-center mt-6 flex flex-col justify-center items-center'>
                         <li className='mb-4'>
@@ -60,7 +60,7 @@ const Footer = () => {
 
                 {/* Fin  de la segunda columna */}
                 {/* Contenido de la tercera columna */}
-                <div className="w-full md:w-1/4 mx-4 md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
+                <div className="w-full md:w-1/4  md:mx-0 mb-6 md:mb-0 mr-0 md:mr-10 font-OverPass">
                     <h3 className={Styles.footerText + ' text-center text-xl mr-4 md:mr-10 text-white hover:underline cursor-pointer'}>CONTACTO</h3>
                     <div className="mx-4 text-center mt-6">
                         <div className="text-center">
