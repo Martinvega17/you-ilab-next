@@ -13,6 +13,11 @@
   src: url("../public/Lato-Bold.ttf");
 }
 
+@font-face {
+  font-family: "OverPass";
+  src: url("../public/Overpass-SemiBold.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -36,6 +41,8 @@ a {
     @apply hover:text-hoverColor cursor-pointer duration-300;
   }
 }
+
+
 
 /* .about_us {
   font-family: "Cera-Medium", sans-serif;
