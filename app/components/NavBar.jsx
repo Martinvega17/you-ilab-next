@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import logo_you_i_lab from "../assets/logos/logo-you-i_lab.png";
+import logo_org from '../assets/logos/Logo-Original.png'
 import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs"
@@ -9,7 +10,8 @@ import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
 
 const styles = {
-  navLinks: 'cursor pointer ml-10  border-b-[0.150rem] border-blue-800 hover:border-[#F6B520] text-lg',
+  navLinks: 'cursor-pointer ml-10 text-lg transition-colors duration-300 p-2',
+  navLinksHover: 'hover:border-[#91f2fe] hover:bg-black hover:text-[#91f2fe] rounded-full'
 };
 
 function NavBar() {
@@ -36,36 +38,36 @@ function NavBar() {
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
             <Image
-              src={logo_you_i_lab}
+              src={logo_org}
               alt="Logo You i Lab"
-              width={110}
+              width={130}
               height={75}
               className="cursor-pointer"
             />
           </Link>
-          <div className="text-black hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
+          <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
             <ul className="hidden sm:flex dark:text-white">
-              <li className={styles.navLinks}>
+              <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/">Home</Link>
               </li>
-              <li className={styles.navLinks}>
+              <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/About">About</Link>
               </li>
-              <li className={styles.navLinks}>
+              <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/Projects">Projects</Link>
               </li>
-              <li className={styles.navLinks}>
+              <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/Contact">Contact</Link>
               </li>
             </ul>
           </div>
-          <div className="ml-auto"> {/* Agregamos la clase ml-auto para pegar el elemento al margen derecho */}
-    {theme === "dark" ? (
-      <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-    ) : (
-      <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
-    )}
-  </div>
+          <div className="ml-auto text-[#FFFCFC]"> {/* Agregamos la clase ml-auto para pegar el elemento al margen derecho */}
+            {theme === "dark" ? (
+              <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+            ) : (
+              <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+            )}
+          </div>
           {/* Mobile Menu */}
           <div onClick={toggleMenu}
             className="sm:hidden cursor-pointer pl-24">
@@ -103,12 +105,6 @@ function NavBar() {
                 <Link href='/Contact'>Contact</Link>
               </li>
             </ul>
-            {theme === "dark" ? (
-        <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-      ) : (
-        <FiMoon size={25} cursor="pointer" className="dark:text-black" onClick={() => setTheme("dark")} />
-      )}
-      
           </div>
           {/* Socia Media Links */}
 

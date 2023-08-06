@@ -10,12 +10,13 @@ module.exports = {
       fontFamily: {
         latoRegular: "Lato-Regular",
         latoBold: "Lato-Bold",
+        OverPass: "OverPass"
       },
       colors: {
         hoverColor: "#ffaa17",
         darkRed: "#ea0638",
-        navbarBlue: '#d1e1f4', 
-        footerBlue: '#114d97',
+        navbarBlue: '#11365F',/* '#d1e1f4' */ 
+        footerBlue: '#11365F',/* '#114d97', */
         loaderYellow: '#FFDD2F',
         contact: "rgba(20, 184, 166, 1)",
       },
