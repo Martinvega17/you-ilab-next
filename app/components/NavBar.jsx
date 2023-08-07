@@ -1,10 +1,9 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import logo_you_i_lab from "../assets/logos/logo-you-i_lab.png";
 import logo_org from '../assets/logos/Logo-Original.png'
 import Image from "next/image";
 import Link from "next/link";
-import { BsList, BsPinterest, BsX, BsYoutube } from "react-icons/bs"
+import { BsList, BsFacebook, BsX, BsTwitter, BsLinkedin } from "react-icons/bs"
 import { useTheme } from "next-themes";
 import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
@@ -109,15 +108,18 @@ function NavBar() {
           {/* Socia Media Links */}
 
           <div className="flex flex-row justify-around pt-10 items-center">
-            <Link href="https://www.youtube.com/watch?v=0KLz7NMj1hc">
-              <BsYoutube size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
+            <Link href="https://www.facebook.com/youilab/" target="_blanck">
+              <BsFacebook size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
-            <Link href="https://www.pinterest.com">
-              <BsPinterest size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
+            <Link href="https://twitter.com/youi_lab?lang=en" target="_blanck">
+              <BsTwitter size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
+            </Link>
+            <Link href="https://www.pinterest.com" target="_blanck">
+              <BsLinkedin size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
           </div>
           <Image
-            src={logo_you_i_lab}
+            src={logo_org}
             alt="logo"
             width={205}
             height={75}
