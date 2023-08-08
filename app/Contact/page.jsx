@@ -59,9 +59,6 @@ export default function Contact() {
                 >
                     <div className="flex-1 text-gray-700 p-8 md:p-20">
                         <h1 className="text-3xl pb-2 font-latoBold">Contact Us 👋</h1>
-                        <p className="text-lg text-gray-500">
-                            Join our E-learning platform today and unlock over 500+ courses and digital asset ready to download
-                        </p>
                         <div className="mt-6">
                             {/* Name input field */}
                             <div className="pb-4">
@@ -122,7 +119,7 @@ export default function Contact() {
             className="h-5 w-5 text-teal-500 border-2 focus:border-teal-500 focus:ring-teal-500"
         />
         <p className="text-sm text-gray-700">
-            I agree to the <a href="/Contact/terms-of-use" target="_blank" className="font-bold">Terms of Service</a> and <a href="/Contact/privacy-policy" target="_blank" className="font-bold">Privacy Policy</a>
+            I agree to the <a href="/Policies/terms-of-use" target="_blank" className="font-bold">Terms of Service</a> and <a href="/Policies/privacy-policy" target="_blank" className="font-bold">Privacy Policy</a>
         </p>
     </div>
 </div>
@@ -130,7 +127,7 @@ export default function Contact() {
                                 type="submit"
                                 className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full hover:bg-teal-300"
                             >
-                                Start learning today!
+                                Send Message
                             </button>
                         </div>
                     </div>
