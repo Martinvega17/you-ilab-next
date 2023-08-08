@@ -10,7 +10,8 @@ module.exports = {
       fontFamily: {
         latoRegular: "Lato-Regular",
         latoBold: "Lato-Bold",
-        OverPass: "OverPass"
+        OverPassSemiBold: "OverPass-SemiBold",
+        OverPassRegular: "OverPass-Regular"
       },
       colors: {
         hoverColor: "#ffaa17",

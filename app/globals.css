@@ -14,8 +14,13 @@
 }
 
 @font-face {
-  font-family: "OverPass";
+  font-family: "OverPass-SemiBold";
   src: url("../public/fonts/Overpass-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OverPass-Regular";
+  src: url("../public/fonts/Overpass-Regular.ttf");
 }
 
 html,
