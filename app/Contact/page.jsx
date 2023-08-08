@@ -1,8 +1,5 @@
 "use client"
-import Head from "next/head";
 import { useState } from "react";
-import TermsAndService from '../TermsAndService/page'
-import PrivacyPolice from '../PrivacyPolicy/page'
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -125,7 +122,7 @@ export default function Contact() {
             className="h-5 w-5 text-teal-500 border-2 focus:border-teal-500 focus:ring-teal-500"
         />
         <p className="text-sm text-gray-700">
-            I agree to the <a href="/TermsAndService" target="_blank" className="font-bold">Terms of Service</a> and <a href="/PrivacyPolicy" target="_blank" className="font-bold">Privacy Policy</a>
+            I agree to the <a href="/Contact/terms-of-use" target="_blank" className="font-bold">Terms of Service</a> and <a href="/Contact/privacy-policy" target="_blank" className="font-bold">Privacy Policy</a>
         </p>
     </div>
 </div>
