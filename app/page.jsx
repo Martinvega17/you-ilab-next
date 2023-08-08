@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import styled from "styled-components";
 import Image from "next/image";
 import Projects from "@/components/Projects/Carousel/Projects";
 
@@ -13,11 +12,6 @@ import GCIC from './assets/sponsors/GCIC.png'
 import collaborators from './assets/team/Collage_colab_.jpg'
 
 
-// Importar LightColor from styled-components
-/* const LightColor = styled.div`
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
-    position: relative;
-`; */
 
 export default function Home() {
   return (
@@ -32,40 +26,41 @@ export default function Home() {
           <AliadosCarousel />
           {/* Carousel Sponsors */}
 
-          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-24 pb-16 h-80 relative -z-10 ">
-            <div className="container mx-auto text-center">
-              <div className="flex justify-around">
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
-                    <a href="">
-                      <Image src={YIL} alt="" className="w-36 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
-                    <a href="">
-                      <Image src={DBM} alt="" className="w-72 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
-                    <a href="">
-                      <Image src={GCIC} alt="" className="w-80 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="ml-4">
-                    <a href="">
-                      <Image src={IPICYT} alt="" className="w-72 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-24 pb-16 h-80 relative -z-10">
+  <div className="container mx-auto text-center">
+    <div className="flex justify-around">
+      <div className="mb-4 md:mb-0">
+        <div className="mr-3 ml-4">
+          <a href="http://youilab.ipicyt.edu.mx/">
+            <Image src={YIL} alt="" className="w-36 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+          </a>
+        </div>
+      </div>
+      <div className="mb-4 md:mb-0">
+        <div className="mr-3 ml-4">
+          <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php">
+            <Image src={DBM} alt="" className="w-72 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+          </a>
+        </div>
+      </div>
+      <div className="mb-4 md:mb-0">
+        <div className="mr-3 ml-4">
+          <a href="https://cic.ipicyt.edu.mx/">
+          <Image src={GCIC} alt="" className="w-80 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+          </a>
+        </div>
+      </div>
+      <div className="mb-4 md:mb-0">
+        <div className="ml-4">
+          <a href="https://www.ipicyt.edu.mx/">
+          <Image src={IPICYT} alt="" className="w-72 h-auto grayscale hover:grayscale-0 transition duration-500" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           {/* End Carousel Sponsors */}
 
           {/* Section Collage Collaborators */}

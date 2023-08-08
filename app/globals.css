@@ -5,17 +5,17 @@
 /* Fonts */
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../public/Lato-Regular.ttf");
+  src: url("../public/fonts/Lato-Regular.ttf");
 }
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("../public/Lato-Bold.ttf");
+  src: url("../public/fonts/Lato-Bold.ttf");
 }
 
 @font-face {
   font-family: "OverPass";
-  src: url("../public/Overpass-SemiBold.ttf");
+  src: url("../public/fonts/Overpass-SemiBold.ttf");
 }
 
 html,
@@ -36,11 +36,11 @@ a {
   box-sizing: border-box;
 }
 
-@layer components {
+/* @layer components {
   .navbarLi {
     @apply hover:text-hoverColor cursor-pointer duration-300;
   }
-}
+} */
 
 
 
