@@ -5,6 +5,7 @@ import Image from 'next/image';
 const About = () => {
     return(
         <div className="about_container">
+            <title>You I Lab | About</title>
 
             <div className="about">
                 <div

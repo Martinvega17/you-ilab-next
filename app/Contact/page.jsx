@@ -1,6 +1,8 @@
 "use client"
 import Head from "next/head";
 import { useState } from "react";
+import TermsAndService from '../TermsAndService/page'
+import PrivacyPolice from '../PrivacyPolicy/page'
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -51,19 +53,15 @@ export default function Contact() {
 
     return (
         <div>
-            <Head>
-                <title>Create Next App</title>
-                <meta name="description" content="Generated" />
-                <link rel="icon" href="/youilab_logo.svg" />
-            </Head>
+            <title>You I Lab | Contact</title>
 
-            <main className="h-screen flex items-center justify-center bg-contact">
+            <main className="h-full flex items-center justify-center bg-contact">
                 <form
                     onSubmit={handleSubmit}
-                    className="bg-white flex flex-col lg:flex-row rounded-lg w-full lg:w-2/3 xl:w-1/2 font-latoRegular"
+                    className="bg-white flex my-4 flex-col lg:flex-row rounded-lg w-full lg:w-2/3 xl:w-1/2 font-latoRegular"
                 >
                     <div className="flex-1 text-gray-700 p-8 md:p-20">
-                        <h1 className="text-3xl pb-2 font-latoBold">Lets get started 👋</h1>
+                        <h1 className="text-3xl pb-2 font-latoBold">Contact Us 👋</h1>
                         <p className="text-lg text-gray-500">
                             Join our E-learning platform today and unlock over 500+ courses and digital asset ready to download
                         </p>
@@ -115,22 +113,22 @@ export default function Contact() {
                             </div>
                             {/* Terms of service */}
                             <div className="pb-4">
-                                <label className="block font-latoBold text-sm pb-2" htmlFor="terms">
-                                    Terms of service
-                                </label>
-                                <div className="flex items-center gap-2">
-                                    <input
-                                        onChange={(e) => setTerms(e.target.checked)}
-                                        type="checkbox"
-                                        name="terms"
-                                        checked={terms}
-                                        className="h-5 w-5 text-teal-500 border-2 focus:border-teal-500 focus:ring-teal-500"
-                                    />
-                                    <p className="text-sm font-latoBold text-gray-500">
-                                        I agree to the Terms and Service that my data will be taken and sold
-                                    </p>
-                                </div>
-                            </div>
+    <label className="block font-latoBold text-sm pb-2" htmlFor="terms">
+        Terms of service
+    </label>
+    <div className="flex items-center gap-2">
+        <input
+            onChange={(e) => setTerms(e.target.checked)}
+            type="checkbox"
+            name="terms"
+            checked={terms}
+            className="h-5 w-5 text-teal-500 border-2 focus:border-teal-500 focus:ring-teal-500"
+        />
+        <p className="text-sm text-gray-700">
+            I agree to the <a href="/TermsAndService" target="_blank" className="font-bold">Terms of Service</a> and <a href="/PrivacyPolicy" target="_blank" className="font-bold">Privacy Policy</a>
+        </p>
+    </div>
+</div>
                             <button
                                 type="submit"
                                 className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full hover:bg-teal-300"

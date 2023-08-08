@@ -16,6 +16,7 @@ import collaborators from './assets/team/Collage_colab_.jpg'
 export default function Home() {
   return (
     <main>
+      <title>You I Lab | Home</title>
       <div className="w-full bg-banner-bg bg-center">
         <div className="w-full text-white">
           {/* <LightColor> */}
