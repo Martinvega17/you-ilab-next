@@ -12,11 +12,11 @@ const Styles = {
 const Footer = () => {
     return (
         <footer className="bg-footerBlue py-5 dark:bg-[#282948]">
-            <div className="flex flex-col md:flex-row md:justify-between text-white">
+            <div className="flex flex-col md:flex-row md:justify-between text-white mx-28 ">
             <div className="w-full md:w-1/4 md:mx-0 mb-6 md:mb-0 mr-0 text-center md:mr-10 font-OverPass">
                     {/* Contenido de la primera columna */}
                     <h3 className={Styles.footerText + ' text-center text-xl ml-4 md:mr-10 text-white hover:underline cursor-pointer'}>YOUTH INNOVATION LABORATORY</h3>
-                    <p className='mt-5 ml-0 md:ml-10 mr-10 md:mr-20 font-sans'>El You-i Lab está alojado en el Centro Nacional de Supercómputo (CNS) de San Luis Potosí, que es una instalación de investigación HPC de vanguardia que se centra en el desarrollo de proyectos industriales a gran escala. El CNS que está gestionado por el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
+                    <p className='mt-5 ml-0  font-sans'>El You-i Lab está alojado en el Centro Nacional de Supercómputo (CNS) de San Luis Potosí, que es una instalación de investigación HPC de vanguardia que se centra en el desarrollo de proyectos industriales a gran escala. El CNS que está gestionado por el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT).</p>
                 </div>
                 {/* Fin de la primera columna */}
                 {/* Contenido de la segunda columna */}
@@ -82,16 +82,16 @@ const Footer = () => {
                         <h4 className="mt-4 text-xl text-center text-white">REDES SOCIALES:</h4>
                         <div className="flex space-x-3 mt-4 items-center justify-center">
                             <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
-                                <BsFacebook className="h-8 w-8 rounded-full inline-grid" />
+                                <BsFacebook className="h-6 w-6 rounded-full inline-grid" />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
-                                <BsTwitter className="h-8 w-8 rounded-full inline-grid" />
+                                <BsTwitter className="h-6 w-6 rounded-full inline-grid" />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
-                                <FaLinkedinIn className="h-8 w-8 rounded-full inline-grid" />
+                                <FaLinkedinIn className="h-6 w-6 rounded-full inline-grid" />
                             </a>
                             <a href="tel:+1234567890" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
-                                <BsTelephoneFill className="h-8 w-8 rounded-full inline-grid" />
+                                <BsTelephoneFill className="h-6 w-6 rounded-full inline-grid" />
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             <hr className="my-5" />
             <p className="text-center text-white">
                 &copy; 2023 You i Lab. All rights reserved.<br />
-                Powered by <b>You I Lab </b> <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6" />
+                Powered by <b>You I Lab </b> <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-10 h-10" />
             </p>
         </footer>
     );
