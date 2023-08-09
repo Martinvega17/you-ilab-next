@@ -10,8 +10,12 @@
   color: #01be96;
 }
 
-.slick-list, .slick-slider, .slick-track{
+.slick-list, .slick-track{
   padding: 1.5rem 0;
+}
+
+.slick-slider {
+  padding: .2rem;
 }
 
 .center .slick-center .project{
