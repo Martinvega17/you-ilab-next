@@ -5,22 +5,22 @@
 /* Fonts */
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../public/fonts/Lato-Regular.ttf");
+  src: url("../fonts/Lato-Regular.ttf");
 }
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("../public/fonts/Lato-Bold.ttf");
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 @font-face {
   font-family: "OverPass-SemiBold";
-  src: url("../public/fonts/Overpass-SemiBold.ttf");
+  src: url("../fonts/Overpass-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "OverPass-Regular";
-  src: url("../public/fonts/Overpass-Regular.ttf");
+  src: url("../fonts/Overpass-Regular.ttf");
 }
 
 html,

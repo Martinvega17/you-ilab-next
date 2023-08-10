@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelopeOpen, faRocket, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { BsFacebook, BsTwitter, BsTelephoneFill } from "react-icons/bs";
 import { FaLinkedinIn } from 'react-icons/fa'
-import logo_you_i_lab from '../assets/logos/Logo-Original.png';
+import logo_you_i_lab from '@/assets/logos/Logo-Original.png';
 import Image from 'next/image';
 
 const Styles = {

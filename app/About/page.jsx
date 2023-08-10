@@ -1,5 +1,5 @@
-import Card from '@/components/SwiperCarousel'
-import team from '../assets/team.jpg';
+import Card from '../../components/SwiperCarousel'
+import team from '@/assets/team.jpg';
 
 import Image from 'next/image';
 const About = () => {

@@ -1,13 +1,13 @@
 
 import Slider from "react-slick";
 
-import balviLogo from '../assets/aliados/balvi.png';
-import cemobiliLogo from '../assets/aliados/CEMOBILI.png';
-import cseLogo from '../assets/aliados/CSE.png';
-import idiapLogo from '../assets/aliados/idiap.png';
-import saludLogo from '../assets/aliados/salud.png';
-import uspLogo from '../assets/aliados/USP.png';
-import wenetLogo from '../assets/aliados/WeNet.png';
+import balviLogo from '@/assets/aliados/balvi.png';
+import cemobiliLogo from '@/assets/aliados/CEMOBILI.png';
+import cseLogo from '@/assets/aliados/CSE.png';
+import idiapLogo from '@/assets/aliados/idiap.png';
+import saludLogo from '@/assets/aliados/salud.png';
+import uspLogo from '@/assets/aliados/USP.png';
+import wenetLogo from '@/assets/aliados/WeNet.png';
 import Image from "next/image";
 
 

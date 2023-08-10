@@ -4,15 +4,15 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/Swiper.css';
+import '@/styles/Swiper.css';
 import dataDigital from '../components/data';
 import Modal from 'react-modal';
-import '../styles/Modal.css';
+import '@/styles/Modal.css';
 import Image from 'next/image';
 
-import cv from '../assets/icons/perfil-cv.png'
-import ln from '../assets/icons/perfil-linkedin.png'
-import email from '../assets/icons/perfil-email.png'
+import cv from '@/assets/icons/perfil-cv.png'
+import ln from '@/assets/icons/perfil-linkedin.png'
+import email from '@/assets/icons/perfil-email.png'
 
 /* Modal.setAppElement('#root'); */
 

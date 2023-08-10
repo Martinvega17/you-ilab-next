@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import logo_org from '../assets/logos/Logo-Original.png'
+import logo_org from '@/assets/logos/Logo-Original.png'
 import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsFacebook, BsX, BsTwitter, BsLinkedin } from "react-icons/bs"

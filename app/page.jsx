@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import Projects from "@/components/Projects/Carousel/Projects";
+import Projects from "../components/Projects/Carousel/Projects";
 
-import AliadosCarousel from "@/components/Aliados";
+import AliadosCarousel from "../components/Aliados";
 //Images
 import YIL from './assets/sponsors/YOU_I_LAB_WHITE_LOGO.png'
 import DBM from './assets/sponsors/DBM_WHITE_LOGO.png'
