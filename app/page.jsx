@@ -28,39 +28,40 @@ export default function Home() {
           {/* Carousel Sponsors */}
 
           <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-24 pb-16 h-80 relative -z-10">
-            <div className="container text-center">
-              <div className="flex justify-around mx-24 ">
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
+    <div className="container text-center mx-24">
+        <div className="flex justify-around">
+            <div className="mb-4 md:mb-0">
+                <div className="mr-3 ml-4">
                     <a href="http://youilab.ipicyt.edu.mx/">
-                      <Image src={YIL} alt="" className=" w-24 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                        <Image src={YIL} alt="" className="w-24 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                     </a>
-                  </div>
                 </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
-                    <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php">
-                      <Image src={DBM} alt="" className=" w-48 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="mr-3 ml-4">
-                    <a href="https://cic.ipicyt.edu.mx/">
-                      <Image src={GCIC} alt="" className="w-80 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-4 md:mb-0">
-                  <div className="ml-4">
-                    <a href="https://www.ipicyt.edu.mx/">
-                      <Image src={IPICYT} alt="" className="w-64 h-auto grayscale hover:grayscale-0 transition duration-500" />
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div className="mb-4 md:mb-0">
+                <div className="mr-3 ml-4">
+                    <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php">
+                        <Image src={DBM} alt="" className="w-48 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
+                </div>
+            </div>
+            <div className="mb-4 md:mb-0">
+                <div className="mr-3 ml-4">
+                    <a href="https://cic.ipicyt.edu.mx/">
+                        <Image src={GCIC} alt="" className="w-80 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
+                </div>
+            </div>
+            <div className="mb-4 md:mb-0">
+                <div className="ml-4">
+                    <a href="https://www.ipicyt.edu.mx/">
+                        <Image src={IPICYT} alt="" className="w-64 h-auto grayscale hover:grayscale-0 transition duration-500" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
           {/* End Carousel Sponsors */}
 
