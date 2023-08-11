@@ -85,8 +85,8 @@ function NavBar() {
             </div>
           </div>
           {/* Mobile Menu Links */}
-          <div className="flex-col py-4">
-            <ul className="text-white justify-center text-center">
+          <div className="flex-col py-4 ">
+            <ul className="text-white justify-center text-center ">
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/'>Home</Link>

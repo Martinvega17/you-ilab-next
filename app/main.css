@@ -1,4 +1,4 @@
-/* Estilo letra wavy */
+/* Estilo de letra "wavy" con borde */
 .borderl {
     color: black;
     text-shadow:
@@ -8,14 +8,18 @@
         1px 1px 0 white;
 }
 
+/* Animación "wave" para el efecto ondulado */
 .wave {
     color: #09f;
+    /* Color de la letra */
     animation: wave 3s ease-in-out infinite;
+    /* Aplica la animación "wave" con duración de 3 segundos, suavidad de entrada y salida y se repite infinitamente */
 }
 
 @keyframes wave {
 
     0%,
+    /* En el inicio y al final */
     100% {
         clip-path: polygon(0% 47%,
                 10% 48%,
@@ -26,9 +30,11 @@
                 100% 52%,
                 100% 100%,
                 0% 100%);
+        /* Define un polígono para recortar la forma de las letras en la animación */
     }
 
     50% {
+        /* En el punto medio de la animación */
         clip-path: polygon(0% 60%,
                 15% 65%,
                 34% 66%,
@@ -38,5 +44,6 @@
                 100% 46%,
                 100% 100%,
                 0% 100%);
+        /* Cambia la forma del polígono en la animación para crear el efecto de ondulación */
     }
 }
