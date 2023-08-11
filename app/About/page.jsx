@@ -1,3 +1,4 @@
+"use client"
 import Card from '../../components/SwiperCarousel';
 import team from '@/assets/team.jpg';
 import '../main.css'
@@ -13,7 +14,7 @@ const About = () => {
                     className="container-fluid p-24 w-full h-full"
                     style={{
                         backgroundColor: '#02d3bf',
-                        background: 'linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%)',
+                        background: 'linear-gradient(90deg, rgba(71, 118, 230, 1) 0%, rgba(142, 84, 233, 1) 100%)',
                     }}
                 >
                     <h2 className="text-right text-5xl text-white mr-24">Nosotros</h2>
@@ -25,18 +26,17 @@ const About = () => {
             <div className="lg:ml-40 ml-10 ">
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">
-                        <div className="md:mr-20">
-                            <h2 className="section_title text-5xl lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
-                                Youth Innovation <br /> Laboratory
-                            </h2>
+                        <div className="md:mr-16">
+                            <h2 className="text-6xl borderl absolute text-[7vmin] mb-8 font-semibold">Youth Innovation Laboratory</h2>
+                        <h2 className="text-6xl wave absolute text-[7vmin] mb-8 font-semibold">Youth Innovation Laboratory</h2>
                             <div>
-                                <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-h-lg xl:max-w-2xl">
+                                <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-h-lg xl:max-w-2xl mt-24">
                                     El Youth Innovation Laboratory (You-i Lab) es una iniciativa desde el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT) sin precedentes que sienta las bases para una participación de la población joven del país en la resolución de problemas sociales para beneficio de un mejor mañana.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="md:mr-52">
+                        <div className="md:ml-40 ">
                             <div className="about-left">
                                 <Image src={team} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl" alt="Team" />
                             </div>
