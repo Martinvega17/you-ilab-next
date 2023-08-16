@@ -1,3 +1,4 @@
+"use client"
 import Card from '../../components/SwiperCarousel';
 import team from '@/assets/team.jpg';
 import '../main.css'
@@ -22,24 +23,23 @@ const About = () => {
             <div className="lg:ml-40 ml-10 ">
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">
-                        <div className="md:mr-20">
-                            <h2 className="section_title text-5xl lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
+                    <div className="about_content md:mr-20">
+                            <h2 className="section_title text-5xl  lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
                                 Youth Innovation <br /> Laboratory
                             </h2>
-                            <div>
+                            <div className="about-left">
                                 <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-h-lg xl:max-w-2xl">
                                     El Youth Innovation Laboratory (You-i Lab) es una iniciativa desde el Instituto Potosino de Investigación Científica y Tecnológica (IPICYT) sin precedentes que sienta las bases para una participación de la población joven del país en la resolución de problemas sociales para beneficio de un mejor mañana.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="md:mr-52">
+                        <div className="md:ml-40 ">
                             <div className="about-left">
                                 <Image src={team} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl" alt="Team" />
                             </div>
                         </div>
                     </div>
-
                     <div className="flex flex-col md:flex-row mb-5">
                         <div className="mr-8">
                         <div className="relative">
