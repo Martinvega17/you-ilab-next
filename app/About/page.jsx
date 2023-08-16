@@ -13,15 +13,12 @@ const About = () => {
                     className="container-fluid p-24 w-full h-full"
                     style={{
                         backgroundColor: '#02d3bf',
-                        background: 'linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 214, 191, 255) 100%)',
+                        background: 'linear-gradient(90deg, rgba(71, 118, 230, 1) 0%, rgba(142, 84, 233, 1) 100%)',
                     }}
                 >
                     <h2 className="text-right text-5xl text-white mr-24">Nosotros</h2>
                 </div>
             </div>
-
-
-
             <div className="lg:ml-40 ml-10 ">
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">

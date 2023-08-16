@@ -10,7 +10,7 @@ const Styles = {
 };
 
 const Footer = () => {
-    return (
+    return (    
         <footer className="bg-footerBlue py-5 dark:bg-[#282948]">
             <div className="flex flex-col md:flex-row md:justify-between text-white mx-28 ">
             <div className="w-full md:w-1/4 md:mx-0 mb-6 md:mb-0 mr-0 text-center md:mr-10 font-OverPass">
@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
             <hr className="my-5" />
             <p className="text-center text-white">
-                &copy; 2023 You i Lab. All rights reserved.<br />
+                &copy; 2023 You i Lab. Todos los derechos reservados.<br />
                 Powered by <b>You I Lab </b> <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-10 h-10" />
             </p>
         </footer>

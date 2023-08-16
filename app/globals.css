@@ -31,3 +31,7 @@ body {
 
 }
 
+/* Globals Styles from Projects Page */
+
+.contenedor:hover .imagen {-webkit-transform:scale(.9);transform:scale(.9);}
+.contenedor {overflow:hidden;}
