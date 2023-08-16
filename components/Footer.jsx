@@ -81,16 +81,16 @@ const Footer = () => {
                         </div>
                         <h4 className="mt-4 text-xl text-center text-white">REDES SOCIALES:</h4>
                         <div className="flex space-x-3 mt-4 items-center justify-center">
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                            <a href="https://www.facebook.com/youilab/" aria-label="logo-facebook" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <BsFacebook className="h-6 w-6 rounded-full inline-grid" />
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                            <a href="https://twitter.com/youi_lab/" aria-label="logo-twiter" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <BsTwitter className="h-6 w-6 rounded-full inline-grid" />
                             </a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="logo-linkedin" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <FaLinkedinIn className="h-6 w-6 rounded-full inline-grid" />
                             </a>
-                            <a href="tel:+1234567890" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
+                            <a href="tel:+524448342000" aria-label="logo-phone" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <BsTelephoneFill className="h-6 w-6 rounded-full inline-grid" />
                             </a>
                         </div>
