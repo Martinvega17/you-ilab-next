@@ -60,7 +60,7 @@ const projectsData = [
     },
     {
         id: 9,
-        name: 'Urbis',
+        name: 'UrBis',
         imageSrc: urbis,
         link: 'URL_DEL_ENLACE_DEL_PROYECTO_1',
     },

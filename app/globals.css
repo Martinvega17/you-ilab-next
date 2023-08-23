@@ -35,3 +35,9 @@ body {
 
 .contenedor:hover .imagen {-webkit-transform:scale(.9);transform:scale(.9);}
 .contenedor {overflow:hidden;}
+
+.imagen {
+  width: 720px;
+  height: 240px;
+  object-fit: cover; /* Esto mantendrá la proporción y recortará si es necesario */
+}
