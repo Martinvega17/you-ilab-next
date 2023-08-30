@@ -14,7 +14,7 @@ const projectsData = [
         id: 1,
         name: 'Centinela del Aire',
         imageSrc: cAire,
-        link: 'URL_DEL_ENLACE_DEL_PROYECTO_1',
+        link: 'Projects/Detail/1',
     },
     {
         id: 2,

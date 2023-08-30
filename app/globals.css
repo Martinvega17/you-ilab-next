@@ -41,3 +41,8 @@ body {
   height: 240px;
   object-fit: cover; /* Esto mantendrá la proporción y recortará si es necesario */
 }
+
+.sponsors {
+  width: 140px;
+  height: 80px;
+}

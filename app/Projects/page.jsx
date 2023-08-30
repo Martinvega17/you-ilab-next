@@ -17,10 +17,6 @@ const Projects = () => {
         project.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-
-
-
-
     const projectItems = filteredProjects.map(project => (
         <div key={project.id} className="w-full text-center font-OverPass py-6">
             <h3 className='text-center text-xl ml-4 md:mr-2 text-projectsTitle font-bold hover:underline cursor-pointer pb-4'>

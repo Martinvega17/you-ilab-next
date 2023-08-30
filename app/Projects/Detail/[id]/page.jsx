@@ -20,11 +20,10 @@ const Projects = () => {
                 {data.map(project => (
                     <div key={project.id} className="project-card">
                         <h3 className='font-semibold text-6xl text-projectsTitle text-center my-8'>{project.title}</h3>
-                        <p>{project.description}</p>
+                        <p className='ml-6'>{project.description}</p>
                         
                     </div>
                 ))}
-
             </div>
         </div>
     );
