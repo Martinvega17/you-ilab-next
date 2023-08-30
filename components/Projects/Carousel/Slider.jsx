@@ -5,7 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
 /* Images import */
-import cAire from "@/assets/projects/logo_centinela.png";
+import cAire from "@/assets/projects/logo_centinela.jpg";
 import WeNet from "@/assets/projects/logo_wenet.png";
 import cSalud from "@/assets/projects/logo_centinela_salud.png";
 import Muframex from "@/assets/projects/logo_muframex.png";

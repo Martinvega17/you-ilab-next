@@ -32,7 +32,7 @@ export default Project;
 
 const Container = styled.div`
     height: 10rem;
-    background-color: #4e5156;
+    background-color: #fff;
     margin: 0 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
