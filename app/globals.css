@@ -43,6 +43,17 @@ body {
 }
 
 .sponsors {
-  width: 140px;
+  width: 120px;
   height: 80px;
+}
+
+.projectsTitle {
+
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0 2em;
 }

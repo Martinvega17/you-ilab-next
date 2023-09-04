@@ -29,7 +29,7 @@ const Projects = () => {
                         alt={project.name}
                         width={560}
                         height={100}
-                        className="imagen border-4 shadow-lg border-projectsTitle hover:border-teal-500 rounded-3xl cursor-pointer dark:grayscale dark:hover:grayscale-0"
+                        className="imagen border-4 shadow-lg projectsTitle hover:border-gray-300 rounded-3xl cursor-pointer dark:grayscale dark:hover:grayscale-0"
                     />
                 </div>
             </a>

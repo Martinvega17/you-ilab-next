@@ -29,7 +29,7 @@ export default function Home() {
 
           <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-16 pb-12 relative">
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 mx-auto">
-              <div className="md:flex md:flex-wrap sm:flex sm:flex-wrap justify-center sm:justify-around">
+              <div className="md:flex md:flex-wrap sm:flex sm:flex-wrap justify-center sm:justify-around mx-16">
                 <div className="mb-4 md:mb-0">
                   <div className="mr-3 ml-4">
                     <a href="http://youilab.ipicyt.edu.mx/">
