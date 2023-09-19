@@ -89,15 +89,16 @@
 }
 
 .card__title {
+    color: var(--color);
+    margin-top: .4em;
+}
+
+.card__name {
     font-size: 1.5rem;
     font-weight: 500;
     position: relative;
     top: .2em;
-}
 
-.card__name {
-    color: var(--color);
-    margin-top: .4em;
 }
 
 .card__text {

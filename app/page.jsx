@@ -64,9 +64,9 @@ export default function Home() {
           {/* End Carousel Sponsors */}
 
           {/* Section Collage Collaborators */}
-          <section className="relative -z-10">
+          <section className="relative -z-10 ">
             <div className="relative -z-1 text-center text-white">
-              <Image src={collaborators} alt="" className="bg-repeat bg-1/2 w-full bg-cover bg-1/2" />
+              <Image src={collaborators} alt="" className="bg-no-repeat bg-1/2 w-full bg-cover bg-1/2" />
               <div
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10"
                 style={{
