@@ -34,7 +34,7 @@
     border-radius: 6px;
     padding: 30px;
     width: 96vw;
-    max-height: 100vh;
+    max-height: 20vh;
     overflow: auto;
     margin: auto;
     z-index: 9999;
@@ -82,7 +82,8 @@
     border-radius: 50%;
     border: 5px solid var(--color);
     padding: 3px;
-    margin-right: 2em;
+    margin-right: 1.5em;
+    margin-left: 5%;
   }
   
   /* Estilos para los títulos dentro del modal */

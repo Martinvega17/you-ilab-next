@@ -27,7 +27,7 @@ export default function Home() {
           
           {/* Carousel Sponsors */}
 
-          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-16 pb-12 relative">
+          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-8 pb-12 relative">
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 mx-auto">
               <div className="md:flex md:flex-wrap sm:flex sm:flex-wrap justify-center sm:justify-around mx-16">
                 <div className="mb-4 md:mb-0">

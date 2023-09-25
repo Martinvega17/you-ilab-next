@@ -43,8 +43,9 @@ body {
 }
 
 .sponsors {
-  width: auto;
-  height: auto;
+  width: 13px;
+  height: 5em;
+  image-rendering: pixelated;
 }
 
 .projectsTitle {
