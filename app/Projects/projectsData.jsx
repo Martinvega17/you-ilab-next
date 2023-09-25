@@ -1,4 +1,4 @@
-import cAire from '@/assets/projects/logo_centinela.png'
+/* import cAire from '@/assets/projects/logo_centinela.png'
 import WeNet from '@/assets/projects/logo_wenet.png'
 import cSalud from '@/assets/projects/logo_centinela_salud.png'
 import Muframex from '@/assets/projects/logo_muframex.png'
@@ -79,3 +79,4 @@ const projectsData = [
 ];
 
 export default projectsData;
+ */
