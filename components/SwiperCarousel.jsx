@@ -66,7 +66,7 @@ const SwiperCarousel = () => {
                         <div className="card__content" onClick={() => handleViewMore(card)}>
                             <span className="card__title text-center">{card.profession}</span>
                             <span className="card__name text-center">{card.name}</span>
-                            <p className="card__text">{card.text}</p>
+                            
                             {card.text.length > 100 && (
                                 <button className="card__btn">View More</button>
                             )}
@@ -96,7 +96,7 @@ const SwiperCarousel = () => {
                                 <span className="card__name">{expandedCard.name}</span>
                                 <p className="card__text">{expandedCard.text}</p>
                             </div>
-                            <div className="modal__links-container">
+                            <div className="modal__links-container text-center justify-center items-center">
                                 {expandedCard.cv && (
                                     <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
                                         <Image src={cv} alt="cv" />

@@ -64,10 +64,10 @@ export default function Home() {
 
           {/* End Carousel Sponsors */}
           <div
-            className="h-screen w-auto flex justify-center items-center"
+            className="h-96 w-auto flex justify-center items-center"
             style={{
               backgroundImage: `url(${collaborators.src})`,
-              backgroundSize: "60% ",
+              backgroundSize: "35% ",
             }}
           >
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">

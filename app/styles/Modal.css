@@ -132,7 +132,7 @@
   }
   
   /* Media queries para dispositivos con ancho máximo de 1400px */
-  @media (max-width: 1400px) {
+  @media (max-width: 1600px) {
     .modal {
       top: 5%;
       bottom: 5%;
@@ -142,10 +142,12 @@
     }
   
     .modal .card__image {
-      width: 50%;
-      width: 20em;
-      height: 20em;
-      margin-right: 1em;
+      width: 24em;
+      height: 24em;
+      border-radius: 50%;
+      border: 5px solid var(--color);
+      padding: 3px;
+      margin-right: 2em;
     }
   
     .modal .card__title {
@@ -157,7 +159,7 @@
       font-size: 1.2rem;
       left: 10%;
       font-size: 1.5rem;
-      top: 13%;
+      top: 20%;
     }
   
     .modal .card__text {
@@ -174,11 +176,9 @@
   
     .modal__links-container {
       display: flex;
-      margin-top: -2.3em;
-      justify-items: space-between;
-      gap: 100px;
-      margin-left: 2rem;
-      justify-content: center;
+      margin-top: -15.3em;
+      position: relative;
+      margin-right: -25rem;
     }
   
     .modal__links-container img {
