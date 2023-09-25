@@ -1,4 +1,4 @@
-/* import cAire from '@/assets/projects/logo_centinela.png'
+import cAire from '@/assets/projects/logo_centinela.png'
 import WeNet from '@/assets/projects/logo_wenet.png'
 import cSalud from '@/assets/projects/logo_centinela_salud.png'
 import Muframex from '@/assets/projects/logo_muframex.png'
@@ -14,7 +14,7 @@ const projectsData = [
         id: 1,
         name: 'Centinela del Aire',
         imageSrc: cAire,
-        link: 'Projects/Detail/1',
+        link: 'URL_DEL_ENLACE_DEL_PROYECTO_1',
     },
     {
         id: 2,
@@ -79,4 +79,3 @@ const projectsData = [
 ];
 
 export default projectsData;
- */
