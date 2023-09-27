@@ -1,12 +1,12 @@
-import cAire from "@/assets/projects/Centinela del aire.png";
-import WeNet from "@/assets/projects/wenet.png";
-import cSalud from "@/assets/projects/cds.png";
-import Muframex from "@/assets/projects/Muframex.png";
-import hSaludable from "@/assets/projects/Horizonte Saludable.png";
-import juventud from "@/assets/projects/Juventud al Dia.png";
-import csef from "@/assets/projects/C-SEF.png";
-import bStreet from "@/assets/projects/Beyond the Street.png";
-import Enviromental from "@/assets/projects/Environmental Restoration Perception.png";
+import cAire from "../assets/projects/Centinela del aire.png";
+import WeNet from "../assets/projects/wenet.png";
+import cSalud from "../assets/projects/cds.png";
+import Muframex from "../assets/projects/Muframex.png";
+import hSaludable from "../assets/projects/Horizonte Saludable.png";
+import juventud from "../assets/projects/Juventud al Dia.png";
+import csef from "../assets/projects/C-SEF.png";
+import bStreet from "../assets/projects/Beyond the Street.png";
+import Enviromental from "../assets/projects/Environmental Restoration Perception.png";
 
 const projectsData = [
     {
