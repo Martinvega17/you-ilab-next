@@ -5,15 +5,15 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
 /* Images import */
-import cAire from "../assets/projects/Centinela_del_Aire.png";
-import WeNet from "../assets/projects/wenet.png";
-import cSalud from "../assets/projects/cds.png";
-import Muframex from "../assets/projects/Muframex.png";
-import hSaludable from "../assets/projects/Horizonte_Saludable.png";
-import juventud from "../assets/projects/Juventud.png";
-import csef from "../assets/projects/C-SEF.png";
-import bStreet from "../assets/projects/Beyond_the_Street.png";
-import Enviromental from "../assets/projects/Environmental_Restoration_Perception.png";
+import cAire from "@/assets/projects/Centinela_del_Aire.png";
+import WeNet from "@/assets/projects/wenet.png";
+import cSalud from "@/assets/projects/cds.png";
+import Muframex from "@/assets/projects/Muframex.png";
+import hSaludable from "@/assets/projects/Horizonte_Saludable.png";
+import juventud from "@/assets/projects/Juventud.png";
+import csef from "@/assets/projects/C-SEF.png";
+import bStreet from "@/assets/projects/Beyond_the_Street.png";
+import Enviromental from "@/assets/projects/Environmental_Restoration_Perception.png";
 
 let data = [
   {
