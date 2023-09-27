@@ -5,16 +5,15 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
 /* Images import */
-import cAire from "@/assets/projects/logo_centinela.jpg";
-import WeNet from "@/assets/projects/logo_wenet.png";
-import cSalud from "@/assets/projects/logo_centinela_salud.png";
-import Muframex from "@/assets/projects/logo_muframex.png";
-import hSaludable from "@/assets/projects/logo_hsaludable.png";
-import juventud from "@/assets/projects/logo_juventud.png";
-import csef from "@/assets/projects/logo_csef.png";
-import urbis from "@/assets/projects/logo_urbis.jpg";
-import bStreet from "@/assets/projects/logo_beyond_street.png";
-import Enviromental from "@/assets/projects/logo_environmental.png";
+import cAire from "@/assets/projects/Centinela del aire.png";
+import WeNet from "@/assets/projects/wenet.png";
+import cSalud from "@/assets/projects/cds.png";
+import Muframex from "@/assets/projects/Muframex.png";
+import hSaludable from "@/assets/projects/Horizonte Saludable.png";
+import juventud from "@/assets/projects/Juventud al Dia.png";
+import csef from "@/assets/projects/C-SEF.png";
+import bStreet from "@/assets/projects/Beyond the Street.png";
+import Enviromental from "@/assets/projects/Environmental Restoration Perception.png";
 
 let data = [
   {
@@ -68,7 +67,7 @@ let data = [
   },
   {
     desc: "Urbis",
-    img: urbis,
+    img: juventud,
     disc: "UrBis es una plataforma de crowdsourcing desarrollada en el You-i Lab del IPICYT para abordar problemas socio-urbanos en México.",
     src: "/Projects",
     alt: "Urbis",
