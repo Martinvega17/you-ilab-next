@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import projectsData from './projectsData'; // Asegúrate de importar los datos correctamente
+import proyectos from '@/assets/footer/projects.jpg';
+
 
 const Projects = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -40,14 +42,16 @@ const Projects = () => {
         <div>
             <title>You I Lab | Projects</title>
             <div className="about">
-                <div
-                    className="container-fluid p-24 w-full h-full"
+            <div
+                    className="h-[23rem] w-auto flex justify-center items-center"
                     style={{
-                        backgroundColor: '#02d3bf',
-                        background: 'linear-gradient(90deg, rgba(71, 118, 230, 1) 0%, rgba(142, 84, 233, 1) 100%)',
+                        backgroundImage: `url(${proyectos.src})`,
+                        backgroundSize: "100% ",
                     }}
                 >
-                    <h2 className="text-right text-5xl text-white mr-24">Proyectos</h2>
+                    <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">
+                        <h1 className="text-neutral-600 text-2xl lg:text-5xl font-bold text-right">PROYECTOS</h1>
+                    </div>
                 </div>
 
                 <div className="justify-center justify-items-center flex mt-20">
@@ -55,7 +59,7 @@ const Projects = () => {
                         <input
                             type="text"
                             placeholder="Buscar proyectos..."
-                            className="px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-500 bg-slate-300 pr-10"
+                            className="px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-500 bg-slate-300 pr-10 dark:text-black"
                             value={searchTerm}
                             onChange={e => setSearchTerm(e.target.value)}
                         />

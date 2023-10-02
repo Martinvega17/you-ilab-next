@@ -47,16 +47,16 @@ function NavBar() {
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
             <ul className="hidden sm:flex dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/">Home</Link>
+                <Link href="/">Inicio</Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/About">About</Link>
+                <Link href="/About">¿Quienes Somos?</Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/Projects">Projects</Link>
+                <Link href="/Projects">Proyectos</Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/Contact">Contact</Link>
+                <Link href="/Contact">Contacto</Link>
               </li>
             </ul>
           </div>

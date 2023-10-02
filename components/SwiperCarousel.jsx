@@ -88,7 +88,7 @@ const SwiperCarousel = () => {
                     </button>
                     {expandedCard && (
                         <>
-                            <div className="card__image">
+                            <div className="card__images">
                                 <Image src={expandedCard.image} alt="card image" />
                             </div>
                             <div className="card__content">
