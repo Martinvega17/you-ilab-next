@@ -7,7 +7,9 @@ const Project = (props) => {
     const { img, disc, src, desc, alt } = props.item;
     return (
         <Container className='project'>
+            <a href={src} target='_blanck'>
             <Image src={img} alt={alt} width="400" height="300" className='img'/>
+            </a>
             <div className="disc">
                 {/* <h1 className='text-white description font-bold'>{desc}</h1> */}
                 <p className='text-white demo font-bold'>{disc}

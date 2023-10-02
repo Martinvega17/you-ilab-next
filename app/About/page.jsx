@@ -36,7 +36,7 @@ const About = () => {
 
                         <div className="md:ml-40 ">
                             <div className="about-left">
-                                <Image src={team} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl" alt="Team" />
+                                <Image src={team} className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mr-4" alt="Team" />
                             </div>
                         </div>
                     </div>
