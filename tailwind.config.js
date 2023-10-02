@@ -19,7 +19,7 @@ module.exports = {
         navbarBlue: '#11365F',/* '#d1e1f4' */ 
         footerBlue: '#11365F',/* '#114d97', */
         loaderYellow: '#FFDD2F',
-        contact: "rgba(20, 184, 166, 1)",
+        contact: '#262626',
       },
     },
   },

@@ -52,102 +52,80 @@ export default function Contact() {
         <div>
             <title>You I Lab | Contact</title>
 
-            <main className="h-full flex items-center justify-center bg-contact">
-                <form
-                    onSubmit={handleSubmit}
-                    className="bg-white flex my-4 flex-col lg:flex-row rounded-lg w-full lg:w-2/3 xl:w-1/2 font-latoRegular"
-                >
-                    <div className="flex-1 text-gray-700 p-8 md:p-20">
-                        <h1 className="text-3xl pb-2 font-latoBold">Contact Us 👋</h1>
-                        <div className="mt-6">
-                            {/* Name input field */}
-                            <div className="pb-4">
-                                <label className="block font-latoBold text-sm pb-2" htmlFor="name">
-                                    Name
-                                </label>
-                                <input
-                                    onChange={(e) => setName(e.target.value)}
-                                    className="border-2 border-gray-500 rounded-md p-2 w-full focus:border-teal-500 focus:ring-teal-500"
-                                    type="text"
-                                    value={name}
-                                    name="name"
-                                    placeholder="Enter your name"
-                                />
-                            </div>
-                            {/* Email input field */}
-                            <div className="pb-4">
-                                <label className="block font-latoBold text-sm pb-2" htmlFor="email">
-                                    Email
-                                </label>
-                                <input
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="border-2 border-gray-500 rounded-md p-2 w-full focus:border-teal-500 focus:ring-teal-500"
-                                    type="email"
-                                    name="email"
-                                    value={email}
-                                    placeholder="Enter your email"
-                                />
-                            </div>
-                            {/* Message input field */}
-                            <div className="pb-4">
-                                <label className="block font-latoBold text-sm pb-2" htmlFor="message">
-                                    Message (max 250 characters)
-                                </label>
-                                <textarea
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    className="border-2 border-gray-500 rounded-md p-2 w-full focus:border-teal-500 focus:ring-teal-500"
-                                    value={message}
-                                    name="message"
-                                    placeholder="Type your message here..."
-                                    maxLength={250} // Agrega el atributo maxLength
-                                />
-                                <p className="text-sm text-right text-gray-500">
-                                    {message.length}/250 characters
-                                </p>
-                            </div>
-                            {/* Terms of service */}
-                            <div className="pb-4">
-    <label className="block font-latoBold text-sm pb-2" htmlFor="terms">
-        Terms of service
-    </label>
-    <div className="flex items-center gap-2">
-        <input
-            onChange={(e) => setTerms(e.target.checked)}
-            type="checkbox"
-            name="terms"
-            checked={terms}
-            className="h-5 w-5 text-teal-500 border-2 focus:border-teal-500 focus:ring-teal-500"
-        />
-        <p className="text-sm text-gray-700">
-            I agree to the <a href="/Policies/terms-of-use" target="_blank" className="font-bold">Terms of Service</a> and <a href="/Policies/privacy-policy" target="_blank" className="font-bold">Privacy Policy</a>
-        </p>
-    </div>
-</div>
-                            <button
-                                type="submit"
-                                className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full hover:bg-teal-300"
-                            >
-                                Send Message
-                            </button>
+            <main className="bg-contact">
+            <div class="container my-24 mx-auto md:px-6 ">
+
+                <section class="mb-32">
+                    <div class="flex flex-wrap py-4">
+                        <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+                            <h2 class="mb-6 text-3xl font-bold text-neutral-500 dark:text-neutral-300 text-center">Contact us</h2>
+                            <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laudantium, modi accusantium ipsum corporis quia asperiores
+                                dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
+                                autem omnis fugiat perspiciatis? Ad, veritatis.
+                            </p>
+                            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+                                San Luis Potosí, 78216, Mexico
+                            </p>
+                            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+                                Camino a la Presa San José 2055, Lomas 4a sección
+                            </p>
+                            
+                            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+                                + 52 444 834 2000
+                            </p>
+                            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+                                you-i.lab@ipicyt.edu.mx
+                            </p>
+                        </div>
+                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+                            <form>
+                                <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <input type="text"
+                                        class="peer block min-h-[auto] w-full rounded border-neutral-300 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        id="exampleInput90" placeholder="Name" />
+                                    <label
+                                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                        for="exampleInput90">Name
+                                    </label>
+                                </div>
+                                <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <input type="email"
+                                        class="peer block min-h-[auto] w-full rounded border-neutral-300 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        id="exampleInput91" placeholder="Email address" />
+                                    <label
+                                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                        for="exampleInput91">Email address
+                                    </label>
+                                </div>
+                                <div class="relative mb-6" data-te-input-wrapper-init>
+                                    <textarea
+                                        class="peer block min-h-[auto] w-full rounded border-neutral-300 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                                    <label for="exampleFormControlTextarea1"
+                                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
+                                </div>
+                                <div class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
+                                    <input
+                                        class="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                                        type="checkbox" value="" id="exampleCheck96" checked />
+                                    <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="exampleCheck96">
+                                        Send me a copy of this message
+                                    </label>
+                                </div>
+                                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                                    class="mb-6 inline-block w-full rounded bg-[#3B71CA] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                    Send
+                                </button>
+                            </form>
                         </div>
                     </div>
-                    <div className="bg-slate-100 flex flex-col lg:w-1/3">
-                        {error &&
-                            error.map((e, index) => (
-                                <div
-                                    key={index}
-                                    className={`${success ? "text-green-800" : "text-red-600"
-                                        } px-5 py-2`}
-                                >
-                                    {e}
-                                </div>
-                            ))}
-                        {success && (
-                            <div className="text-green-800 px-5 py-2">Form submitted successfully!</div>
-                        )}
-                    </div>
-                </form>
+                </section>
+
+            </div>
             </main>
         </div>
+        
     );
 }
