@@ -26,15 +26,15 @@
 /* Estilos generales del modal */
 .modal {
     position: fixed;
-    top: 10%;
+    top: 2%;
     left: 0;
     right: 0%;
     bottom: 5%;
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: 30px;
     padding: 30px;
-    width: 96vw;
-    max-height: 90vh;
+    width: 60vw;
+    max-height: 99vh;
     overflow: auto;
     margin: auto;
     z-index: 9999;
@@ -88,20 +88,21 @@
   
   /* Estilos para los títulos dentro del modal */
   .modal .card__title {
+    color: var(--color);
+    top: 0.4em;
     font-size: 2rem;
     font-weight: 500;
     position: absolute;
-    top: 1em;
     margin-left: 40%;
+    font-style: bold;
   }
   
   /* Estilos para los nombres dentro del modal */
   .modal .card__name {
-    color: var(--color);
     font-size: 1.4rem;
     font-weight: 500;
     position: absolute;
-    top: 3.8em;
+    top: 5em;
     margin-left: 41%;
   }
   
@@ -134,7 +135,7 @@
   
 /* Media queries para dispositivos con ancho máximo de 768px */
 @media screen and (max-width: 1500px) {
-  .modal .card__images {
+  .modal .card__image {
     width: 20em;
     height: 20em;
     border-radius: 10%;
@@ -144,7 +145,7 @@
     margin-left: 2%;
   }
 
-  .card__images img {
+  .card__image img {
     width: 100%;
     height: 100%;
     border-radius: 10%;

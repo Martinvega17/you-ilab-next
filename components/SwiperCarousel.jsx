@@ -65,7 +65,7 @@ const SwiperCarousel = () => {
 
                         <div className="card__content" onClick={() => handleViewMore(card)}>
                             <span className="card__title text-center text-black">{card.name}</span>
-                            <span className="card__name text-center">{card.profession}</span>
+                            <span className="card__name text-center font-latoBold">{card.profession}</span>
                             
                             {card.text.length > 100 && (
                                 <button className="card__btn">View More</button>
@@ -88,12 +88,12 @@ const SwiperCarousel = () => {
                     </button>
                     {expandedCard && (
                         <>
-                            <div className="card__images">
+                            <div className="card__image">
                                 <Image src={expandedCard.image} alt="card image" />
                             </div>
                             <div className="card__content">
                                 <span className="card__title dark:text-black">{expandedCard.profession}</span>
-                                <span className="card__name">{expandedCard.name}</span>
+                                <span className="card__name font-bold">{expandedCard.name}</span>
                                 <p className="card__text dark:text-black">{expandedCard.text}</p>
                             </div>
                             <div className="modal__links-container text-center justify-center items-center">

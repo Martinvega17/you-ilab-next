@@ -50,7 +50,7 @@ function NavBar() {
                 <Link href="/">Inicio</Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/About">¿Quienes Somos?</Link>
+                <Link href="/About">Nosotros</Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/Projects">Proyectos</Link>
