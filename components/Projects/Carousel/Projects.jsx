@@ -31,6 +31,9 @@ const Container = styled.div`
     }
     .recent{
         font-size: 3.6rem;
+        @media(max-width : 480px){
+            font-size: 2.4rem;
+        }
     }
 
     .des{
