@@ -64,15 +64,13 @@ const SwiperCarousel = () => {
                         </div>
 
                         <div className="card__content" onClick={() => handleViewMore(card)}>
-<<<<<<< HEAD
                             <span className="card__title text-center">{card.profession}</span>
                             <span className="card__name">{card.name}</span>
                             <p className="card__text">{card.text}</p>
-=======
                             <span className="card__title text-center text-black">{card.name}</span>
                             <span className="card__name text-center">{card.profession}</span>
                             
->>>>>>> main
+
                             {card.text.length > 100 && (
                                 <button className="card__btn">View More</button>
                             )}
