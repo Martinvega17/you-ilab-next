@@ -34,7 +34,7 @@
     border-radius: 6px;
     padding: 30px;
     width: 96vw;
-    max-height: 100vh;
+    max-height: 90vh;
     overflow: auto;
     margin: auto;
     z-index: 9999;
@@ -77,11 +77,21 @@
   
   /* Estilos para la imagen dentro del modal */
   .modal .card__image {
+<<<<<<< HEAD
     width: 28em;
     height: 28em;
     position: relative;
     display: flex;
     margin-right: 2em;
+=======
+    width: 32em;
+    height: 32em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 3px;
+    margin-right: 1.5em;
+    margin-left: 5%;
+>>>>>>> main
   }
   
   /* Estilos para los títulos dentro del modal */
@@ -132,4 +142,8 @@
     top: 100%;
   }
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
   

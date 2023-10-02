@@ -27,10 +27,10 @@ export default function Home() {
           
           {/* Carousel Sponsors */}
 
-          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-16 pb-12 relative">
+          <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-8 pb-12 relative">
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 mx-auto">
-              <div className="md:flex md:flex-wrap sm:flex sm:flex-wrap justify-center sm:justify-around mx-16">
-                <div className="mb-4 md:mb-0">
+              <div className="flex justify-center sm:justify-around mx-16">
+                <div className="mb-4">
                   <div className="mr-3 ml-4">
                     <a href="http://youilab.ipicyt.edu.mx/">
                       <Image src={YIL} alt="" className="sponsors w-14 h-auto filter grayscale transition duration-500 hover:grayscale-0 sm:w-32 md:w-40" />
@@ -61,7 +61,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           {/* End Carousel Sponsors */}
+<<<<<<< HEAD
 
           {/* Section Collage Collaborators */}
           <section className="relative -z-10 ">
@@ -82,8 +84,22 @@ export default function Home() {
                 <h1 className="text-white text-2xl lg:text-5xl font-bold ">COLLABORATORS!</h1>
 
               </div>
+=======
+          <div
+            className="h-96 w-auto flex justify-center items-center"
+            style={{
+              backgroundImage: `url(${collaborators.src})`,
+              backgroundSize: "35% ",
+            }}
+          >
+            <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">
+              <h2 className="text-white text-2xl lg:text-5xl font-bold">AND THANKS YOU ALL</h2>
+              <br />
+              <h1 className="text-white text-2xl lg:text-5xl font-bold">COLLABORATORS!</h1>
+>>>>>>> main
             </div>
-          </section>
+          </div>
+
           <AliadosCarousel />
 
           {/* End Section Collage Collaborators */}
