@@ -63,28 +63,6 @@ export default function Home() {
           </div>
 
           {/* End Carousel Sponsors */}
-<<<<<<< HEAD
-
-          {/* Section Collage Collaborators */}
-          <section className="relative -z-10 ">
-            <div className="relative -z-1 text-center text-white">
-              <Image src={collaborators} alt="" className="bg-no-repeat bg-1/2 w-full bg-cover bg-1/2" />
-              <div
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10"
-                style={{
-                  width: "80%",
-                  maxWidth: "1280px",
-                  margin: "0 auto",
-                  textAlign: "center",
-                  "@media(max-width: 840px)": { width: "90%" }, // Este estilo debe ser convertido a un objeto
-                }}
-              >
-                <h2 className="text-white text-2xl lg:text-5xl font-bold">AND THANKS YOU ALL</h2>
-                <br />
-                <h1 className="text-white text-2xl lg:text-5xl font-bold ">COLLABORATORS!</h1>
-
-              </div>
-=======
           <div
             className="h-96 w-auto flex justify-center items-center"
             style={{
@@ -96,7 +74,6 @@ export default function Home() {
               <h2 className="text-white text-2xl lg:text-5xl font-bold">AND THANKS YOU ALL</h2>
               <br />
               <h1 className="text-white text-2xl lg:text-5xl font-bold">COLLABORATORS!</h1>
->>>>>>> main
             </div>
           </div>
 
