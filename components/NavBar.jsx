@@ -17,6 +17,7 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -32,7 +33,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="fixed top-0 w-full py-5 bg-gray-200 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 ">
+      <nav className="absolute top-0 w-full py-5 bg-gray-200 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
