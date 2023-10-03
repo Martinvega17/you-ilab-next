@@ -32,7 +32,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="w-full h-24 shadow-xl bg-navbarBlue dark:bg-[#2C2C2C]" style={{ zIndex: 100 }}>
+      <nav className="fixed top-0 w-full py-5 bg-gray-200 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -45,7 +45,7 @@ function NavBar() {
             />
           </Link>
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
-            <ul className="hidden sm:flex dark:text-white">
+            <ul className="hidden sm:flex text-black dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href="/">Inicio</Link>
               </li>
@@ -60,7 +60,7 @@ function NavBar() {
               </li>
             </ul>
           </div>
-          <div className="ml-auto text-[#FFFCFC]"> {/* Agregamos la clase ml-auto para pegar el elemento al margen derecho */}
+          <div className="ml-auto text-black dark:text-[#FFFCFC]"> {/* Agregamos la clase ml-auto para pegar el elemento al margen derecho */}
             {theme === "dark" ? (
               <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
             ) : (

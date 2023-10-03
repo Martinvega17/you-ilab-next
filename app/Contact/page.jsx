@@ -52,7 +52,7 @@ export default function Contact() {
         <div>
             <title>You I Lab | Contact</title>
 
-            <main className="bg-contact">
+            <main className="dark:bg-contact">
             <div class="container my-24 mx-auto md:px-6 ">
 
                 <section class="mb-32">
