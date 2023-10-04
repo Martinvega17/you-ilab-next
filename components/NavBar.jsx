@@ -33,7 +33,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="absolute top-0 w-full py-5 bg-gray-200 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 ">
+            <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 z-50">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -71,7 +71,7 @@ function NavBar() {
           {/* Mobile Menu */}
           <div onClick={toggleMenu}
             className="sm:hidden cursor-pointer pl-24">
-            <BsList className="h-8 w-8 text-white fixed -ml-5" />
+            <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
           </div>
         </div>
         <div className={menuOpen

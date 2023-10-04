@@ -53,7 +53,7 @@ body {
   background-color: #fff;
   border-radius: 2em;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
-  padding: 2em 1em;
+  padding: 1em 1em;
   overflow: hidden;
   flex-direction: column;
   margin: 0 2em;
@@ -64,4 +64,17 @@ body {
 }
 
 /* navbar.css */
-
+@media  (max-width: 360px) {
+  .imagen {
+    max-width: 14rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectsTitle {
+    margin: 0px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+  

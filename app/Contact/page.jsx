@@ -79,7 +79,8 @@ export default function Contact() {
                                 you-i.lab@ipicyt.edu.mx
                             </p>
                         </div>
-                        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+                        <div className="container my-24 mx-auto md:px-6 h-auto sm:h-[calc(100vh-72px)] relative">
+
                             <form>
                                 <div class="relative mb-6" data-te-input-wrapper-init>
                                     <input type="text"

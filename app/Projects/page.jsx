@@ -21,21 +21,21 @@ const Projects = () => {
 
     const projectItems = filteredProjects.map(project => (
         <div key={project.id} className="w-full text-center font-OverPass py-6">
-            <h3 className='text-center text-xl ml-4 md:mr-2 text-projectsTitle font-bold hover:underline cursor-pointer pb-4'>
-                {project.name}
-            </h3>
-            <a href={project.link} target="_blank">
-                <div className="image-container">
-                    <Image
-                        src={project.imageSrc}
-                        alt={project.name}
-                        width={560}
-                        height={100}
-                        className="imagen border-4 shadow-lg projectsTitle hover:border-gray-300 rounded-3xl cursor-pointer dark:grayscale dark:hover:grayscale-0"
-                    />
-                </div>
-            </a>
+    <h3 className='text-center text-xl ml-4 md:mr-2 text-projectsTitle font-bold hover:underline cursor-pointer pb-4'>
+        {project.name}
+    </h3>
+    <a href={project.link} target="_blank">
+        <div className="image-container">
+            <Image
+                src={project.imageSrc}
+                alt={project.name}
+
+                className="imagen border-4 shadow-lg projectsTitle hover:border-gray-300 rounded-3xl cursor-pointer dark:grayscale dark:hover:grayscale-0"
+            />
         </div>
+    </a>
+</div>
+
     ));
 
     return (
@@ -43,14 +43,14 @@ const Projects = () => {
             <title>You I Lab | Projects</title>
             <div className="about">
             <div
-                    className="h-[23rem] w-auto flex justify-center items-center"
+                        className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
                     style={{
                         backgroundImage: `url(${proyectos.src})`,
-                        backgroundSize: "100% ",
+                        backgroundSize: "cover",
                     }}
                 >
                     <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">
-                        <h1 className="text-neutral-600 text-2xl lg:text-5xl font-bold text-right">PROYECTOS</h1>
+                        <h1 className="text-neutral-600 text-2xl lg:text-5xl font-bold text-right ">PROYECTOS</h1>
                     </div>
                 </div>
 
@@ -83,14 +83,13 @@ const Projects = () => {
                 </div>
             </div>
             <div className="mt-4 justify-center items-center flex">
-                {/* ... */}
             </div>
             {filteredProjects.length === 0 ? (
                 <div className="text-center text-gray-500 my-4">
                     No se encontraron resultados para la búsqueda.
                 </div>
             ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mx-36">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mx-14 sm:mx-28">
                     {projectItems.slice(0, projectsToShow)}
                 </div>
             )}
