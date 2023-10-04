@@ -26,10 +26,7 @@ const SwiperCarousel = () => {
         setModalOpen(true);
     };
 
-    const closeModal = () => {
-        setModalOpen(false);
-        setExpandedCard(null);
-    };
+
 
     useEffect(() => {
         const swiper = new Swiper(swiperRef.current, {
@@ -66,7 +63,7 @@ const SwiperCarousel = () => {
                         <div className="card__content" onClick={() => handleViewMore(card)}>
                             <span className="card__title text-center text-black">{card.name}</span>
                             <span className="card__name text-center font-latoBold">{card.profession}</span>
-                            
+
                             {card.text.length > 100 && (
                                 <button className="card__btn">View More</button>
                             )}
@@ -77,26 +74,30 @@ const SwiperCarousel = () => {
 
             <Modal
                 isOpen={modalOpen}
-                onRequestClose={closeModal}
                 contentLabel="Expanded Card"
                 className="modal"
                 overlayClassName="overlay"
             >
                 <div className="modal-content dark:text-black">
-                    <button className="close-btn" onClick={closeModal}>
-                        X
-                    </button>
                     {expandedCard && (
                         <>
+                            <button
+                                className="modal-close-button"
+                                onClick={() => setModalOpen(false)}
+                            >
+                                X
+                            </button>
                             <div className="card__image">
                                 <Image src={expandedCard.image} alt="card image" />
                             </div>
                             <div className="card__content">
-                                <span className="card__title dark:text-black">{expandedCard.profession}</span>
+                                <span className="card__title dark:text-black">
+                                    {expandedCard.profession}
+                                </span>
                                 <span className="card__name font-bold">{expandedCard.name}</span>
                                 <p className="card__text dark:text-black">{expandedCard.text}</p>
                             </div>
-                            <div className="modal__links-container text-center justify-center items-center">
+                            <div className="modal__links-container">
                                 {expandedCard.cv && (
                                     <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
                                         <Image src={cv} alt="cv" />
@@ -117,6 +118,8 @@ const SwiperCarousel = () => {
                     )}
                 </div>
             </Modal>
+
+
         </section>
     );
 };
