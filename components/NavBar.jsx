@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 
 const styles = {
   navLinks: 'cursor-pointer ml-10 text-lg transition-colors duration-300 p-2',
-  navLinksHover: 'hover:border-bottom-white rounded-full justify-center text-center',
+  navLinksHover: 'cursor-pointer ml-10 text-lg transition-colors duration-300 p-2'
 };
 
 function NavBar() {
@@ -50,7 +50,7 @@ function NavBar() {
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
             <ul className="hidden sm:flex text-black dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link className={`link ${pathname === '/' ? 'h-full active' : ''}`} href="/">
+                <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
                   Inicio
                 </Link>
               </li>
