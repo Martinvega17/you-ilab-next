@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <Container id='project'>
         <Zoom>
-            <h1 className='green recent mb-6 '>Proyectos <span className="text-white">Recientes</span></h1>
+            <h1 className='green recent mt-10 '>Proyectos <span className="text-white">Recientes</span></h1>
         </Zoom>
         <Slide>
             <SliderComp/>

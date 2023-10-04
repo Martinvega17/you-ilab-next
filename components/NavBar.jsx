@@ -10,7 +10,7 @@ import { BsSun } from "react-icons/bs";
 
 const styles = {
   navLinks: 'cursor-pointer ml-10 text-lg transition-colors duration-300 p-2',
-  navLinksHover: 'hover:border-[#91f2fe] hover:bg-black hover:text-[#91f2fe] rounded-full'
+  navLinksHover: 'hover:border-[#91f2fe] hover:bg-black hover:text-[#91f2fe] rounded-full justify-center text-center'
 };
 
 function NavBar() {
@@ -75,7 +75,7 @@ function NavBar() {
           </div>
         </div>
         <div className={menuOpen
-          ? "fixed top-0 left-0 w-[100%] sm:hidden h-screen bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
+          ? "fixed top-0 left-0 w-[100%] h-screen sm:hidden  bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
           style={{ zIndex: 200 }}>
@@ -86,8 +86,8 @@ function NavBar() {
             </div>
           </div>
           {/* Mobile Menu Links */}
-          <div className="flex-col py-4 ">
-            <ul className="text-white justify-center text-center ">
+          <div className="flex-col py-4">
+            <ul className="text-white justify-between text-center mr-10">
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link href='/'>Home</Link>
