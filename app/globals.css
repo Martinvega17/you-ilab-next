@@ -43,8 +43,8 @@ body {
 }
 
 .sponsors {
-  width: 13px;
-  height: 5em;
+  max-width: 40em;
+  max-height: 20em;
   image-rendering: pixelated;
 }
 
@@ -52,8 +52,8 @@ body {
 
   background-color: #fff;
   border-radius: 2em;
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
-  padding: 1em 1em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+  padding: 7px 7px;
   overflow: hidden;
   flex-direction: column;
   margin: 0 2em;

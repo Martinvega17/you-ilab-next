@@ -12,7 +12,7 @@ const Project = (props) => {
             </a>
             <div className="disc">
                 {/* <h1 className='text-white description font-bold'>{desc}</h1> */}
-                <p className='text-white demo font-bold'>{disc}
+                <p className='text-white demo font-bold'>
                     <a href={src} target='_blank' rel="noreferrer"> Ver mas</a>
                 </p>
             </div>

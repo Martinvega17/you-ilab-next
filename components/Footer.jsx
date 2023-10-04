@@ -72,7 +72,7 @@ const Footer = () => {
                             </p>
                             <p className="flex items-center justify-center mt-2">
                                 <FontAwesomeIcon icon={faPhone} className="h-6 w-6 mr-2 flex-shrink-0" />
-                                <span className="flex-shrink-0">+52 444 834 2000</span>
+                                <span className="flex-shrink-0">+52 444 834 2000 ext 2117</span>
                             </p>
                             <p className="mb-10 flex items-center justify-center mt-2">
                                 <FontAwesomeIcon icon={faEnvelopeOpen} className="h-6 w-6 mr-2 flex-shrink-0" />
