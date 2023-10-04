@@ -78,3 +78,11 @@ body {
   }
 }
   
+.active {
+  line-height: 2rem;
+  color: #fff;
+  height: 100%;
+  display: inline-block;
+  border-bottom: 3px solid white;
+  
+}

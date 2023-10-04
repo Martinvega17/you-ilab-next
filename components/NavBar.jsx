@@ -7,19 +7,21 @@ import { BsList, BsFacebook, BsX, BsTwitter, BsLinkedin } from "react-icons/bs"
 import { useTheme } from "next-themes";
 import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
+import { usePathname } from "next/navigation";
 
 const styles = {
   navLinks: 'cursor-pointer ml-10 text-lg transition-colors duration-300 p-2',
-  navLinksHover: 'hover:border-[#91f2fe] hover:bg-black hover:text-[#91f2fe] rounded-full justify-center text-center'
+  navLinksHover: 'hover:border-bottom-white rounded-full justify-center text-center',
 };
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  
+
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+  const pathname = usePathname()
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -33,7 +35,7 @@ function NavBar() {
 
   return (
     <header>
-            <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 z-50">
+      <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-24 z-50">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -48,16 +50,24 @@ function NavBar() {
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
             <ul className="hidden sm:flex text-black dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/">Inicio</Link>
+                <Link className={`link ${pathname === '/' ? 'h-full active' : ''}`} href="/">
+                  Inicio
+                </Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/About">Nosotros</Link>
+                <Link className={`link ${pathname === '/About' ? 'active' : ''}`} href="/About">
+                  Nosotros
+                </Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/Projects">Proyectos</Link>
+                <Link className={`link ${pathname === '/Projects' ? 'active' : ''}`} href="/Projects">
+                  Proyectos
+                </Link>
               </li>
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href="/Contact">Contacto</Link>
+                <Link className={`link ${pathname === '/Contact' ? 'active' : ''}`} href="/Contact">
+                  Contacto
+                </Link>
               </li>
             </ul>
           </div>

@@ -13,6 +13,7 @@ import Image from 'next/image';
 import cv from '@/assets/icons/perfil-cv.png'
 import ln from '@/assets/icons/perfil-linkedin.png'
 import email from '@/assets/icons/perfil-email.png'
+import gh from '@/assets/icons/perfil-github.svg'
 
 /* Modal.setAppElement('#root'); */
 
@@ -111,6 +112,11 @@ const SwiperCarousel = () => {
                                 {expandedCard.linkedin && (
                                     <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
                                         <Image src={ln} alt="linkedin" />
+                                    </a>
+                                )}
+                                {expandedCard.github && (
+                                    <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
+                                        <Image src={gh} alt="github" />
                                     </a>
                                 )}
                             </div>

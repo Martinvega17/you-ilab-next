@@ -3,6 +3,7 @@ import viridiana from '@/assets/team/viridiana.jpg';
 import lourdes from '@/assets/team/lourdes.jpg';
 import miguel from '@/assets/team/miguel.jpg';
 import juanjo from '@/assets/team/juanjo.jpg';
+import ricardo from '@/assets/team/ricardo.jpg';
 
 const dataDigital = [
     {
@@ -46,6 +47,7 @@ const dataDigital = [
         cv: '',
         email: 'miguelangelmtzh@hotmail.com',
         linkedin: 'https://www.linkedin.com/in/miguelmhz/',
+        github: 'https://github.com/miguelmhz',
         showMore: false,
         image: miguel,
     },
@@ -57,10 +59,23 @@ const dataDigital = [
         cv: '',
         email: 'contacto@juanjodmz.com​',
         linkedin: 'https://www.linkedin.com/in/juanjo-dominguezp/',
+        github: 'https://github.com/juanjodmz',
         showMore: false,
         image: juanjo,
     },
-    // Agrega aquí los otros 19 elementos con su respectivo texto e imagen
+    {
+        id: 6,
+        name: 'Ricardo Barba Hernandez',
+        profession: 'Ingeniero en Sistemas Inteligentes',
+        text: 'Ricardo Barba Hernandez tiene el grado de Ingeniería de Sistemas por la Universidad Autónoma de San Luis Potosí. Es asociado de investigación y programador del You-i Lab del IPICYT.',
+        cv: '',
+        email: 'rickb_hdz@outlook.com',
+        linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
+        github: 'https://github.com/Richb17',
+        showMore: false,
+        image: ricardo,
+    },
+
 ];
 
 export default dataDigital;

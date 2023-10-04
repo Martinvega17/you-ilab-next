@@ -30,7 +30,8 @@ const About = () => {
                         <div className="about_content md:mr-20">
                             <h2 className="section_title text-5xl  lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
                                 Sobre el You I Lab
-                                <hr />
+                                
+                                
                             </h2>
             
                             <div className="about-left">
@@ -76,6 +77,11 @@ const About = () => {
                         <div className="about-left ">
                             <p className="mt-24">
                                 El laboratorio You+i del IPICYT (Instituto Potosino de Investigaci&oacute;n Cient&iacute;fica y Tecnol&oacute;gica) se fund&oacute; en 2013 con el objetivo de investigar y desarrollar tecnolog&iacute;as relacionadas con la interacci&oacute;n humano-m&aacute;quina. Su nombre proviene de la combinaci&oacute;n de la palabra &quot;you&quot; que hace referencia al usuario y la letra &quot;i&quot; de interfaz, buscando crear una &quot;yuxtaposici&oacute;n&quot; entre los seres humanos y la tecnolog&iacute;a, a trav&eacute;s del dise&ntilde;o de interfaces intuitivas y eficientes que mejoren la experiencia del usuario. Desde entonces, el laboratorio ha colaborado en diversos proyectos de investigaci&oacute;n e innovaci&oacute;n en este campo.
+                                <br />
+                                <br />
+                                El You-i Lab ha tenido un impacto positivo en la vida de muchos jóvenes en San Luis Potosí. Ha ayudado a los jóvenes a desarrollar sus habilidades STEM, a adquirir experiencia práctica y a conectarse con otros jóvenes interesados ​​en ciencia y tecnología.
+                                <br />
+                                El You-i Lab es un ejemplo de cómo la ciencia y la tecnología pueden ser utilizadas para mejorar la vida de los jóvenes. Es un modelo para otras instituciones que buscan empoderar a la juventud a través de la educación STEM.
                             </p>
                         </div>
                     </div>
