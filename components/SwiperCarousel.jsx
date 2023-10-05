@@ -10,8 +10,13 @@ import Modal from 'react-modal';
 import '@/styles/Modal.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+
 
 import cv from '@/assets/icons/perfil-cv.png'
 import ln from '@/assets/icons/perfil-linkedin.png'
@@ -106,26 +111,26 @@ const SwiperCarousel = () => {
                             <div className="modal__links-container">
                                 {expandedCard.cv && (
                                     <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
-                                        <Image src={cv} alt="cv" />
+                                        <Image src={cv} alt="cv" className="icon" />
                                     </a>
                                 )}
                                 {expandedCard.email && (
                                     <a href={`mailto:${expandedCard.email}`}>
-                                        <Image src={email} alt="email" />
+                                        <FontAwesomeIcon icon={faEnvelope} style={{ color: "#0077B5" }} className="icon"/>
                                     </a>
                                 )}
                                 {expandedCard.linkedin && (
                                     <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
-
-                                        <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: "#0077b5" }} />
+                                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} className="icon" />
                                     </a>
                                 )}
-                                {expandedCard.linkedin && (
-                                    <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} />
+                                {expandedCard.github && (
+                                    <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faGithub} style={{ color: "#171515" }} className="icon" />
                                     </a>
                                 )}
                             </div>
+
                         </>
                     )}
                 </div>
