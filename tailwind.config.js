@@ -20,9 +20,10 @@ module.exports = {
         footerBlue: '#11365F',/* '#114d97', */
         loaderYellow: '#FFDD2F',
         contact: '#262626',
+        titleAbout: '#4DB9CA',
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("tailwindcss-animated")],
   darkMode: "class",
 };

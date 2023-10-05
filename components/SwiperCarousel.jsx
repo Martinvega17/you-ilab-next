@@ -82,7 +82,8 @@ const SwiperCarousel = () => {
             <Modal
                 isOpen={modalOpen}
                 contentLabel="Expanded Card"
-                className="modal"
+                className="modal animate-fade-down
+                "
                 overlayClassName="overlay"
             >
                 <div className="modal-content dark:text-black">

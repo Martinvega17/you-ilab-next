@@ -2,7 +2,6 @@
 import Card from '../../components/SwiperCarousel';
 import team from '@/assets/team.jpg';
 import nosotros from '@/assets/footer/nosotros.jpg';
-import '../main.css'
 import Image from 'next/image';
 
 const About = () => {
@@ -24,11 +23,11 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:ml-40 ml-10 mr-10 lg:mr-40  ">
+            <div className="lg:ml-40 ml-10 mr-10 md:mr-34 ">
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">
                         <div className="about_content md:mr-20">
-                            <h2 className="section_title text-5xl  lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-dark-blue font-medium">
+                            <h2 className="section_title text-5xl lg:text-4xl xl:text-5xl mb-8 lg:mb-10 text-titleAbout font-medium">
                                 Sobre el You I Lab
                                 
                                 
@@ -50,32 +49,28 @@ const About = () => {
                     <div className="flex flex-col md:flex-row mb-5">
                         <div className="mr-8">
                             <div className="relative">
-                                <h2 className="text-6xl borderl absolute text-[7vmin] mb-8 font-semibold">Mision</h2>
-                                <h2 className="text-6xl wave absolute text-[7vmin] mb-8 font-semibold">Mision</h2>
+                                <h2 className="inherit vertical-align text-center font-bold text-5xl text-titleAbout">Mision</h2>
                             </div>
-                            <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-20 ">
+                            <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-10 ">
                                 Empoderar a la juventud a través del uso de las tecnologías de la información y la comunicación en el contexto de proyectos de impacto social.
                             </p>
                         </div>
 
                         <div className="ml-10 ">
                             <div className="relative py-1">
-                                <h2 className="text-6xl borderl absolute text-[7vmin] mb-8 font-semibold">Vision</h2>
-                                <h2 className="text-6xl wave absolute text-[7vmin] mb-8 font-semibold">Vision</h2>
-                            </div>
-                            <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-20">
+                                <h2 className="inherit vertical-align text-center font-bold text-5xl text-titleAbout">Vision</h2>                            </div>
+                            <p className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-10">
                                 Contar con los mejores talentos y creativos interesados en gestionar y ejecutar proyectos interdisciplinarios innovadores centrados en el bienestar social.
                             </p>
                         </div>
                     </div>
 
                     <div className="mr-8">
-                        <div className="relative py-1 ">
-                            <h2 className="text-6xl borderl absolute text-[7vmin] mb-8 font-semibold">Historia</h2>
-                            <h2 className="text-6xl wave absolute text-[7vmin] mb-8 font-semibold">Historia</h2>
+                        <div className="relative py-1">
+                            <h2 className="mt-10 inherit vertical-align text-center font-bold text-5xl text-titleAbout">Historia</h2>
                         </div>
                         <div className="about-left ">
-                            <p className="mt-24">
+                            <p className="mt-10">
                                 El laboratorio You+i del IPICYT (Instituto Potosino de Investigaci&oacute;n Cient&iacute;fica y Tecnol&oacute;gica) se fund&oacute; en 2013 con el objetivo de investigar y desarrollar tecnolog&iacute;as relacionadas con la interacci&oacute;n humano-m&aacute;quina. Su nombre proviene de la combinaci&oacute;n de la palabra &quot;you&quot; que hace referencia al usuario y la letra &quot;i&quot; de interfaz, buscando crear una &quot;yuxtaposici&oacute;n&quot; entre los seres humanos y la tecnolog&iacute;a, a trav&eacute;s del dise&ntilde;o de interfaces intuitivas y eficientes que mejoren la experiencia del usuario. Desde entonces, el laboratorio ha colaborado en diversos proyectos de investigaci&oacute;n e innovaci&oacute;n en este campo.
                                 <br />
                                 <br />
@@ -89,7 +84,7 @@ const About = () => {
                     <div className="md:mr-20 mt-16">
                         <div className="content">
                             <div className="title_team">
-                                <h2 className="inherit vertical-align text-center font-normal text-4xl text-[#038cd4] ">NUESTRO EQUIPO DE TRABAJO</h2>
+                                <h2 className="inherit vertical-align text-center text-4xl text-titleAbout font-semibold">NUESTRO EQUIPO DE TRABAJO</h2>
                             </div>
                         </div>
                         {/* cards */}

@@ -60,7 +60,7 @@
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 100%;
   font-size: 20px;
   background-color: transparent;
   border: none;
@@ -82,8 +82,8 @@
 
 /* Estilos para la imagen dentro del modal */
 .modal .card__image {
-  width: 12em;
-  height: 12em;
+  width: 11em;
+  height: 11em;
   border-radius: 50%;
   border: 5px solid var(--color);
   padding: 3px;
@@ -133,6 +133,7 @@
   justify-content: center; /* Alinea los elementos horizontalmente al centro */
   align-items: center; /* Alinea los elementos verticalmente al centro */
   width: 100%;
+  margin-top: 10px;
 }
 
 /* Estilos para las imágenes dentro del contenedor */
