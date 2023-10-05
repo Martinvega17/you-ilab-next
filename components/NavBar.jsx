@@ -100,19 +100,19 @@ function NavBar() {
             <ul className="text-white justify-between text-center mr-10">
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href='/'>Home</Link>
+                <Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>Home</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href='/About'>About</Link>
+                <Link className={`link ${pathname === '/About' ? 'active' : ''}`} href='/About'>About</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href='/Projects'>Projects</Link>
+                <Link className={`link ${pathname === '/Projects' ? 'active' : ''}`} href='/Projects'>Projects</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link href='/Contact'>Contact</Link>
+                <Link className={`link ${pathname === '/Contact' ? 'active' : ''}`} href='/Contact'>Contact</Link>
               </li>
             </ul>
           </div>

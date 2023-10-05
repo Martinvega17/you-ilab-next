@@ -9,11 +9,16 @@ import dataDigital from '../components/data';
 import Modal from 'react-modal';
 import '@/styles/Modal.css';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import cv from '@/assets/icons/perfil-cv.png'
 import ln from '@/assets/icons/perfil-linkedin.png'
 import email from '@/assets/icons/perfil-email.png'
 import gh from '@/assets/icons/perfil-github.svg'
+library.add(fab);
+
 
 /* Modal.setAppElement('#root'); */
 
@@ -111,12 +116,13 @@ const SwiperCarousel = () => {
                                 )}
                                 {expandedCard.linkedin && (
                                     <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
-                                        <Image src={ln} alt="linkedin" />
+
+                                        <FontAwesomeIcon icon={['fab', 'linkedin']} style={{ color: "#0077b5" }} />
                                     </a>
                                 )}
-                                {expandedCard.github && (
-                                    <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
-                                        <Image src={gh} alt="github" />
+                                {expandedCard.linkedin && (
+                                    <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} />
                                     </a>
                                 )}
                             </div>

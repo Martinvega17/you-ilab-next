@@ -43,8 +43,8 @@ body {
 }
 
 .sponsors {
-  max-width: 40em;
-  max-height: 20em;
+  max-width: auto;
+  max-height: auto;
   image-rendering: pixelated;
 }
 
