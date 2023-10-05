@@ -96,15 +96,7 @@ const SwiperCarousel = () => {
                             </button>
                             <div className="card__image">
                                 <Image src={expandedCard.image} alt="card image" />
-                            </div>
-                            <div className="card__content">
-                                <span className="card__title dark:text-black text-center">
-                                    {expandedCard.profession}
-                                </span>
-                                <span className="card__name font-bold text-center">{expandedCard.name}</span>
-                            </div>
-                                <p className="card__text dark:text-black ">{expandedCard.text}</p>
-                            <div className="modal__links-container">
+                                <div className="modal__links-container">
                                 {expandedCard.cv && (
                                     <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faFile} style={{ color: "#0077B5" }} className="icon"/>
@@ -126,6 +118,15 @@ const SwiperCarousel = () => {
                                     </a>
                                 )}
                             </div>
+                            </div>
+                            <div className="card__content">
+                                <span className="card__title dark:text-black text-center">
+                                    {expandedCard.profession}
+                                </span>
+                                <span className="card__name font-bold text-center">{expandedCard.name}</span>
+                            </div>
+                                <p className="card__text dark:text-black ">{expandedCard.text}</p>
+
 
                         </>
                     )}

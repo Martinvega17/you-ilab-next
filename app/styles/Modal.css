@@ -129,28 +129,17 @@
 /* Estilos para el contenedor de enlaces dentro del modal */
 .modal__links-container {
   text-align: left;
-  float: left;
-  margin-top: 1rem;
-  justify-content: center;
-  align-items: center;
-  
+  display: flex;
+  justify-content: center; /* Alinea los elementos horizontalmente al centro */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  width: 100%;
 }
 
 /* Estilos para las imágenes dentro del contenedor */
-.modal__links-container {
-  text-align: left;
-  float: left;
-  clear: both;
-  width: 100%;
-  margin-top: -2rem;
-}
-
-
 .modal__links-container .icon {
   width: 40px;
-  margin:  10px;
+  margin: 10px;
   height: 30px;
-  margin-top: 1rem;
 }
 
 
