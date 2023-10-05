@@ -143,30 +143,7 @@
   height: 30px;
 }
 
-@media screen and (max-width:760px) {
-  .modal .card__image {
-    width: 7em;
-    height: 7em;
-  }
-  .modal .card__title {
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-    font-style: bold;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-  
-  /* Estilos para los nombres dentro del modal */
-  .modal .card__name {
-      color: var(--color);
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-top: 0.2rem;
-    
-  }
-  
-}
+
 
 @media screen and (max-width:1100px) {
   .modal .card__image {
@@ -186,6 +163,31 @@
   .modal .card__name {
       color: var(--color);
       font-size: 1.6rem;
+      font-weight: 500;
+      margin-top: 0.2rem;
+    
+  }
+  
+}
+
+@media screen and (max-width:760px) {
+  .modal .card__image {
+    width: 7em;
+    height: 7em;
+  }
+  .modal .card__title {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Estilos para los nombres dentro del modal */
+  .modal .card__name {
+      color: var(--color);
+      font-size: 1.3rem;
       font-weight: 500;
       margin-top: 0.2rem;
     
@@ -218,7 +220,7 @@
   
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:480px) {
   .modal .card__image {
     width: 8em;
     height: 8em;
