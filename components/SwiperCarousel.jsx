@@ -11,17 +11,13 @@ import '@/styles/Modal.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/free-regular-svg-icons';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 
-import cv from '@/assets/icons/perfil-cv.png'
-import ln from '@/assets/icons/perfil-linkedin.png'
-import email from '@/assets/icons/perfil-email.png'
-import gh from '@/assets/icons/perfil-github.svg'
 library.add(fab);
 
 
@@ -102,16 +98,16 @@ const SwiperCarousel = () => {
                                 <Image src={expandedCard.image} alt="card image" />
                             </div>
                             <div className="card__content">
-                                <span className="card__title dark:text-black">
+                                <span className="card__title dark:text-black text-center">
                                     {expandedCard.profession}
                                 </span>
-                                <span className="card__name font-bold">{expandedCard.name}</span>
-                                <p className="card__text dark:text-black">{expandedCard.text}</p>
+                                <span className="card__name font-bold text-center">{expandedCard.name}</span>
                             </div>
+                                <p className="card__text dark:text-black ">{expandedCard.text}</p>
                             <div className="modal__links-container">
                                 {expandedCard.cv && (
                                     <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
-                                        <Image src={cv} alt="cv" className="icon" />
+                                        <FontAwesomeIcon icon={faFile} style={{ color: "#0077B5" }} className="icon"/>
                                     </a>
                                 )}
                                 {expandedCard.email && (

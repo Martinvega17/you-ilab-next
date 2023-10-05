@@ -24,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:ml-40 ml-10 ">
+            <div className="lg:ml-40 ml-10 mr-10 lg:mr-40  ">
                 <div className="row">
                     <div className="flex flex-col md:flex-row mt-8 mb-5">
                         <div className="about_content md:mr-20">
