@@ -98,35 +98,39 @@ const SwiperCarousel = () => {
                             <div className="card__image">
                                 <Image src={expandedCard.image} alt="card image" />
                                 <div className="modal__links-container">
-                                {expandedCard.cv && (
-                                    <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faFile} style={{ color: "#0077B5" }} className="icon"/>
-                                    </a>
-                                )}
-                                {expandedCard.email && (
-                                    <a href={`mailto:${expandedCard.email}`}>
-                                        <FontAwesomeIcon icon={faEnvelope} style={{ color: "#0077B5" }} className="icon"/>
-                                    </a>
-                                )}
-                                {expandedCard.linkedin && (
-                                    <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} className="icon" />
-                                    </a>
-                                )}
-                                {expandedCard.github && (
-                                    <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faGithub} style={{ color: "#171515" }} className="icon" />
-                                    </a>
-                                )}
-                            </div>
+                                    {expandedCard.cv && (
+                                        <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
+                                            <FontAwesomeIcon icon={faFile} style={{ color: "#0077B5" }} className="icon" />
+                                        </a>
+                                    )}
+                                    {expandedCard.email && (
+                                        <a href={`mailto:${expandedCard.email}`}>
+                                            <FontAwesomeIcon icon={faEnvelope} style={{ color: "#0077B5" }} className="icon" />
+                                        </a>
+                                    )}
+                                    {expandedCard.linkedin && (
+                                        <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
+                                            <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} className="icon" />
+                                        </a>
+                                    )}
+                                    {expandedCard.github && (
+                                        <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
+                                            <FontAwesomeIcon icon={faGithub} style={{ color: "#171515" }} className="icon" />
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                             <div className="card__content">
+                                <span className="card__name font-bold text-center">
+                                    {expandedCard.name}
+                                </span>
+
                                 <span className="card__title dark:text-black text-center">
                                     {expandedCard.profession}
                                 </span>
-                                <span className="card__name font-bold text-center">{expandedCard.name}</span>
+
                             </div>
-                                <p className="card__text dark:text-black ">{expandedCard.text}</p>
+                            <p className="card__text dark:text-black ">{expandedCard.text}</p>
 
 
                         </>
