@@ -21,6 +21,7 @@ module.exports = {
         loaderYellow: '#FFDD2F',
         contact: '#262626',
         titleAbout: '#4DB9CA',
+        darkBlack: '#333',
       },
     },
   },

@@ -2,7 +2,7 @@
 const NextConfig = {
 
     images: {
-      domains: ['res.cloudinary.com', 'cdn.dribbble.com', 'static.chollometro.com'],
+      domains: ['res.cloudinary.com', 'cdn.dribbble.com', 'static.chollometro.com', 'reqres.in'],
     },
     
   };

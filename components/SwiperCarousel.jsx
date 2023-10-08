@@ -89,12 +89,14 @@ const SwiperCarousel = () => {
                 <div className="modal-content dark:text-black">
                     {expandedCard && (
                         <>
-                            <button
-                                className="modal-close-button"
-                                onClick={() => setModalOpen(false)}
-                            >
-                                X
-                            </button>
+                            <div className="modal__close-container">
+                                <button
+                                    className="modal-close-button"
+                                    onClick={() => setModalOpen(false)}
+                                >
+                                    X
+                                </button>
+                            </div>
                             <div className="card__image">
                                 <Image src={expandedCard.image} alt="card image" />
                                 <div className="modal__links-container">
