@@ -19,7 +19,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
         from: 'Acme <onboarding@resend.dev>',
-        to: ['martinvega170500@gmail.com'],
+        to: [process.env.TO_EMAIL],
         subject: `${name} has a message!`,
         react: <ContactMeEmail name={name} email={email} phone={phone} content={content} />,
     });
