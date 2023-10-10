@@ -20,6 +20,7 @@ module.exports = {
         footerBlue: '#11365F',/* '#114d97', */
         loaderYellow: '#FFDD2F',
         contact: '#262626',
+        buttonContact: '#2563EB',
         titleAbout: '#4DB9CA',
         darkBlack: '#333',
       },

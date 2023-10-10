@@ -132,8 +132,7 @@ const SwiperCarousel = () => {
                                 </span>
 
                             </div>
-                            <p className="card__text dark:text-black ">{expandedCard.text}</p>
-
+                            <p className="card__text dark:text-black mx-auto">{expandedCard.text}</p>
 
                         </>
                     )}
