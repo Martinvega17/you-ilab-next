@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useState } from "react";
-import { ToastProvider, useToasts } from 'react-toast-notifications';
+
 
 
 
@@ -31,13 +31,7 @@ export default function ContactForm() {
         });
 
 
-    const [messageSent, setMessageSent] = useState(false);
 
-    const { addToast } = useToasts();
-
-    const notify = () => {
-        addToast('Message successfully sent!', { appearance: 'success' });
-    };
 
 
 
