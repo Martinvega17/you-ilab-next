@@ -42,7 +42,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "18.2.24",
+    "@types/react": "17.0.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "standard": "^17.1.0",
