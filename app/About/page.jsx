@@ -12,10 +12,10 @@ const About = () => {
             <div className="about">
 
                 <div
-                    className="h-80 w-auto flex justify-center items-center"
+                    className="h-screen w-auto flex justify-center items-center bg-fixed"
                     style={{
-                        backgroundImage: `url(${nosotros.src})`,
-                        backgroundSize: "100% ",
+                        backgroundImage: `url(${nosotros})`,
+
                     }}
                 >
                     <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">

@@ -1,132 +1,120 @@
 "use client"
-import { useState } from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
 
-export default function Contact() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [terms, setTerms] = useState(false);
-    const [error, setError] = useState([]);
-    const [success, setSuccess] = useState(false);
+const formSchema = z.object({
+    name: z.string().min(2, {
+        message: "Name must be at least 2 characters.",
+    }),
+    email: z.string().email({
+        message: "Email must be in proper format",
+    }),
+    phone: z.string().min(2, {
+        message: "Phone number must be at least 2 characters.",
+    }),
+    content: z.string().min(2, {
+        message: "Content must be at least 2 characters.",
+    }),
+});
 
+export default function ContactForm() {
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
+        resolver: zodResolver(formSchema),
+    });
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    async function onSubmit(values) {
+        // TODO: implement
+        console.log(values);
 
-        console.log("Name", name);
-        console.log("Email", email);
-        console.log("Message", message);
-        console.log("Terms", terms);
-
-        if (!terms) {
-            setError(["You must agree to the Terms of Service before submitting the form."]);
-            return;
-        }
-
-        const res = await fetch("api/reload", {
+        await fetch("/api/send", {
             method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
             body: JSON.stringify({
-                name,
-                email,
-                message,
-                terms: terms,
+                name: values.name,
+                email: values.email,
+                phone: values.phone,
+                content: values.content,
             }),
         });
-
-        const { msg, success } = await res.json();
-        setError(msg);
-        setSuccess(success);
-
-        if (success) {
-            setName("");
-            setEmail("");
-            setMessage("");
-            setTerms(false);
-        }
-    };
+    }
 
     return (
-        <div>
-            <title>You I Lab | Contact</title>
+        <section className="bg-white dark:bg-gray-900">
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+                <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                <form action="#" className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+                    <div>
+                        <label for="name" htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="John Doe" required
+                            {...register("name")} />
+                        {errors?.name && (
+                            <p className="px-1 text-xs text-red-600">
+                                {errors.name.message}
+                            </p>
+                        )}
+                    </div>
+                    <div>
+                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@flowbite.com"
+                            required
+                            {...register("email")} />
+                        {errors?.name && (
+                            <p className="px-1 text-xs text-red-600">
+                                {errors.name.message}
+                            </p>
+                        )}
+                    </div>
+                    <div>
+                        <label className="sr-only" htmlFor="phone">
+                            Phone
+                        </label>
 
-            <main className="dark:bg-contact">
+                        <input
+                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Phone Number"
+                            type="tel"
+                            id="phone"
+                            {...register("phone")}
+                        />
 
-                <div class="container my-24 mx-auto md:px-6 py-6">
+                        {errors?.phone && (
+                            <p className="px-1 text-xs text-red-600">
+                                {errors.phone.message}
+                            </p>
+                        )}
+                    </div>
 
-                    <section className="mb-14">
-                        <div className="flex flex-wrap">
-                            <div className="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                                <h2 className="mb-6 text-3xl font-bold">Contact us</h2>
-                                <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Laudantium, modi accusantium ipsum corporis quia asperiores
-                                    dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
-                                    autem omnis fugiat perspiciatis? Ad, veritatis.
-                                </p>
-                                <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                                    San Luis Potosi, S.L.P, 78216, Mexico
-                                </p>
-                                <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                                    Camino a la Presa San Jose 2055, Lomas 4a Sección
-                                </p>
-                                <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                                    + 52 444 834 2000 ext 2117
-                                </p>
-                                <p className="mb-2 text-neutral-500 dark:text-neutral-300">
-                                    you-i.lab@ipicyt.edu.mx
-                                </p>
-                            </div>
-                            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
-                                <form>
-                                    <div className="relative mb-6" data-te-input-wrapper-init>
-                                        <input type="text"
-                                            className="peer block min-h-[auto] w-full rounded border-neutral-300 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                            id="exampleInput90" placeholder="Name" />
-                                        <label
-                                            className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                                            for="exampleInput90">Name
-                                        </label>
-                                    </div>
-                                    <div className="relative mb-6" data-te-input-wrapper-init>
-                                        <input type="email"
-                                            className="peer block min-h-[auto] w-full rounded border-neutral-300-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                            id="exampleInput91" placeholder="Email address" />
-                                        <label
-                                            className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                                            for="exampleInput91">Email address
-                                        </label>
-                                    </div>
-                                    <div className="relative mb-6" data-te-input-wrapper-init>
-                                        <textarea
-                                            className="peer block min-h-[auto] w-full rounded border-neutral-300-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                                            id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-                                        <label for="exampleFormControlTextarea1"
-                                            className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
-                                    </div>
-                                    <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
-                                        <input
-                                            className="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                                            type="checkbox" value="" id="exampleCheck96" />
-                                        <label className="inline-block pl-[0.15rem] hover:cursor-pointer" for="exampleCheck96">
-                                            Send me a copy of this message
-                                        </label>
-                                    </div>
-                                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                                        className="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] bg-[#3B71CA]">
-                                        Send
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-
-            </main>
-        </div>
-
+                    <div className="sm:col-span-2">
+                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea
+                            id="message"
+                            rows="6"
+                            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a comment..."
+                            {...register("content")}
+                        />
+                        {errors?.content && (
+                            <p className="px-1 text-xs text-red-600">
+                                {errors.content.message}
+                            </p>
+                        )}
+                    </div>
+                    <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </form>
+            </div>
+        </section>
     );
 }
