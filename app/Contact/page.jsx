@@ -1,7 +1,9 @@
 "use client"
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, reset } from "react-hook-form";
 import * as z from "zod";
+import { useState } from "react";
+
 
 const formSchema = z.object({
     name: z.string().min(2, {
@@ -22,10 +24,13 @@ export default function ContactForm() {
     const {
         register,
         handleSubmit,
-        formState: { errors },
-    } = useForm({
-        resolver: zodResolver(formSchema),
-    });
+        formState: { errors }, reset } = useForm({
+    resolver: zodResolver(formSchema),
+});
+
+
+    const [messageSent, setMessageSent] = useState(false);
+    
 
     async function onSubmit(values) {
         // TODO: implement
@@ -40,6 +45,9 @@ export default function ContactForm() {
                 content: values.content,
             }),
         });
+        reset();
+        setMessageSent(true);
+
     }
 
     return (
@@ -114,6 +122,11 @@ export default function ContactForm() {
                     </div>
                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact">Send message</button>
                 </form>
+                {messageSent && (
+                    <div className="text-green-500 mt-4">
+                        Message sent successfully!
+                    </div>
+                )}
             </div>
         </section>
     );
