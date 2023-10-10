@@ -4,6 +4,7 @@ import Projects from "../components/Projects/Carousel/Projects";
 
 import AliadosCarousel from "../components/Aliados";
 import Sponsors from '../components/sponsors'
+import ContactoForm from "../components/contactHome";
 
 import collaborators from './assets/team/Collage_colab_.jpg'
 
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <title>You I Lab | Home</title>
-      <div className="w-full bg-banner-bg bg-center">
+      <div className="h-full bg-banner-bg bg-center">
         <div className="w-full text-white">
           {/* <LightColor> */}
           <div className="dark:bg-[#363636] bg-gradient-to-r from-[#2d2d3a] to-[#2b2b35]">
@@ -24,6 +25,8 @@ export default function Home() {
           {/* Carousel Sponsors */}
 
             <Sponsors />
+            <ContactoForm />
+            
 
           {/* End Carousel Sponsors */}
           <div
