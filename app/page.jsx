@@ -27,25 +27,27 @@ export default function Home() {
 
           {/* Carousel Sponsors */}
           <Sponsors />
-          <div className="flex w-ful1l px-16 py-0">
-            <div className="w-1/2 p-4">
+          <div className="flex flex-col sm:flex-row px-4 sm:px-16 py-0">
+            <div className="w-full sm:w-1/2 p-4">
               <HomeSection />
             </div>
-            <div className="w-1/2 p-4">
-              <div className="w-96 h-96 overflow-hidden">
-                <Image src={image} alt='Imagen trabajo en equipo' />
+            <div className="w-full sm:w-1/2 p-4">
+              <div className="w-full md:w-[540px] h-96 md:h-[540px] overflow-hidden mx-auto">
+                <Image src={image} alt='Imagen trabajo en equipo' className="w-full h-full" />
               </div>
             </div>
 
           </div>
-          <div className="flex w-ful1l px-16 py-0">
-            <div className="w-1/2 p-4">
+
+          <div className="flex flex-col sm:flex-row w-full px-4 sm:px-16 py-0">
+            <div className="w-full sm:w-1/2 p-4">
               <ContactoForm />
             </div>
-            <div className="w-1/2 p-4">
+            <div className="w-full sm:w-1/2 p-4">
               <Info />
             </div>
           </div>
+
 
 
           {/* End Carousel Sponsors */}

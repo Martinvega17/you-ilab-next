@@ -74,9 +74,9 @@ export default function ContactForm() {
 
     return (
         <section>
-            
+
             {!userValid && (
-                <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl ">
+                <div className="pt-2 pb-12 md:px-8 px-4 md:mx-4 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl">
                     <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
                         Contacta a un representante
                     </h2>
@@ -129,9 +129,9 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label 
-                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600" 
-                            htmlFor="phone"
+                            <label
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+                                htmlFor="phone"
                             >
                                 Telefono
                             </label>
@@ -170,12 +170,14 @@ export default function ContactForm() {
                                 </p>
                             )}
                         </div>
-                        <ReCAPTCHA
-                            ref={captcha}
-                            sitekey="6LdTQpAoAAAAAOKsjIrC459kVMW6ZSrxUvJO7KTW"
-                            onChange={onChange}
-                        />
-                        ,
+                        <div className="w-full max-w-screen-md mx-auto">
+                            <ReCAPTCHA
+                                ref={captcha}
+                                sitekey="6LdTQpAoAAAAAOKsjIrC459kVMW6ZSrxUvJO7KTW"
+                                onChange={onChange}
+                            />
+                        </div>
+
                         <div className="mb-4 text-red-600">
                             Por favor verifica que no eres un robot
                         </div>
@@ -192,13 +194,13 @@ export default function ContactForm() {
                         </div>
                     </form>
                 </div>
-                
+
             )}
-            
+
 
             {/* Second form */}
 
-           {/*  {userValid && (
+            {/*  {userValid && (
                 <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl">
                     <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
                         Contacta a un representante
