@@ -133,7 +133,7 @@ const AliadosCarousel = () => {
                 {images.map((image) => (
                     <div key={image.id}>
                         <a href={image.url} target="_blank" rel="noopener noreferrer">
-                            <Image src={image.src} alt={image.alt} className='w-[120px] h-[6em] grayscale hover:grayscale-0' />
+                            <Image src={image.src} alt={image.alt} className='max-w-[120px] h-[6em] grayscale hover:grayscale-0' />
                         </a>
                     </div>
                 ))}

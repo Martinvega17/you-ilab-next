@@ -25,8 +25,9 @@ export default function Home() {
 
           {/* Carousel Sponsors */}
           <Sponsors />
+
           <HomeSection />
-          <div className="flex w-full">
+          <div className="flex w-ful1l px-16 py-0">
             <div className="w-1/2 p-4">
               <ContactoForm />
             </div>
@@ -34,6 +35,7 @@ export default function Home() {
               <Info />
             </div>
           </div>
+
 
           {/* End Carousel Sponsors */}
           <div

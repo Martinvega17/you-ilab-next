@@ -76,7 +76,7 @@ export default function ContactForm() {
         <section>
             
             {!userValid && (
-                <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl">
+                <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl ">
                     <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
                         Contacta a un representante
                     </h2>
