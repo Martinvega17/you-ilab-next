@@ -5,7 +5,8 @@ import Projects from "../components/Projects/Carousel/Projects";
 import AliadosCarousel from "../components/Aliados";
 import Sponsors from '../components/sponsors'
 import ContactoForm from "../components/contactHome";
-
+import Info from "../components/info";
+import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
 
 
@@ -21,20 +22,26 @@ export default function Home() {
             <Projects />
           </div>
           {/* </LightColor> */}
-          
-          {/* Carousel Sponsors */}
 
-            <Sponsors />
-            <ContactoForm />
-            
+          {/* Carousel Sponsors */}
+          <Sponsors />
+          <HomeSection />
+          <div className="flex w-full">
+            <div className="w-1/2 p-4">
+              <ContactoForm />
+            </div>
+            <div className="w-1/2 p-4">
+              <Info />
+            </div>
+          </div>
 
           {/* End Carousel Sponsors */}
           <div
-            className="h-96 w-auto flex justify-center items-center md:h-full"
+            className="h-96 w-auto flex justify-center items-center md:h-full mt-8"
             style={{
               backgroundImage: `url(${collaborators.src})`,
               backgroundSize: "35% ",
-              
+
             }}
           >
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">

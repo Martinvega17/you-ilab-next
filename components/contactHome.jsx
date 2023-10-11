@@ -73,10 +73,11 @@ export default function ContactForm() {
     }
 
     return (
-        <section className="bg-white dark:bg-gray-900 w-1/2">
+        <section>
+            
             {!userValid && (
-                <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl">
+                    <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
                         Contacta a un representante
                     </h2>
 
@@ -96,7 +97,7 @@ export default function ContactForm() {
                             <input
                                 type="text"
                                 id="name"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="John Doe"
                                 {...register("name")}
                             />
@@ -116,7 +117,7 @@ export default function ContactForm() {
                             <input
                                 type="email"
                                 id="email"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="name@example.com"
                                 rquired
                                 {...register("email")}
@@ -133,7 +134,7 @@ export default function ContactForm() {
                             </label>
 
                             <input
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="55 8452 9632"
                                 type="tel"
                                 id="phone"
@@ -156,7 +157,7 @@ export default function ContactForm() {
                             <textarea
                                 id="message"
                                 rows="6"
-                                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="Deja tu mensaje aqui"
                                 {...register("content")}
                             />
@@ -188,10 +189,15 @@ export default function ContactForm() {
                         </div>
                     </form>
                 </div>
+                
             )}
-            {userValid && (
-                <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+            
+
+            {/* Second form */}
+
+           {/*  {userValid && (
+                <div className="pt-2 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#F6F6F6] rounded-xl">
+                    <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
                         Contacta a un representante
                     </h2>
 
@@ -211,7 +217,7 @@ export default function ContactForm() {
                             <input
                                 type="text"
                                 id="name"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="John Doe"
                                 {...register("name")}
                             />
@@ -231,7 +237,7 @@ export default function ContactForm() {
                             <input
                                 type="email"
                                 id="email"
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="name@example.com"
                                 rquired
                                 {...register("email")}
@@ -248,7 +254,7 @@ export default function ContactForm() {
                             </label>
 
                             <input
-                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="55 8452 9632"
                                 type="tel"
                                 id="phone"
@@ -271,7 +277,7 @@ export default function ContactForm() {
                             <textarea
                                 id="message"
                                 rows="6"
-                                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                                 placeholder="Deja tu mensaje aqui"
                                 {...register("content")}
                             />
@@ -291,22 +297,20 @@ export default function ContactForm() {
                             Por favor verifica que no eres un robot
                         </div>
                         <div>
-                            <Toaster
-                                richColors
-
-                            />
+                            <Toaster richColors />
                             <button
-                                onClick={() => toast.success('Mensaje enviado correctamente')
-                                }
+                                onClick={() => toast.success("Mensaje enviado correctamente")}
                                 type="submit"
-                                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact"
+                                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover-bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact"
+                                disabled={!isVerified}
                             >
-                                Send message
+                                Enviar mensaje
                             </button>
                         </div>
                     </form>
                 </div>
-            )}
+            )} */}
+
         </section>
     );
 }
