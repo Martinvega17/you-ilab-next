@@ -32,7 +32,7 @@ export default function Home() {
               <HomeSection />
             </div>
             <div className="w-full sm:w-1/2 p-4">
-              <div className="w-full md:w-[540px] h-96 md:h-[540px] overflow-hidden mx-auto">
+              <div className="w-full lg:w-[540px] h-96 lg:h-[540px] overflow-hidden mx-auto">
                 <Image src={image} alt='Imagen trabajo en equipo' className="w-full h-full" />
               </div>
             </div>
