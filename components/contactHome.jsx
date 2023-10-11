@@ -90,7 +90,7 @@ export default function ContactForm() {
                             <label
                                 for="name"
                                 htmlFor="name"
-                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
                             >
                                 Nombre
                             </label>
@@ -110,7 +110,7 @@ export default function ContactForm() {
                         <div>
                             <label
                                 htmlFor="email"
-                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
                             >
                                 Correo electronico
                             </label>
@@ -129,7 +129,10 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className="sr-only" htmlFor="phone">
+                            <label 
+                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600" 
+                            htmlFor="phone"
+                            >
                                 Telefono
                             </label>
 
@@ -150,7 +153,7 @@ export default function ContactForm() {
                         <div className="sm:col-span-2">
                             <label
                                 htmlFor="message"
-                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
                             >
                                 Mensaje
                             </label>

@@ -1,10 +1,9 @@
-import image from '@/assets/varios/image1.png'
-import Image from 'next/image'
+
 import Link from 'next/link'
 export default function HomeSection() {
     return (
-        <div className="flex w-ful1l px-16 py-0">
-            <div className="w-1/2 p-4">
+        <div className="pt-8 pb-12 px-16 mx-auto max-w-screen-md bg-[#F6F6F6] dark:bg-[#141413] rounded-xl">
+            <div className="">
                 <h1 className="text-5xl text-[#01BE96] font-latoBold">
                     You I Lab es un espacio para ti
                 </h1>
@@ -21,11 +20,7 @@ export default function HomeSection() {
                         </button>
                     </Link>
                 </div>
-            </div>
-            <div className="w-1/2 p-4">
-                <div className="w-96 h-96 overflow-hidden">
-                    <Image src={image} alt='Imagen trabajo en equipo' />
-                </div>
+                
             </div>
 
         </div>

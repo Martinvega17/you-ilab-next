@@ -8,6 +8,8 @@ import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
+import image from './assets/varios/image1.png'
+import Image from "next/image";
 
 
 
@@ -25,8 +27,17 @@ export default function Home() {
 
           {/* Carousel Sponsors */}
           <Sponsors />
+          <div className="flex w-ful1l px-16 py-0">
+            <div className="w-1/2 p-4">
+              <HomeSection />
+            </div>
+            <div className="w-1/2 p-4">
+              <div className="w-96 h-96 overflow-hidden">
+                <Image src={image} alt='Imagen trabajo en equipo' />
+              </div>
+            </div>
 
-          <HomeSection />
+          </div>
           <div className="flex w-ful1l px-16 py-0">
             <div className="w-1/2 p-4">
               <ContactoForm />
