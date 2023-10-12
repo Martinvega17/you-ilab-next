@@ -12,8 +12,8 @@ const About = () => {
             <div className="about">
 
                 <div
-                    className="h-80 w-auto flex justify-center items-center bg-fixed bg-no-repeat"
-                    style={{
+                        className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
+                        style={{
                         backgroundImage: `url(${about.src})`,
                         backgroundSize: "100% ",
                     }}
