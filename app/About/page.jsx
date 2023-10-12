@@ -1,5 +1,5 @@
 import Card from '../../components/SwiperCarousel';
-import team from '@/assets/team.jpg';
+import logo from '@/assets/logos/logo.png'
 import nosotros from '@/assets/footer/nosotros.jpg';
 import about from '@/assets/footer/about.jpg';
 import Image from 'next/image';
@@ -12,8 +12,8 @@ const About = () => {
             <div className="about">
 
                 <div
-                        className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
-                        style={{
+                    className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
+                    style={{
                         backgroundImage: `url(${about.src})`,
                         backgroundSize: "100% ",
                     }}
@@ -47,6 +47,75 @@ const About = () => {
                     </p>
                 </div>
             </div>
+
+            <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
+                <div className="text-left">
+                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                        Objetivo
+                    </h2>
+                </div>
+                <div className="text-[15px] leading-[27px] text-justify mt-4">
+                    <div className="float-left mr-4">
+                        <Image src={logo} alt='Mision' height={140} width={120} />
+                    </div>
+                    <p className="font-MontserratRegular">
+                        Somos un Laboratorio de Innovacion Juvenil perteneciente al IPICYT, dedicado a promover la investigación y el desarrollo de tecnologías de la información, centrándose en aspectos relacionados tanto con el frontend como el backend, y contribuir al avance de la ciencia y la tecnología en la región de San Luis Potosí y más allá
+                    </p>
+                </div>
+            </div>
+
+            <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
+                <div className="text-center">
+                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                        Misión
+                    </h2>
+                </div>
+                <div className="float-right ml-4">
+                        <Image src={logo} alt='Mision' height={140} width={120} />
+                    </div>
+                <div className="text-[15px] leading-[27px] text-justify mt-4">
+                    <p className="font-MontserratRegular text-right">
+                        Establecerse como un centro tecnológico de excelencia a nivel nacional y regional. A través de sus servicios y productos, nuestro laboratorio se dedica a promover y desarrollar diversas áreas de importancia clave:
+                    </p>
+                    <ul className="font-MontserratRegular text-right mr-[136px]">
+                        <li> - Investigación Científica:</li>
+                        <li> - Desarrollo de la Docencia:</li>
+                        <li> - Generación de Conocimiento Tecnológico:</li>
+                        <li> - Habilidades y Competencias Humanas:</li>
+                        <li> - Soluciones TIC Eficientes:</li>
+                    </ul>
+                    <br />
+                    <p className="font-MontserratRegular text-right mb-2 mr-[136px]">
+                        En un ámbito de trabajo en equipo y colaboración
+                    </p>
+ 
+
+                </div>
+            </div>
+
+
+
+
+
+            <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
+                <div className="text-left">
+                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                        Visión
+                    </h2>
+                </div>
+                <div className="text-[15px] leading-[27px] text-justify mt-4">
+                    <div className="float-left mr-4">
+                        <Image src={logo} alt='Mision' height={140} width={120} />
+                    </div>
+                    <p className="font-MontserratRegular">
+                        El YouI Lab aspira a ser un referente global en la generación de conocimiento y la innovación en las áreas de desarrollo web, frontend y backend, así como en campos relacionados. Buscamos liderar la investigación en tecnologías emergentes, la inteligencia artificial, la ciberseguridad y otros dominios clave de la informática. Nuestra visión incluye la transferencia efectiva de este conocimiento a la industria y la sociedad, impulsando así el desarrollo tecnológico en la región y contribuyendo al progreso económico y social.
+                    </p>
+                </div>
+            </div>
+
+
+
+
 
 
 
