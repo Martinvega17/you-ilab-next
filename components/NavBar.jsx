@@ -19,6 +19,7 @@ function NavBar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
 
+
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const pathname = usePathname()
@@ -35,7 +36,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-20 z-50">
+      <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-20 z-50 ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -79,12 +80,16 @@ function NavBar() {
             )}
           </div>
           {/* Mobile Menu */}
-          <div onClick={toggleMenu}
-            className="sm:hidden cursor-pointer pl-24">
-            <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
-          </div>
+          <div onClick={(e) => {
+  toggleMenu();
+  ShowNav(e);
+}}
+className="sm:hidden cursor-pointer pl-24">
+  <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
+</div>
+
         </div>
-        <div className={menuOpen
+        <div id="NavDiv" onClick={SetShowNav} className={menuOpen
           ? "fixed top-0 left-0 w-[100%] h-screen sm:hidden  bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
@@ -136,15 +141,28 @@ function NavBar() {
             height={75}
             className="cursor-pointer pt-10 mx-auto"
           />
-          {/* <p className="mt-10">
-            &copy; 2023 You i Lab. All rights reserved.
-            Powered by You I Lab <Image src={logo_you_i_lab} alt="You I Lab Logo" className="inline-block w-6 h-6"></Image>
-          </p> */}
 
         </div>
       </nav>
     </header>
   )
 }
+
+function ShowNav(e) {
+  const target = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+  console.log(target);
+  target.classList.add("overflow-hidden");
+}
+
+function SetShowNav(e) {
+  const target = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+  console.log(target);
+  target.classList.remove("overflow-hidden");
+}
+
+
+
+
+
 
 export default NavBar
