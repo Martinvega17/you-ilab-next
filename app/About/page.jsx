@@ -68,16 +68,18 @@ const About = () => {
                 <div className="text-center">
                     <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
                         Misión
+                        <div className="float-right ml-4">
+                            <Image src={logo} alt='Mision' height={140} width={120} />
+                        </div>
                     </h2>
+
                 </div>
-                <div className="float-right ml-4">
-                        <Image src={logo} alt='Mision' height={140} width={120} />
-                    </div>
+
                 <div className="text-[15px] leading-[27px] text-justify mt-4">
-                    <p className="font-MontserratRegular text-right">
+                    <p className="font-MontserratRegular text-left mb-4">
                         Establecerse como un centro tecnológico de excelencia a nivel nacional y regional. A través de sus servicios y productos, nuestro laboratorio se dedica a promover y desarrollar diversas áreas de importancia clave:
                     </p>
-                    <ul className="font-MontserratRegular text-right mr-[136px]">
+                    <ul className="font-MontserratRegular text-left">
                         <li> - Investigación Científica:</li>
                         <li> - Desarrollo de la Docencia:</li>
                         <li> - Generación de Conocimiento Tecnológico:</li>
@@ -85,10 +87,10 @@ const About = () => {
                         <li> - Soluciones TIC Eficientes:</li>
                     </ul>
                     <br />
-                    <p className="font-MontserratRegular text-right mb-2 mr-[136px]">
+                    <p className="font-MontserratRegular text-left mb-2 ">
                         En un ámbito de trabajo en equipo y colaboración
                     </p>
- 
+
 
                 </div>
             </div>

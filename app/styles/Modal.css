@@ -68,7 +68,8 @@
   border: none;
   cursor: pointer;
   font-size: 22px;
-  color: #000; /* Color del texto del botón */
+  color: #000;
+  /* Color del texto del botón */
   padding: 0;
 }
 
@@ -93,13 +94,13 @@
   padding: 3px;
   float: left;
   margin-right: 1rem;
-  
+
 }
 
 /* Estilos para los títulos dentro del modal */
 .modal .card__title {
-  color: var(--color);
-  font-size: 2rem;
+  color: #000;
+  font-size: 1.4rem;
   font-weight: 500;
   font-style: bold;
   margin-bottom: 0.5rem;
@@ -108,10 +109,11 @@
 
 /* Estilos para los nombres dentro del modal */
 .modal .card__name {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-top: 0.2rem;
-  
+  color: var(--color);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+
 }
 
 /* Estilos para el texto dentro del modal */
@@ -134,8 +136,10 @@
 .modal__links-container {
   text-align: left;
   display: flex;
-  justify-content: center; /* Alinea los elementos horizontalmente al centro */
-  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: center;
+  /* Alinea los elementos horizontalmente al centro */
+  align-items: center;
+  /* Alinea los elementos verticalmente al centro */
   width: 100%;
   margin-top: 10px;
 }
@@ -154,6 +158,7 @@
     width: 9em;
     height: 9em;
   }
+
   .modal .card__title {
     color: black;
     font-size: 1.3rem;
@@ -162,16 +167,16 @@
     margin-bottom: 0.5rem;
     display: block;
   }
-  
+
   /* Estilos para los nombres dentro del modal */
   .modal .card__name {
-      color: var(--color);
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin-top: 0.2rem;
-    
+    color: var(--color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+
   }
-  
+
 }
 
 @media screen and (max-width:760px) {
@@ -179,6 +184,7 @@
     width: 7em;
     height: 7em;
   }
+
   .modal .card__title {
     color: black;
     font-size: 1rem;
@@ -187,16 +193,16 @@
     margin-bottom: 0.5rem;
     display: block;
   }
-  
+
   /* Estilos para los nombres dentro del modal */
   .modal .card__name {
-      color: var(--color);
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-top: 0.2rem;
-    
+    color: var(--color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+
   }
-  
+
 }
 
 @media screen and (max-width:640px) {
@@ -204,6 +210,7 @@
     width: 5em;
     height: 5em;
   }
+
   .modal .card__title {
     color: black;
     font-size: 1rem;
@@ -212,16 +219,16 @@
     margin-bottom: 0.5rem;
     display: block;
   }
-  
+
   /* Estilos para los nombres dentro del modal */
   .modal .card__name {
-      color: var(--color);
-      font-size: 1.2rem;
-      font-weight: 500;
-      margin-top: 0.2rem;
-    
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+
   }
-  
+
 }
 
 @media screen and (max-width:480px) {
@@ -230,6 +237,7 @@
     height: 8em;
     margin-bottom: 3rem;
   }
+
   .modal .card__title {
     color: black;
     font-size: 1rem;
@@ -238,25 +246,28 @@
 
     display: block;
   }
-  
+
   /* Estilos para los nombres dentro del modal */
   .modal .card__name {
-      color: var(--color);
-      font-size: 1.2rem;
-      font-weight: 500;
-    
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: 500;
+
   }
+
   .modal .card__content {
     max-width: 100%;
     float: left;
     clear: none;
   }
+
   .modal .card__text {
     margin-top: 8rem;
   }
+
   .modal {
     width: 80vw;
     max-height: 92vh;
   }
-  
+
 }
