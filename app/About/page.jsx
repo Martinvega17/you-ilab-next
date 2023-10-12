@@ -18,7 +18,7 @@ const About = () => {
                     }}
                 >
                     <div className="container text-center sm:px-2 md:px-4 lg:px-8 py-4">
-                        <h1 className="text-neutral-300 text-2xl lg:text-5xl font-bold text-right">NOSOTROS</h1>
+                        <h1 className="text-neutral-400 text-2xl lg:text-5xl font-bold text-right">NOSOTROS</h1>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const About = () => {
                         </div>
                         <div className="about-left ">
                             <p className="mt-4">
-                            El laboratorio You+i del IPICYT (Instituto Potosino de Investigaci&oacute;n Cient&iacute;fica y Tecnol&oacute;gica) se fund&oacute; en 2013 con el objetivo de investigar y desarrollar tecnolog&iacute;as relacionadas con la interacci&oacute;n humano-m&aacute;quina. Su nombre proviene de la combinaci&oacute;n de la palabra &quot;you&quot; que hace referencia al usuario y la letra &quot;i&quot; de interfaz, buscando crear una &quot;yuxtaposici&oacute;n&quot; entre los seres humanos y la tecnolog&iacute;a, a trav&eacute;s del dise&ntilde;o de interfaces intuitivas y eficientes que mejoren la experiencia del usuario. Desde entonces, el laboratorio ha colaborado en diversos proyectos de investigaci&oacute;n e innovaci&oacute;n en este campo.                                <br />
+                                El laboratorio You+i del IPICYT (Instituto Potosino de Investigaci&oacute;n Cient&iacute;fica y Tecnol&oacute;gica) se fund&oacute; en 2013 con el objetivo de investigar y desarrollar tecnolog&iacute;as relacionadas con la interacci&oacute;n humano-m&aacute;quina. Su nombre proviene de la combinaci&oacute;n de la palabra &quot;you&quot; que hace referencia al usuario y la letra &quot;i&quot; de interfaz, buscando crear una &quot;yuxtaposici&oacute;n&quot; entre los seres humanos y la tecnolog&iacute;a, a trav&eacute;s del dise&ntilde;o de interfaces intuitivas y eficientes que mejoren la experiencia del usuario. Desde entonces, el laboratorio ha colaborado en diversos proyectos de investigaci&oacute;n e innovaci&oacute;n en este campo.                                <br />
                                 <br />
                                 El You-i Lab ha tenido un impacto positivo en la vida de muchos jóvenes en San Luis Potosí. Ha ayudado a los jóvenes a desarrollar sus habilidades STEM, a adquirir experiencia práctica y a conectarse con otros jóvenes interesados ​​en ciencia y tecnología.
                                 <br />
