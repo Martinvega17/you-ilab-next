@@ -48,7 +48,7 @@ function NavBar() {
             />
           </Link>
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
-            <ul className="hidden sm:flex text-black dark:text-white">
+            <ul className="hidden sm:flex text-neutral-100 dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
                   Inicio

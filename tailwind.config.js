@@ -11,7 +11,12 @@ module.exports = {
         latoRegular: "Lato-Regular",
         latoBold: "Lato-Bold",
         OverPassSemiBold: "OverPass-SemiBold",
-        OverPassRegular: "OverPass-Regular"
+        OverPassRegular: "OverPass-Regular",
+        MontserratBlack: "Montserrat-Black",
+        MontserratBold: "Montserrat-Bold",
+        MontserratRegular: "Montserrat-Regular",
+        MontserratThin: "Montserrat-Thin",
+        MontserratThinItalic: "Montserrat-ThinItalic",
       },
       colors: {
         hoverColor: "#ffaa17",
@@ -23,6 +28,7 @@ module.exports = {
         buttonContact: '#2563EB',
         titleAbout: '#4DB9CA',
         darkBlack: '#333',
+        titleAbout: '#183157',
       },
     },
   },
