@@ -5,16 +5,17 @@ import { Zoom } from 'react-awesome-reveal';
 import './ProjectsStyles.css'
 
 const Projects = () => {
-  return (
-    <Container id='project'>
-        <Zoom>
-            <h1 className='green recent mt-10 '>Proyectos <span className="text-white">Recientes</span></h1>
-        </Zoom>
-        <Slide>
-            <SliderComp/>
-        </Slide>
-    </Container>
-  )
+    return (
+        <Container id='project'>
+
+            <h1 className='green recent mt-10 '>Forjando un Futuro Prometedor</h1>
+            <p className='mb-6'>El You I Lab abre las puertas a la creatividad juvenil para abordar problemas sociales</p>
+
+            <Slide>
+                <SliderComp />
+            </Slide>
+        </Container>
+    )
 }
 
 export default Projects;
