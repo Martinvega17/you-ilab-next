@@ -80,16 +80,13 @@ function NavBar() {
             )}
           </div>
           {/* Mobile Menu */}
-          <div onClick={(e) => {
-  toggleMenu();
-  ShowNav(e);
-}}
+          <div onClick={toggleMenu}
 className="sm:hidden cursor-pointer pl-24">
   <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
 </div>
 
         </div>
-        <div id="NavDiv" onClick={SetShowNav} className={menuOpen
+        <div className={menuOpen
           ? "fixed top-0 left-0 w-[100%] h-screen sm:hidden  bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
@@ -147,22 +144,6 @@ className="sm:hidden cursor-pointer pl-24">
     </header>
   )
 }
-
-function ShowNav(e) {
-  const target = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
-  console.log(target);
-  target.classList.add("overflow-hidden");
-}
-
-function SetShowNav(e) {
-  const target = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
-  console.log(target);
-  target.classList.remove("overflow-hidden");
-}
-
-
-
-
 
 
 export default NavBar
