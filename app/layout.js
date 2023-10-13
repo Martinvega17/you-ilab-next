@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* link manifest.json */}
-        <link rel="manifest" href="/manifest.json" />
+
         <link rel="icon" type="image/svg+xml" href="/youilab_logo.svg" />
         <link rel="stylesheet" type="text/css" charset="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
