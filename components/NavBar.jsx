@@ -87,10 +87,10 @@ className="sm:hidden cursor-pointer pl-24">
 
         </div>
         <div className={menuOpen
-          ? "fixed top-0 left-0 w-[100%] h-screen sm:hidden  bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500"
-          : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
+          ? "fixed top-0 left-0 w-full h-[600vh] sm:hidden bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500 overflow-auto"
+          : "fixed left-[100%] top-0 p-10 "
         }
-          style={{ zIndex: 200 }}>
+          style={{ zIndex: 9999 }}>
           <div className="flex w-full items-center justify-end">
             <div onClick={toggleMenu}
               className="cursor-pointer">
