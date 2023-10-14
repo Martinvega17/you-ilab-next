@@ -23,6 +23,7 @@ class App extends Component {
             speed: 7400,
             autoplaySpeed: 100,
             cssEase: "linear",
+            arrows: false,
             responsive: [
                 {
                     breakpoint: 1400,
@@ -82,7 +83,7 @@ class App extends Component {
         };
         return (
             <div className="mainContainer">
-                <h2 className="text-4xl text-black font-MontserratBold ">Aliados</h2>
+                <h2 className="text-4xl text-black font-MontserratBold dark:text-white ">Aliados</h2>
                 <Slider {...settings}>
                     <div className="container ">
                         <a href="https://www.internetofus.eu/" target="_blanck">
