@@ -3,6 +3,7 @@ import logo from '@/assets/logos/logo.png'
 import nosotros from '@/assets/footer/nosotros.jpg';
 import about from '@/assets/footer/about.jpg';
 import Image from 'next/image';
+import team from '@/assets/team/team.jpg';
 
 const About = () => {
     return (
@@ -45,6 +46,9 @@ const About = () => {
                     <p className="font-MontserratRegular">
                         En la actualidad el You I Lab satisface necesidades de servicios tecnológicos para el sector gobierno, educación y salud, sectores con quienes ha trabajado y se ha consolidado a través del tiempo.
                     </p>
+                    <Image src={team} alt=''>
+
+                    </Image>
                 </div>
             </div>
 
