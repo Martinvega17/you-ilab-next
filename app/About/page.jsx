@@ -43,7 +43,7 @@ const About = () => {
                     <p className="font-MontserratRegular mb-4">
                         Este laboratorio se ha convertido en un faro de innovación en San Luis Potosí y México en su conjunto, y su labor de investigación y desarrollo sigue siendo un motor de progreso en la región. A través de sus esfuerzos continuos en la promoción de la ciencia y la tecnología, el YouI Lab del IPICYT sigue dejando una huella significativa en la historia de la investigación en informática y tecnologías de la información.
                     </p>
-                    <p className="font-MontserratRegular">
+                    <p className="font-MontserratRegular mb-10">
                         En la actualidad el You I Lab satisface necesidades de servicios tecnológicos para el sector gobierno, educación y salud, sectores con quienes ha trabajado y se ha consolidado a través del tiempo.
                     </p>
                     <Image src={team} alt=''>
@@ -54,7 +54,7 @@ const About = () => {
 
             <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
                 <div className="text-left">
-                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                    <h2 className="font-MontserratBold text-[#8A26CC] text-4xl sm:text-5xl">
                         Objetivo
                     </h2>
                 </div>
@@ -70,7 +70,7 @@ const About = () => {
 
             <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
                 <div className="text-center">
-                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                    <h2 className="font-MontserratBold text-[#8A26CC] text-4xl sm:text-5xl">
                         Misión
                         <div className="float-right ml-4">
                             <Image src={logo} alt='Mision' height={140} width={120} />
@@ -105,7 +105,7 @@ const About = () => {
 
             <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
                 <div className="text-left">
-                    <h2 className="font-MontserratRegular text-[#8A26CC] text-4xl sm:text-5xl">
+                    <h2 className="font-MontserratBold text-[#8A26CC] text-4xl sm:text-5xl">
                         Visión
                     </h2>
                 </div>
@@ -128,7 +128,7 @@ const About = () => {
             <div className="md:mr-4 mt-4">
                 <div className="content">
                     <div className="title_team">
-                        <h2 className="inherit vertical-align text-center text-3xl text-titleAbout font-semibold">NUESTRO EQUIPO DE TRABAJO</h2>
+                        <h2 className="inherit vertical-align text-center text-3xl text-titleAbout dark:text-[#8A26CC] font-MontserratBold">NUESTRO EQUIPO DE TRABAJO</h2>
                     </div>
                 </div>
                 {/* cards */}
