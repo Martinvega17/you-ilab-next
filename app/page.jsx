@@ -2,7 +2,6 @@
 import React from "react";
 import Projects from "../components/Projects/Carousel/Projects";
 
-import AliadosCarousel from "../components/Aliados";
 import Sponsors from '../components/sponsors'
 import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
@@ -10,7 +9,7 @@ import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
 import image from './assets/varios/image1.png'
 import Image from "next/image";
-
+import Collaborator from '../components/Collaborators'
 
 
 export default function Home() {
@@ -52,7 +51,7 @@ export default function Home() {
 
           {/* End Carousel Sponsors */}
           <div
-            className="h-96 w-auto flex justify-center items-center md:h-full mt-8"
+            className="h-96 w-auto flex justify-center items-center md:h-full mb-10"
             style={{
               backgroundImage: `url(${collaborators.src})`,
               backgroundSize: "35% ",
@@ -66,7 +65,7 @@ export default function Home() {
             </div>
           </div>
 
-          <AliadosCarousel />
+          <Collaborator />
 
           {/* End Section Collage Collaborators */}
         </div>
