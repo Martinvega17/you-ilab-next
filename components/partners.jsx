@@ -24,10 +24,10 @@ export default function Partners() {
             <h3 className="text-center font-MontserratThin dark:text-black text-black pt-4  ">
                 OUR PARTNERS
             </h3>
-            <div className="pt-[5vh] pb-[15vh] px-[15vh] py-0 flex flex-wrap">
+            <div className="pt-[5vh] pb-[15vh] 2xl:px-[15vh] md:px-[6vh] sm:px-[5vh] py-0 flex flex-wrap">
                 {partnerLogos.map((src, index) => (
                     <div key={index} className="2xl:w-1/5  p-4">
-                        <Image src={src} alt="" className="hover:opacity-[1] h-[6em] max-h-[650px] max-w-[260px]  opacity-[.3]	"></Image>
+                        <Image src={src} alt="" className="hover:opacity-[1] h-[8em] max-h-[40em] max-w-[15em]  opacity-[.3] cursor-pointer"></Image>
                     </div>
                 ))}
             </div>

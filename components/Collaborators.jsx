@@ -28,7 +28,7 @@ class App extends Component {
                 {
                     breakpoint: 1400,
                     settings: {
-                        slidesToShow: 5,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: false
@@ -37,7 +37,7 @@ class App extends Component {
                 {
                     breakpoint: 1040,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: false
@@ -46,7 +46,7 @@ class App extends Component {
                 {
                     breakpoint: 900,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: false
@@ -64,7 +64,7 @@ class App extends Component {
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: false,
