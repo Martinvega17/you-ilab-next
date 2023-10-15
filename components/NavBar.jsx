@@ -87,7 +87,7 @@ className="sm:hidden cursor-pointer pl-24">
 
         </div>
         <div className={menuOpen
-          ? "fixed top-0 left-0 w-full h-[1200vh] sm:hidden bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500 overflow-auto"
+          ? "fixed top-0 left-0 w-[75%] h-[1200vh] sm:hidden bg-navbarBlue dark:bg-[#2C2C2C] p-10 ease-in-out duration-500 overflow-auto"
           : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
         }
           style={{ zIndex: 9999 }}>
