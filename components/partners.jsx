@@ -26,8 +26,8 @@ export default function Partners() {
             </h3>
             <div className="pt-[5vh] pb-[15vh] 2xl:px-[15vh] md:px-[6vh] sm:px-[5vh] py-0 flex flex-wrap ">
                 {partnerLogos.map((src, index) => (
-                    <div key={index} className="2xl:w-1/5 p-4 ">
-                        <Image src={src} alt="" className="hover:opacity-[1]  max-h-[40em] max-w-[10em]  opacity-[.3] cursor-pointer"></Image>
+                    <div key={index} className="2xl:w-1/5 p-4 m-auto ">
+                        <Image src={src} alt="" className="hover:opacity-[1] max-h-[40em] max-w-[10em]  opacity-[.3] cursor-pointer"></Image>
                     </div>
                 ))}
             </div>
