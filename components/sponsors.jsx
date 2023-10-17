@@ -13,14 +13,14 @@ export default function Sponsors() {
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4">
                             <a href="http://youilab.ipicyt.edu.mx/">
-                                <Image src={YIL} alt="" className="sponsors w-32 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                                <Image src={YIL} alt="" className="w-28 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>
                     </div>
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4">
                             <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php">
-                                <Image src={DBM} alt="" className="sponsors w-40 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                                <Image src={DBM} alt="" className="sponsors w-56 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>
                     </div>
@@ -31,10 +31,12 @@ export default function Sponsors() {
                             </a>
                         </div>
                     </div>
-                    <div className="ml-4">
-                        <a href="https://www.ipicyt.edu.mx/">
-                            <Image src={IPICYT} alt="" className="sponsors w-80 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                        </a>
+                    <div className="mb-4 sm:mb-0">
+                        <div className="mr-3 ml-4 ">
+                            <a href="https://www.ipicyt.edu.mx/">
+                                <Image src={IPICYT} alt="" className=" w-[250px] h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
