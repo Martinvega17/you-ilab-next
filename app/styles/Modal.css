@@ -120,9 +120,9 @@
 .modal .card__text {
   overflow: auto;
   max-height: 500px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  top: 12em;
+  top: 14em;
   position: absolute;
   margin-left: auto;
   margin-right: 4%;

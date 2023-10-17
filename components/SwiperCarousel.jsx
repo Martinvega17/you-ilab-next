@@ -58,6 +58,10 @@ const SwiperCarousel = () => {
         };
     }, []);
 
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
     return (
         <section className="swiper mySwiper swiper-container" ref={swiperRef}>
             <div className="swiper-wrapper">
@@ -82,9 +86,9 @@ const SwiperCarousel = () => {
             <Modal
                 isOpen={modalOpen}
                 contentLabel="Expanded Card"
-                className="modal animate-fade-down
-                "
+                className="modal animate-fade-down"
                 overlayClassName="overlay"
+                onRequestClose={closeModal}
             >
                 <div className="modal-content dark:text-black">
                     {expandedCard && (
