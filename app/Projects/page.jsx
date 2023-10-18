@@ -18,7 +18,7 @@ export default async function PostsPage({ params }) {
     <section className="mt-2 ml-4">
       {posts.map(post => (
         <article key={post.id}>
-          <Link  href='/posts/[id]' as={`/posts/${post.id}`}>
+          <Link  href='/Projects/[id]' as={`/Projects/${post.id}`}>
             <h2 className="text-2xl ">{post.nombre}</h2>
             <Image src={post.imagen} alt="" width={300} height={300} className="mb-4"/>
           </Link>
