@@ -1,7 +1,7 @@
 import Image from "next/image";
 // Images
-import YIL from '@/assets/sponsors/YOU_I_LAB_WHITE_LOGO.png';
-import DBM from '@/assets/sponsors/DBM_WHITE_LOGO.png';
+import YIL from '@/assets/sponsors/YOU-I-LAB-LOGO-IPICYT.png';
+import DBM from '@/assets/sponsors/DBM.png';
 import IPICYT from '@/assets/sponsors/IPICYT.png';
 import GCIC from '@/assets/sponsors/GCIC.png';
 
