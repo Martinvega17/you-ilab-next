@@ -1,7 +1,8 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const fetchPosts = () => {
-  return fetch('https://apimocha.com/youilabprojects/projects')
+  return fetch('https://my-json-server.typicode.com/Martinvega17/json-db/personajes')
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error ${res.status}: ${res.statusText}`);
@@ -17,8 +18,8 @@ export default async function PostsPage({ params }) {
       {posts.map(post => (
         <article key={post.id}>
           <Link  href='/posts/[id]' as={`/posts/${post.id}`}>
-            <h2 className="text-2xl">{post.title}</h2>
-            <p>{post.body}</p>
+            <h2 className="text-2xl ">{post.nombre}</h2>
+            <Image src={post.imagen} alt="" width={300} height={300} className="mb-4"/>
           </Link>
         </article>
       ))
