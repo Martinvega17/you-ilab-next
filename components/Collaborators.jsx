@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import wenet from './logos/wenet.png'
-import balvi from './logos/balvi.png'
-import idiap from './logos/idiap.png'
-import universitie from './logos/universitie.png'
-import salud from './logos/salud.png'
-import cse from './logos/CSE.png'
+import wenet from '@/assets/partners/wenet.png'
+import balvi from '@/assets/partners/balvi.png'
+import idiap from '@/assets/partners/idiap.png'
+import universitie from '@/assets/partners/universitie.png'
+import salud from '@/assets/partners/salud.png'
+import cse from '@/assets/partners/CSE.png'
 
 import '@/styles/slider.css';
 
