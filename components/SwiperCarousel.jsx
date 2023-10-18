@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '@/styles/Swiper.css';
-import dataDigital from './data.jsx';
+import dataDigital from './datos/data.jsx';
 import Modal from 'react-modal';
 import '@/styles/Modal.css';
 import Image from 'next/image';
