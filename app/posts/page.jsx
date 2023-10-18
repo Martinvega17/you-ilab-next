@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const fetchPosts = () => {
-  return fetch('https://my-json-server.typicode.com/Martinvega17/json-db/personajes')
+  return fetch('https://my-json-server.typicode.com/Martinvega17/json-db/Projects')
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error ${res.status}: ${res.statusText}`);
@@ -10,6 +10,7 @@ const fetchPosts = () => {
       return res.json();
     })
 }
+
 
 export default async function PostsPage({ params }) {
   const posts = await fetchPosts()

@@ -12,28 +12,28 @@ export default function Sponsors() {
                 <div className="flex flex-col sm:flex-row justify-center sm:justify-around mx-4 sm:mx-8 md:mx-12 lg:mx-20">
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4">
-                            <a href="http://youilab.ipicyt.edu.mx/">
+                            <a href="http://youilab.ipicyt.edu.mx/" target="_blanck">
                                 <Image src={YIL} alt="" className="w-20 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>
                     </div>
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4">
-                            <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php">
+                            <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php" target="_blanck">
                                 <Image src={DBM} alt="" className="sponsors w-44 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>
                     </div>
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4">
-                            <a href="https://cic.ipicyt.edu.mx/">
+                            <a href="https://cic.ipicyt.edu.mx/" target="_blanck">
                                 <Image src={GCIC} alt="" className="sponsors w-64 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>
                     </div>
                     <div className="mb-4 sm:mb-0">
                         <div className="mr-3 ml-4 ">
-                            <a href="https://www.ipicyt.edu.mx/">
+                            <a href="https://www.ipicyt.edu.mx/" target="_blanck">
                                 <Image src={IPICYT} alt="" className=" w-52 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                             </a>
                         </div>

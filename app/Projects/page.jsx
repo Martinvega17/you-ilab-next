@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import projectsData from './projectsData'; // Asegúrate de importar los datos correctamente
+
 import proyectos from '@/assets/footer/projects.jpg';
 
 
@@ -25,7 +25,7 @@ const Projects = () => {
         {project.name}
     </h3>
     <a href={project.link} target="_blank">
-        <div className="image-container">
+        <div className="image-container ">
             <Image
                 src={project.imageSrc}
                 alt={project.name}
