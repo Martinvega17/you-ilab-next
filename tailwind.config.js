@@ -18,6 +18,7 @@ module.exports = {
         MontserratThin: "Montserrat-Thin",
         MontserratThinItalic: "Montserrat-ThinItalic",
         MontserratSemiBoldItalic: "Montserrat-SemiBoldItalic",
+        RobotoRegular: "Roboto-Regular",
       },
       colors: {
         hoverColor: "#ffaa17",
