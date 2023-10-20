@@ -1,0 +1,108 @@
+[
+    
+        {
+            "id": 1,
+            "title": "Centinela del Aire",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "",
+            "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
+            "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia2.jpeg",
+            "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia3.jpeg",
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png"
+        },
+        {
+            "id": 2,
+            "title": "WeNet México",
+            "mainSection": "WeNet México es un proyecto financiado por el Consorcio WeNet de la Comunidad Europea cuyo objetivo es abordar la epidemia de obesidad y sobrepeso en la juventud mexicana. El proyecto se enfoca en la utilización de medios móviles y técnicas de inteligencia artificial (aprendizaje por reforzamiento) para informar y prevenir problemas de obesidad y sobrepeso en poblaciones de estudiantes de educación media superior en los estados de San Luis Potosí, Aguascalientes y Guanajuato.\n\nEl Proyecto WeNet (https://www.we-net.eu) tiene como objetivo final incentivar la comunicación entre personas diversas para responder a alguna necesidad y es llevado a cabo por el Instituto Potosino de Investigación Científica y Tecnológica AC en colaboración con otras instituciones de varios países participantes en el consorcio WeNet.\n\nPara el efecto, en este estudio se pretende realizar grupos focales en donde participarán expertos en salud pública y un grupo de cuatro voluntarios. Los grupos focales serán grabados en formato de video a partir del cual se generarán transcripciones de texto, que no contendrán información personal. Los voluntarios participantes también llenarán un cuestionario y generarán material gráfico durante el grupo focal en donde no se solicitará información personal. Los videos, las transcripciones y el material gráfico generado en el grupo focal serán almacenadas en el Centro Nacional de Supercómputo del IPICYT por un período de tres años y serán posteriormente borrados.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "",
+            "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia1.jpg",
+            "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia2.jpg",
+            "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia3.jpg",
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia4.jpg",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/logo.png"
+        },
+        {
+            "id": 3,
+            "title": "Centinela de la Salud",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/banner.png",
+            "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia1.jpg",
+            "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia2.jpg",
+            "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia3.jpg",
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia4.jpg",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/logo.png"
+        },
+        {
+            "id": 4,
+            "title": "C-SEF. Marco de Educación Segura COVID-19",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/c-sef/banner.png",
+            "evidencia1": "",
+            "evidencia2": "",
+            "evidencia3": "",
+            "evidencia4": "",
+            "logo": "}"
+        },
+        {
+            "id": 5,
+            "title": "MUFRAMEX. Maison Universitaire Franco-Mexicaine",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
+            "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
+            "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia2.jpeg",
+            "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia3.jpeg",
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png"
+        },
+        {
+            "id": 6,
+            "title": "Horizonte Saludable",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/banner.jpg",
+            "evidencia1": "",
+            "evidencia2": "",
+            "evidencia3": "",
+            "evidencia4": "",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/logo.png"
+        },
+        {
+            "id": 7,
+            "title": "Juventud al DIA",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "",
+            "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia1.png",
+            "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia2.png",
+            "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia3.png",
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia4.png",
+            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/logo.png"
+        },
+        {
+            "id": 8,
+            "title": "Diplomado en Inteligencia Artificial Aplicada",
+            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+            "anime": "frieren",
+            "banner": "",
+            "evidencia1": "",
+            "evidencia2": "",
+            "evidencia3": "",
+            "evidencia4": "",
+            "logo": ""
+        }
+    
+    ]
