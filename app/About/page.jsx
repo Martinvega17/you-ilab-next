@@ -4,6 +4,7 @@ import nosotros from '@/assets/footer/nosotros.jpg';
 import about from '@/assets/footer/about.jpg';
 import Image from 'next/image';
 import team from '@/assets/team/team.jpg';
+import Cards from '../../components/card';
 
 const About = () => {
     return (
@@ -49,6 +50,38 @@ const About = () => {
 
                 </div>
             </div>
+
+            {/* Ejemplo cards  */}
+            <div class="grid grid-cols-3 gap-4 px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
+                <div class="p-4">
+                    <h3 className='bg-[#FBA414] p-3 text-center text-3xl text-neutral-100 font-MontserratBold'>MISION</h3>
+                    <p className='text-justify'>El YouI Lab aspira a ser un referente global en la generación de conocimiento y la innovación en las áreas de desarrollo web, frontend y backend, así como en campos relacionados. Buscamos liderar la investigación en tecnologías emergentes, la inteligencia artificial, la ciberseguridad y otros dominios clave de la informática. Nuestra visión incluye la transferencia efectiva de este conocimiento a la industria y la sociedad, impulsando así el desarrollo tecnológico en la región y contribuyendo al progreso económico y social.</p>
+                </div>
+                <div class="p-4">
+                    <h3 className='bg-[#FD7211] p-3 text-center text-3xl text-neutral-100 font-MontserratBold'>VISION</h3>
+                    <p className='text-justify'>Establecerse como un centro tecnológico de excelencia a nivel nacional y regional. A través de sus servicios y productos, nuestro laboratorio se dedica a promover y desarrollar diversas áreas de importancia clave:
+                        <br />
+                        - Investigación Científica:
+                        <br />
+                        - Desarrollo de la Docencia:
+                        <br />
+                        - Generación de Conocimiento Tecnológico:
+                        <br />
+                        - Habilidades y Competencias Humanas:
+                        <br />
+                        - Soluciones TIC Eficientes:
+                        <br />
+                        En un ámbito de trabajo en equipo y colaboración</p>
+                </div>
+                <div class="p-4">
+                    <h3 className='bg-[#C9222B] p-3 text-center text-3xl text-neutral-100 font-MontserratBold'>OBJETIVO</h3>
+                    <p className='text-justify'>Somos un Laboratorio de Innovacion Juvenil perteneciente al IPICYT, dedicado a promover la investigación y el desarrollo de tecnologías de la información y contribuir al avance de la ciencia y la tecnología en la región de San Luis Potosí y más allá</p>
+                </div>
+            </div>
+
+
+            <Cards />
+
 
 
             <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
