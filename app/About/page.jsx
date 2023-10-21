@@ -43,8 +43,8 @@ const About = () => {
                             A lo largo de los años, el YouI Lab ha estado involucrado en una amplia variedad de proyectos innovadores que han abarcado tanto el desarrollo web como el backend y frontend, lo que refleja su enfoque integral en el campo de la informática. Desde sus primeros días, el laboratorio ha estado a la vanguardia de la investigación en inteligencia artificial y tecnologías emergentes, lo que le ha permitido mantener una posición líder en el ámbito de la investigación científica y tecnológica.
                         </p>
                     </div>
-                    <div className="w-full sm:w-1/2 lg:w-2/5 ml-8 mt-14 h-96">
-                        <Image src={team} alt='' className='h-[380px] w-[1000px]' />
+                    <div className="w-auto sm:w-1/2 lg:w-2/5 ml-8 mt-14 h-96">
+                        <Image src={team} alt='' className='h-auto w-auto' />
                     </div>
 
                 </div>
