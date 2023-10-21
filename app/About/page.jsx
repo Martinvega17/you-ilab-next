@@ -44,7 +44,7 @@ const About = () => {
                             A lo largo de los años, el YouI Lab ha estado involucrado en una amplia variedad de proyectos innovadores que han abarcado tanto el desarrollo web como el backend y frontend, lo que refleja su enfoque integral en el campo de la informática. Desde sus primeros días, el laboratorio ha estado a la vanguardia de la investigación en inteligencia artificial y tecnologías emergentes, lo que le ha permitido mantener una posición líder en el ámbito de la investigación científica y tecnológica.
                         </p>
                     </div>
-                    <div className="w-auto sm:w-1/2 lg:w-2/5 ml-8 mt-14 h-96">
+                    <div className="w-full sm:w-1/2 lg:w-2/5 mt-8 ml-10">
                         <Image src={team} alt='' className='h-auto w-auto' />
                     </div>
 
@@ -52,7 +52,7 @@ const About = () => {
             </div>
 
             {/* Ejemplo cards  */}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 py-8 sm:py-4 lg:px-24 xl:px-80">
     <div class="p-4">
         <h3 className='bg-[#FBA414] p-3 text-center text-3xl text-neutral-100 font-MontserratBold'>MISION</h3>
         <p className='text-justify'>El YouI Lab aspira a ser un referente global en la generación de conocimiento y la innovación en las áreas de desarrollo web, frontend y backend, así como en campos relacionados. Buscamos liderar la investigación en tecnologías emergentes, la inteligencia artificial, la ciberseguridad y otros dominios clave de la informática. Nuestra visión incluye la transferencia efectiva de este conocimiento a la industria y la sociedad, impulsando así el desarrollo tecnológico en la región y contribuyendo al progreso económico y social.</p>
