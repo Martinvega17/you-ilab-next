@@ -34,7 +34,7 @@ export default Project;
 
 const Container = styled.div`
     height: 10rem;
-    background-color: #fff;
+    background-color: transparent;
     margin: 0 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
