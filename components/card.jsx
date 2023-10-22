@@ -31,6 +31,7 @@ function generateCard(title, description) {
                         </div>
                     </div>
                 </figure>
+
             </div>
         </article>
     );

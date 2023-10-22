@@ -133,10 +133,6 @@ const About = () => {
                 </div>
             </div>
 
-
-
-
-
             <div className="px-4 py-8 sm:py-4 lg:px-24 xl:px-96">
                 <div className="text-left">
                     <h2 className="font-MontserratBold text-[#8A26CC] text-4xl sm:text-5xl">
@@ -152,11 +148,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-
-
-
-
-
 
 
             <div className="md:mr-4 mt-4">
