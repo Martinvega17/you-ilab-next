@@ -82,30 +82,30 @@ export default async function Post({ params }) {
                                 </section>
                             </section>
                         </section>
-                        <div className="flex flex-wrap mr-[-15px] ml-[-15px] w-full">
-                            <div className="relative w-full px-[15px]">
-                                <div className="mt-20 pt-[75px] pb-20 border-y-2 border-y-[#d6ebff] border-solid">
-                                    <div className='mb-20'>
-                                        <h2 className=' text-[#003242] block text-5xl font-MontserratBold'>
-                                            Descargables
-                                            <span className='text-[#765cf6]'>.</span>
-                                        </h2>
-                                    </div>
-                                    <div className="flex-wrap mt-[-30px] flex">
-                                        <Link href="" className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 pt-6 rounded-[40px] border-0 bg-gradient'>
-                                            <span className="flex items-center"> 
-                                                <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2" />
-                                                App Web
-                                            </span>
-                                        </Link>
-                                    </div>
+                        <section class="flex flex-col items-center space-y-6">
+                            <h2 class="text-[#003242] text-5xl font-MontserratBold">
+                                Descargables
+                                <span class="text-[#765cf6]">.</span>
+                            </h2>
 
+                            <div class="flex space-x-4">
+                                <Link href="" className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
+                                    <span className="flex">
+                                        <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2" />
+                                        App Web
+                                    </span>
+                                </Link>
 
-                                </div>
-
+                                <Link href="" className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
+                                    <span className="flex">
+                                        <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2" />
+                                        App Web
+                                    </span>
+                                </Link>
                             </div>
+                        </section>
 
-                        </div>
+
                     </section>
                 </article>
             )
