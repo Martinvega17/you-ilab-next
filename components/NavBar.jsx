@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsFacebook, BsX, BsTwitter, BsLinkedin } from "react-icons/bs"
 import { useTheme } from "next-themes";
-import { FiMoon } from "react-icons/fi";
+import { FiMoon, } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 
