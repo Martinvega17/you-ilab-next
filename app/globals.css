@@ -127,3 +127,11 @@ body {
   background: linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 212, 191, 255) 100%);
 
 }
+
+.bg-gradient-bef:hover {
+  background: linear-gradient(90deg, rgba(120, 91, 244, 255) 0%, rgba(2, 212, 191, 255) 100%);
+    .icon {
+      color: #fff;
+    }
+
+}
