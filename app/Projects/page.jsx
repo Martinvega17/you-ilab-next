@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const fetchPosts = () => {
-  return fetch('http://localhost:3000/api/projects/')
+  return fetch('https://you-ilab-next.vercel.app/api/projects/')
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error ${res.status}: ${res.statusText}`);
