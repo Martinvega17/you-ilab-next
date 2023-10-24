@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 
 const fetchSinglePost = (id) => {
 
-    return fetch(`https://you-ilab-next.vercel.app/api/projects/${id}`, {
+    return fetch(`http://localhost:3000/api/projects/${id}`, {
         next: {
             revalidate: 60
         }
@@ -40,15 +40,15 @@ export default async function Post({ params }) {
                         </section>
 
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px] ">{post.section2}</p>
+                            <p className="font-RobotoRegular text-[16px] ">{post.secciones.section2}</p>
                         </section>
 
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px]">{post.section3}</p>
+                            <p className="font-RobotoRegular text-[16px]">{post.secciones.section3}</p>
                         </section>
 
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px]">{post.section4}</p>
+                            <p className="font-RobotoRegular text-[16px]">{post.secciones.section4}</p>
                         </section>
 
                         <section className="flex flex-wrap mx-[-15px] mt-10">
@@ -56,12 +56,12 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.evidencia1} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia1} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.evidencia2} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia2} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
@@ -71,12 +71,12 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.evidencia3} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia3} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.evidencia4} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia4} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
@@ -89,19 +89,41 @@ export default async function Post({ params }) {
                             </h2>
 
                             <div class="flex space-x-4">
-                                <Link href="" className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
-                                    <span className="flex">
-                                        <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2" />
-                                        App Web
-                                    </span>
-                                </Link>
+                                {post.descargables.descargable1 && ( // Verifica si descargable1 tiene un valor
+                                    <Link href={post.descargables.descargable1} target='_blank' className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
+                                        <span className="flex">
+                                            <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-white" />
+                                            {post.descargables.title1}
+                                        </span>
+                                    </Link>
+                                )}
 
-                                <Link href="" className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
-                                    <span className="flex">
-                                        <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2" />
-                                        App Web
-                                    </span>
-                                </Link>
+                                {post.descargables.descargable2 && ( // Verifica si descargable2 tiene un valor
+                                    <Link href={post.descargables.descargable2} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                        <span className="flex">
+                                            <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
+                                            {post.descargables.title2}
+                                        </span>
+                                    </Link>
+                                )}
+
+                                {post.descargables.descargable3 && ( // Verifica si descargable3 tiene un valor
+                                    <Link href={post.descargables.descargable3} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                        <span className="flex">
+                                            <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
+                                            {post.descargables.title3}
+                                        </span>
+                                    </Link>
+                                )}
+
+                                {post.descargables.descargable4 && ( // Verifica si descargable4 tiene un valor
+                                    <Link href={post.descargables.descargable4} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                        <span className="flex">
+                                            <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
+                                            {post.descargables.title4}
+                                        </span>
+                                    </Link>
+                                )}
                             </div>
                         </section>
 
