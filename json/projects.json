@@ -1,123 +1,228 @@
 [
-    
-        {
-            "id": 1,
-            "title": "Centinela del Aire",
+    {
+        "id": "centinela-del-aire",
+        "title": "Centinela del Aire",
+        "name": "centinela-del-aire",
+        "secciones": {
             "section1": "Centinela del Aire, financiado por el Consejo Potosino de Ciencia y Tecnología y la Balvi Clean Air Initiative, se propone desarrollar una metodología de monitoreo remoto de espacios interiores para estimar, en tiempo real, el riesgo de contagio por SARS-CoV-2 y otros patógenos de transmisión aérea en espacios públicos de la Zona Metropolitana de San Luis Potosí (ZMSLP). ",
             "section2": "La calidad del aire interior en las casas y otros recintos donde las personas pasan gran parte del tiempo es determinante del bienestar, la productividad y la vida sana. Cada año mueren 4.2 millones de personas en el mundo por la contaminación del aire en espacios interiores. ",
             "section3": "Los riesgos asociados a la mala calidad del aire interior son causados principalmente por microorganismos patógenos y sustancias derivadas de las actividades humanas. Aunque la pandemia de COVID-19 ha puesto la mala calidad del aire interior en el centro de atención, la revolución necesaria para mejorarla está muy atrasada. Debemos ser activistas en este tema durante los próximos años, en los que el progreso podrá ser lento y desigual, como ha ocurrido con la contaminación del aire exterior, en la que --aunque los problemas siguen siendo enormes-- se ha avanzado mucho.",
-            "section4": "Centinela del Aire incluye el diseño, construcción e instalación de una red de monitores remotos inteligentes y el desarrollo de una plataforma digital de monitoreo móvil que extrae la información espaciotemporal de la red y la integra en un sistema de información geográfica. Permitirá obtener una muestra estadística estratificada de los espacios interiores de escuelas de la ZMSLP para guiar la aplicación de intervenciones que prevengan el contagio de COVID-19 y otras infecciones de transmisión aérea en las escuelas.",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "",
+            "section4": "Centinela del Aire incluye el diseño, construcción e instalación de una red de monitores remotos inteligentes y el desarrollo de una plataforma digital de monitoreo móvil que extrae la información espaciotemporal de la red y la integra en un sistema de información geográfica. Permitirá obtener una muestra estadística estratificada de los espacios interiores de escuelas de la ZMSLP para guiar la aplicación de intervenciones que prevengan el contagio de COVID-19 y otras infecciones de transmisión aérea en las escuelas."
+        },
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "",
+        "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
             "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia2.jpeg",
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia3.jpeg",
-            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png"
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg"
         },
-        {
-            "id": 2,
-            "title": "WeNet México",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "App Web",
+            "descargable2": "",
+            "title2": "",
+            "descargable3": "",
+            "title3": "",
+            "descargable4": "",
+            "title4": ""
+        }
+    },
+    {
+        "id": "wenet-mexico",
+        "title": "WeNet México",
+        "secciones": {
             "section1": "WeNet México es un proyecto financiado por el Consorcio WeNet de la Comunidad Europea cuyo objetivo es abordar la epidemia de obesidad y sobrepeso en la juventud mexicana. El proyecto se enfoca en la utilización de medios móviles y técnicas de inteligencia artificial (aprendizaje por reforzamiento) para informar y prevenir problemas de obesidad y sobrepeso en poblaciones de estudiantes de educación media superior en los estados de San Luis Potosí, Aguascalientes y Guanajuato.",
             "section2": "El Proyecto WeNet (https://www.we-net.eu) tiene como objetivo final incentivar la comunicación entre personas diversas para responder a alguna necesidad y es llevado a cabo por el Instituto Potosino de Investigación Científica y Tecnológica AC en colaboración con otras instituciones de varios países participantes en el consorcio WeNet.",
             "section3": "Para el efecto, en este estudio se pretende realizar grupos focales en donde participarán expertos en salud pública y un grupo de cuatro voluntarios. Los grupos focales serán grabados en formato de video a partir del cual se generarán transcripciones de texto, que no contendrán información personal. Los voluntarios participantes también llenarán un cuestionario y generarán material gráfico durante el grupo focal en donde no se solicitará información personal. Los videos, las transcripciones y el material gráfico generado en el grupo focal serán almacenadas en el Centro Nacional de Supercómputo del IPICYT por un período de tres años y serán posteriormente borrados.",
-            "section4": "",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "",
+            "section4": ""
+        },
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "",
+        "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia1.jpg",
             "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia2.jpg",
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia3.jpg",
-            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia4.jpg",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/logo.png"
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia4.jpg"
         },
-        {
-            "id": 3,
-            "title": "Centinela de la Salud",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
+        }
+    },
+    {
+        "id": "centinela-de-la-salud",
+        "title": "Centinela de la Salud",
+        "secciones": {
             "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
             "section2": "Expertos de la Facultad de Medicina de la Universidad Autónoma de San Luis Potosí, los Servicios de Salud de San Luis Potosí y el IPICYT diseñaron un algoritmo que, a través de encuestas individuales autorreportadas por los usuarios de la aplicación móvil, permitió estimar el índice de riesgo individual de contagio-exacerbación de COVID-19, para que cada usuario decidiera el curso de acción recomendado por las autoridades sanitarias. El análisis de la distribución de puntos permitió la localización espacial de los usuarios y la distribución de los patrones de agrupamiento geográfico de puntos (clústeres) coincidió con la distribución de los clústeres de casos de COVID-19 confirmados por las autoridades de salud durante el primer semestre de la pandemia.",
             "section3": "La plataforma CDS, que ya demostró su eficacia para la detección precoz de clústeres de COVID-19, podría aplicarse también a la vigilancia epidemiológica de las infecciones por los virus de influenza, sincicial respiratorio y dengue que generan síndromes similares y producen clústeres con características espaciales distintivas de diseminación temprana, diseminación comunitaria y brotes en gran escala.",
-            "section4": "",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/banner.png",
+            "section4": ""
+        },
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/banner.png",
+        "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia1.jpg",
             "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia2.jpg",
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia3.jpg",
-            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia4.jpg",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/logo.png"
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia4.jpg"
         },
-        {
-            "id": 4,
-            "title": "C-SEF. Marco de Educación Segura COVID-19",
-            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/c-sef/banner.png",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
+        }
+    },
+    {
+        "id": "c-sef",
+        "title": "C-SEF. Marco de Educación Segura COVID-19",
+        "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/c-sef/banner.png",
+        "images": {
             "evidencia1": "",
             "evidencia2": "",
             "evidencia3": "",
-            "evidencia4": "",
-            "logo": ""
+            "evidencia4": ""
         },
-        {
-            "id": 5,
-            "title": "MUFRAMEX. Maison Universitaire Franco-Mexicaine",
-            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
+        "logo": "",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
+        }
+    },
+    {
+        "id": "muframex",
+        "title": "MUFRAMEX. Maison Universitaire Franco-Mexicaine",
+        "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
+        "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
             "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia2.jpeg",
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia3.jpeg",
-            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png"
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg"
         },
-        {
-            "id": 6,
-            "title": "Horizonte Saludable",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Descargar Programa Completo",
+            "descargable2": "",
+            "title2": "Descargar Horarios",
+            "descargable3": "",
+            "title3": "",
+            "descargable4": "",
+            "title4": ""
+        }
+    },
+    {
+        "id": "horizonte-saludable",
+        "title": "Horizonte Saludable",
+        "secciones": {
             "section1": "Horizonte Saludable es un Proyecto financiado por el Departamento de Estado de EUA a través del Consulado de Monterrey en México. El proyecto Horizonte-Saludable tiene como objetivo crear un marco para que los ciudadanos que habitan en las comunidades urbanas mexicanas monitoreen, documenten, caractericen y desarrollen soluciones ciudadanas a los problemas ambientales. La prueba de concepto objetivo inicial del marco considera una comunidad de 1100 hogares que habitan el barrio Los Álamos II en el área metropolitana de la ciudad de San Luis Potosí. Esta comunidad busca herramientas organizativas para abordar los problemas ambientales que afectan a su vecindario. ",
             "section2": "El especialista del IPICYT informará a la comunidad sobre el enfoque one-health, que según la Organización Mundial de la Salud tiene como objetivo diseñar e implementar programas, políticas, legislación e investigación en los que múltiples sectores se comuniquen y trabajen juntos para lograr mejores resultados en salud pública.",
             "section3": "",
-            "section4": "",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/banner.jpg",
+            "section4": ""
+        },
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/banner.jpg",
+        "images": {
             "evidencia1": "",
             "evidencia2": "",
             "evidencia3": "",
-            "evidencia4": "",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/logo.png"
+            "evidencia4": ""
         },
-        {
-            "id": 7,
-            "title": "Juventud al DIA",
-            "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
+        }
+    },
+    {
+        "id": "juventud-al-dia",
+        "title": "Juventud al DIA",
+        "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "",
+        "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia1.png",
             "evidencia2": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia2.png",
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia3.png",
-            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia4.png",
-            "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/logo.png"
+            "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia4.png"
         },
-        {
-            "id": 8,
-            "title": "Diplomado en Inteligencia Artificial Aplicada",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/logo.png",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
+        }
+    },
+    {
+        "id": "diplomado-en-inteligencia-artificial-aplicada",
+        "title": "Diplomado en Inteligencia Artificial Aplicada",
+        "secciones": {
             "section1": "El objetivo general del diplomado se centra en hacer que los profesionales y estudiantes participantes adquieran los conceptos teóricos y prácticos que fundamentan la IA, en particular, el aprendizaje de máquina y aprendizaje profundo. Con ellos se pretende que los estudiantes adquieran los conocimientos que les permitan resolver problemas que requieren el procesamiento de datos y el destilado de información, a través de técnicas del uso de sistemas de computación de alto rendimiento.",
-            "section2":"La Inteligencia Artificial (IA) es un área en la frontera del conocimiento que tiene aplicaciones que impactan diversos ámbitos de la sociedad humana, incluyendo transformaciones notables en los sectores productivo, manufacturero y de prestación de servicios, entre muchos otros. Solo en el 2016, gigantes tecnológicos como Google y Baidu invirtieron más de 30 billones de dólares en desarrollos de IA. Un estudio de Price Waterhouse Coopers estima que esta tecnología podría agregar 16 trillones de dólares al PIB mundial para finales de la siguiente década. Las ofertas de trabajo en IA y áreas relacionadas como el Aprendizaje de Máquina (AM), la Robótica, la Visión Computacional y las Ciencias de Datos han crecido más del 70% conforme se incrementa la necesidad de personal especializado en el sector empresarial4 y gubernamental. Este panorama sugiere un rediseño de las estrategias científicas y tecnológicas, que fomente la creación e innovación de productos y servicios dirigidos a cubrir las necesidades específicas de la sociedad mexicana y potencialmente las sociedades en América Latina.",
-            "section3":"Por estas razones, el Grupo de Ciencia e Ingeniería Computacionales (GCIC) del IPICYT tiene como propósito formar recursos humanos calificados que sean capaces de aplicar de manera efectiva las nuevas tecnologías en IA, para la solución de problemas nacionales del México actual. El GCIC ha diseñado un diplomado que aborda los fundamentos de la IA para atender la demanda en la formación de estudiantes y profesionales interesados en aplicaciones prácticas en esta área del conocimiento, a través del uso de un sistema de computación de alto rendimiento disponible en el Centro Nacional de Supercómputo (CNS) del IPICYT.",
-            "section4":"",
-            "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
-            "anime": "frieren",
-            "banner": "",
+            "section2": "La Inteligencia Artificial (IA) es un área en la frontera del conocimiento que tiene aplicaciones que impactan diversos ámbitos de la sociedad humana, incluyendo transformaciones notables en los sectores productivo, manufacturero y de prestación de servicios, entre muchos otros. Solo en el 2016, gigantes tecnológicos como Google y Baidu invirtieron más de 30 billones de dólares en desarrollos de IA. Un estudio de Price Waterhouse Coopers estima que esta tecnología podría agregar 16 trillones de dólares al PIB mundial para finales de la siguiente década. Las ofertas de trabajo en IA y áreas relacionadas como el Aprendizaje de Máquina (AM), la Robótica, la Visión Computacional y las Ciencias de Datos han crecido más del 70% conforme se incrementa la necesidad de personal especializado en el sector empresarial4 y gubernamental. Este panorama sugiere un rediseño de las estrategias científicas y tecnológicas, que fomente la creación e innovación de productos y servicios dirigidos a cubrir las necesidades específicas de la sociedad mexicana y potencialmente las sociedades en América Latina.",
+            "section3": "Por estas razones, el Grupo de Ciencia e Ingeniería Computacionales (GCIC) del IPICYT tiene como propósito formar recursos humanos calificados que sean capaces de aplicar de manera efectiva las nuevas tecnologías en IA, para la solución de problemas nacionales del México actual. El GCIC ha diseñado un diplomado que aborda los fundamentos de la IA para atender la demanda en la formación de estudiantes y profesionales interesados en aplicaciones prácticas en esta área del conocimiento, a través del uso de un sistema de computación de alto rendimiento disponible en el Centro Nacional de Supercómputo (CNS) del IPICYT.",
+            "section4": ""
+        },
+        "imagen": "https://i.pinimg.com/564x/60/26/b3/6026b3a8775912e87534fcfa0c81b898.jpg",
+        "anime": "frieren",
+        "banner": "",
+        "images": {
             "evidencia1": "",
             "evidencia2": "",
             "evidencia3": "",
-            "evidencia4": "",
-            "logo": ""
+            "evidencia4": ""
+        },
+        "logo": "",
+        "descargables": {
+            "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
+            "title1": "Download PDF",
+            "descargable2": "",
+            "title2": "Download Excel",
+            "descargable3": "",
+            "title3": "Download Prescriptions",
+            "descargable4": "",
+            "title4": "Download File"
         }
-    
-    ]
+    }
+]
