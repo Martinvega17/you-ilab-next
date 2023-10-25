@@ -13,10 +13,6 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
-@font-face {
-  font-family: "Montserrat-Black";
-  src: url("../fonts/Montserrat-Black.ttf");
-}
 
 @font-face {
   font-family: "Montserrat-Bold";
@@ -29,19 +25,10 @@
 }
 
 @font-face {
-  font-family: "Montserrat-SemiBoldItalic";
-  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
-}
-
-@font-face {
   font-family: "Montserrat-Thin";
   src: url("../fonts/Montserrat-Thin.ttf");
 }
 
-@font-face {
-  font-family: "Montserrat-ThinItalic";
-  src: url("../fonts/Montserrat-ThinItalic.ttf");
-}
 
 @font-face {
   font-family: "Lato-Bold";
@@ -115,11 +102,12 @@ body {
   
 .active {
   border-bottom: 4px solid rgba(241, 58, 58, 0.895);
-  justify-content: center; 
+  justify-content: center;
+  padding-bottom: 0.4rem;
   text-align: center; 
-  display: flex;
-  height: 2.8rem;
-  width: 5rem;
+  height: 100%;
+  width: 100%;
+  
   
 }
 
@@ -135,3 +123,23 @@ body {
     }
 
 }
+
+.link {
+  text-decoration: none;
+}
+
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
