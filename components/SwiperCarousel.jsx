@@ -64,7 +64,7 @@ const SwiperCarousel = () => {
 
     return (
         <section className="swiper mySwiper swiper-container" ref={swiperRef}>
-            <div className="swiper-wrapper">
+            <div className="swiper-wrapper pb-8">
                 {dataDigital.map((card) => (
                     <div key={card.id} className="card swiper-slide">
                         <div className="card__image">

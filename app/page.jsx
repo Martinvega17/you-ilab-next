@@ -69,6 +69,8 @@ export default function Home() {
           {/* <Collaborator /> */}
           <Partners />
 
+          
+
           {/* End Section Collage Collaborators */}
         </div>
       </div>

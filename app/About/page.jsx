@@ -24,18 +24,15 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-4 py-8 sm:py-16 lg:px-24 xl:px-80">
+            <div className="px-4 py-10 sm:py-20 sm:px-10 lg:px-24 xl:px-30 2xl:px-60">
                 <div className="text-[15px] leading-[27px]  flex flex-wrap">
 
-                    <div className="w-full sm:w-1/2 lg:w-3/4 border-b-[#e9404e] border-b-2 border-solid">
+                    <div className="w-full  border-b-[#e9404e] border-b-2 border-solid">
                         <h2 className='mb-6 text-[#4DB9CA] text-4xl font-MontserratBold text-center'>
                             You I Lab
                         </h2>
                     </div>
-
-
-
-                    <div className="w-full sm:w-1/2 md:w-1/2 lg:w-full mt-10 ">
+                    <div className="w-full sm:w-full md:w-full lg:w-full mt-10  ">
                         <p className="font-MontserratRegular mb-4 mt-4">
                             El YouI Lab del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) es un laboratorio de investigación que tiene una rica historia de contribuciones al campo de la informática y las tecnologías de la información en San Luis Potosí y más allá. Fundado en [insertar año de fundación], este laboratorio se ha destacado por su enfoque interdisciplinario y su compromiso con la promoción de la ciencia y la tecnología en la región.
                         </p>
@@ -45,8 +42,6 @@ const About = () => {
                             A lo largo de los años, el YouI Lab ha estado involucrado en una amplia variedad de proyectos innovadores que han abarcado tanto el desarrollo web como el backend y frontend, lo que refleja su enfoque integral en el campo de la informática. Desde sus primeros días, el laboratorio ha estado a la vanguardia de la investigación en inteligencia artificial y tecnologías emergentes, lo que le ha permitido mantener una posición líder en el ámbito de la investigación científica y tecnológica.
                         </p>
                         
-                    
-                    
                     </div>
 
                 </div>
@@ -54,11 +49,10 @@ const About = () => {
 
             <Cards />
 
-            
 
             <div className="md:mr-4 mt-4">
                 <div className="content">
-                    <div className="title_team">
+                    <div className="title_team pb-10">
                         <h2 className="inherit vertical-align text-center text-3xl text-titleAbout dark:text-[#8A26CC] font-MontserratBold">NUESTRO EQUIPO DE TRABAJO</h2>
                     </div>
                 </div>

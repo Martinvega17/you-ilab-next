@@ -27,13 +27,13 @@ export default async function Post({ params }) {
                     </h1>
                     <section className="px-4 py-8 sm:py-16 lg:px-24 xl:px-[300px] flex flex-wrap">
                         <section className={`flex-[0_0_${post.logo ? '100' : '100'}%] max-w-[100%] relative w-full px-0`}>
-                            <section className="flex flex-wrap">
+                            <section className="flex flex-wrap ">
                                 <section className={`max-w-[${post.logo ? '70' : '100'}%] px-4`}>
                                     <p className="font-RobotoRegular text-[16px]">{post.section1}</p>
                                 </section>
                                 {post.logo && (
-                                    <section className="max-w-[30%] px-4 float-right">
-                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-40 float-right" />
+                                    <section className="max-w-[30%] px-4 flex">
+                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-40 place-items-end" />
                                     </section>
                                 )}
                             </section>
@@ -56,12 +56,12 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia1} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia1} alt='' className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia2} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia2} alt='' className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
@@ -71,12 +71,12 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia3} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia3} alt='' className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia4} className="mb-10 max-w-full h-auto align-middle" />
+                                            <img src={post.images.evidencia4} alt='' className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
