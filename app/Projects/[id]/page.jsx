@@ -27,13 +27,13 @@ export default async function Post({ params }) {
                     </h1>
                     <section className="px-4 py-8 sm:py-16 lg:px-24 xl:px-[300px] flex flex-wrap">
                         <section className={`flex-[0_0_${post.logo ? '100' : '100'}%] max-w-[100%] relative w-full px-0`}>
-                            <section className="flex flex-wrap ">
+                            <section className="flex w-full justify-end">
                                 <section className={`max-w-[${post.logo ? '70' : '100'}%] px-4`}>
                                     <p className="font-RobotoRegular text-[16px]">{post.section1}</p>
                                 </section>
                                 {post.logo && (
                                     <section className="max-w-[30%] px-4 flex">
-                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-40 place-items-end" />
+                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-40" />
                                     </section>
                                 )}
                             </section>
@@ -89,38 +89,38 @@ export default async function Post({ params }) {
                             </h2>
 
                             <div class="flex space-x-4">
-                                {post.descargables.descargable1 && ( // Verifica si descargable1 tiene un valor
-                                    <Link href={post.descargables.descargable1} target='_blank' className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
+                                {post.downloads.descargable1 && ( // Verifica si descargable1 tiene un valor
+                                    <Link href={post.downloads.descargable1} target='_blank' className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
                                         <span className="flex">
                                             <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-white" />
-                                            {post.descargables.title1}
+                                            {post.downloads.title1}
                                         </span>
                                     </Link>
                                 )}
 
-                                {post.descargables.descargable2 && ( // Verifica si descargable2 tiene un valor
-                                    <Link href={post.descargables.descargable2} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                {post.downloads.descargable2 && ( // Verifica si descargable2 tiene un valor
+                                    <Link href={post.downloads.descargable2} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
                                         <span className="flex">
                                             <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
-                                            {post.descargables.title2}
+                                            {post.downloads.title2}
                                         </span>
                                     </Link>
                                 )}
 
-                                {post.descargables.descargable3 && ( // Verifica si descargable3 tiene un valor
-                                    <Link href={post.descargables.descargable3} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                {post.downloads.descargable3 && ( // Verifica si descargable3 tiene un valor
+                                    <Link href={post.downloads.descargable3} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
                                         <span className="flex">
                                             <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
-                                            {post.descargables.title3}
+                                            {post.downloads.title3}
                                         </span>
                                     </Link>
                                 )}
 
-                                {post.descargables.descargable4 && ( // Verifica si descargable4 tiene un valor
-                                    <Link href={post.descargables.descargable4} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
+                                {post.downloads.descargable4 && ( // Verifica si descargable4 tiene un valor
+                                    <Link href={post.downloads.descargable4} target='_blank' className='font-bold  capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] rounded-[40px] text-[#003242] shadow-none no-underline ml-5  px-[38px] py-[15px] border-[#f0f3f4] border-2 border-solid bg-gradient-bef'>
                                         <span className="flex">
                                             <FaFilePdf className="fa-solid fa-file-pdf text-center mr-2 text-[#fb4f52] icon" />
-                                            {post.descargables.title4}
+                                            {post.downloads.title4}
                                         </span>
                                     </Link>
                                 )}

@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -105,24 +106,24 @@ const SwiperCarousel = () => {
                                 <Image src={expandedCard.image} alt="card image" />
                                 <div className="modal__links-container">
                                     {expandedCard.cv && (
-                                        <a href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
+                                        <Link href={expandedCard.cv} target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faFile} style={{ color: "#0077B5" }} className="icon" />
-                                        </a>
+                                        </Link>
                                     )}
                                     {expandedCard.email && (
-                                        <a href={`mailto:${expandedCard.email}`}>
+                                        <Link href={`mailto:${expandedCard.email}`}>
                                             <FontAwesomeIcon icon={faEnvelope} style={{ color: "#0077B5" }} className="icon" />
-                                        </a>
+                                        </Link>
                                     )}
                                     {expandedCard.linkedin && (
-                                        <a href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <Link href={expandedCard.linkedin} target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faLinkedin} style={{ color: "#0077B5" }} className="icon" />
-                                        </a>
+                                        </Link>
                                     )}
                                     {expandedCard.github && (
-                                        <a href={expandedCard.github} target="_blank" rel="noopener noreferrer">
+                                        <Link href={expandedCard.github} target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faGithub} style={{ color: "#171515" }} className="icon" />
-                                        </a>
+                                        </Link>
                                     )}
                                 </div>
                             </div>

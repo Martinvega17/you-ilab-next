@@ -19,7 +19,7 @@
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg"
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "App Web",
             "descargable2": "",
@@ -49,7 +49,7 @@
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia4.jpg"
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",
@@ -79,7 +79,7 @@
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia4.jpg"
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",
@@ -104,7 +104,7 @@
             "evidencia4": ""
         },
         "logo": "",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",
@@ -129,7 +129,7 @@
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg"
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Descargar Programa Completo",
             "descargable2": "",
@@ -159,7 +159,7 @@
             "evidencia4": ""
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",
@@ -184,7 +184,7 @@
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia4.png"
         },
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/logo.png",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",
@@ -214,7 +214,7 @@
             "evidencia4": ""
         },
         "logo": "",
-        "descargables": {
+        "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Download PDF",
             "descargable2": "",

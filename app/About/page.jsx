@@ -3,7 +3,7 @@ import logo from '@/assets/logos/logo.png'
 import about from '@/assets/footer/about.jpg';
 import Image from 'next/image';
 import team from '@/assets/team/team.jpg';
-import Cards from '../../components/card';
+import FlipCard from '../../components/FlipCard';
 
 const About = () => {
     return (
@@ -34,7 +34,7 @@ const About = () => {
                     </div>
                     <div className="w-full sm:w-full md:w-full lg:w-full mt-10  ">
                         <p className="font-MontserratRegular mb-4 mt-4">
-                            El YouI Lab del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) es un laboratorio de investigación que tiene una rica historia de contribuciones al campo de la informática y las tecnologías de la información en San Luis Potosí y más allá. Fundado en [insertar año de fundación], este laboratorio se ha destacado por su enfoque interdisciplinario y su compromiso con la promoción de la ciencia y la tecnología en la región.
+                            El YouI Lab del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) es un laboratorio de investigación que tiene una rica historia de contribuciones al campo de la informática y las tecnologías de la información en San Luis Potosí y más allá. Fundado en el año 2018, este laboratorio se ha destacado por su enfoque interdisciplinario y su compromiso con la promoción de la ciencia y la tecnología en la región.
                         </p>
                         
                         <Image src={team} alt='' className='h-56 w-auto float-right ml-3' />
@@ -47,7 +47,7 @@ const About = () => {
                 </div>
             </div>
 
-            <Cards />
+            <FlipCard />
 
 
             <div className="md:mr-4 mt-4">

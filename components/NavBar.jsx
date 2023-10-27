@@ -102,19 +102,19 @@ className="sm:hidden cursor-pointer pl-24">
             <ul className="text-white justify-between text-center mr-10">
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>Home</Link>
+                <Link className={`link ${pathname === '/' ? 'active' : ''}`} href='/'>Inicio</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link className={`link ${pathname === '/About' ? 'active' : ''}`} href='/About'>About</Link>
+                <Link className={`link ${pathname === '/About' ? 'active' : ''}`} href='/About'>Nosotros</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link className={`link ${pathname === '/Projects' ? 'active' : ''}`} href='/Projects'>Projects</Link>
+                <Link className={`link ${pathname === '/Projects' ? 'active' : ''}`} href='/Projects'>Proyectos</Link>
               </li>
               <li onClick={() => setMenuOpen(false)}
                 className={`${styles.navLinks} ${styles.navLinksHover}`}>
-                <Link className={`link ${pathname === '/Contact' ? 'active' : ''}`} href='/Contact'>Contact</Link>
+                <Link className={`link ${pathname === '/Contact' ? 'active' : ''}`} href='/Contact'>Contacto</Link>
               </li>
             </ul>
           </div>

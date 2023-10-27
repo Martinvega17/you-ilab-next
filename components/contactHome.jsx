@@ -48,7 +48,8 @@ export default function ContactForm() {
 
     useEffect(() => {
         reset();
-    }, 100);
+    }, [reset]); // Incluye 'reset' en el arreglo de dependencias si es necesario que este efecto se ejecute cuando 'reset' cambie
+    
 
 
 

@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const fetchPosts = () => {
-  return fetch('https://you-ilab-next.vercel.app/api/projects/')
+  return fetch('https://you-ilab-next.vercel.app//api/projects/')
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error ${res.status}: ${res.statusText}`);
@@ -26,7 +26,14 @@ export default async function PostsPage({ params }) {
           <article key={post.id}>
             <Link href='/Projects/[id]/' as={`/Projects/${post.id}`}>
               <h2 className="text-2xl ">{post.title}</h2>
-              <Image src={post.imagen} alt="" width={300} height={300} className="mb-4" />
+              <Image
+                src={post.logo}
+                alt=""
+                width={300} // Establece un valor inicial para el ancho
+                height={200} // Establece un valor inicial para la altura
+                className="mb-4 h-40 w-auto"
+              />
+
             </Link>
           </article>
         ))}
