@@ -12,12 +12,9 @@ module.exports = {
         latoBold: "Lato-Bold",
         OverPassSemiBold: "OverPass-SemiBold",
         OverPassRegular: "OverPass-Regular",
-        MontserratBlack: "Montserrat-Black",
         MontserratBold: "Montserrat-Bold",
         MontserratRegular: "Montserrat-Regular",
         MontserratThin: "Montserrat-Thin",
-        MontserratThinItalic: "Montserrat-ThinItalic",
-        MontserratSemiBoldItalic: "Montserrat-SemiBoldItalic",
         RobotoRegular: "Roboto-Regular",
       },
       colors: {

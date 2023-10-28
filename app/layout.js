@@ -5,6 +5,7 @@ import ScrollTopToButton from '../components/ScrollToTopButton'
 import Provider from './providers'
 import { Inter } from 'next/font/google'
 import './styles/slick/slick.min.css'
+import Script from 'next/script'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,6 +27,10 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" /> */}
+          <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></Script>
+ 
+
+
 
       </head>
 

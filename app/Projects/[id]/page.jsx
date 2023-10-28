@@ -22,33 +22,38 @@ export default async function Post({ params }) {
         if (post) {
             return (
                 <article className="ml-2">
+                        {/* Gallery */}
+                        
+
+
                     <h1 className="mt-20 text-5xl text-center font-MontserratBold text-titleAbout dark:text-neutral-300">
                         {post.title}
                     </h1>
                     <section className="px-4 py-8 sm:py-16 lg:px-24 xl:px-[300px] flex flex-wrap">
-                        <section className={`flex-[0_0_${post.logo ? '100' : '100'}%] max-w-[100%] relative w-full px-0`}>
+                        <section className={`flex-[0_0_${post.logo ? '70' : '100'}%] max-w-[100%] relative w-full px-0`}>
                             <section className="flex w-full justify-end">
                                 <section className={`max-w-[${post.logo ? '70' : '100'}%] px-4`}>
-                                    <p className="font-RobotoRegular text-[16px]">{post.section1}</p>
+                                    <p className="font-RobotoRegular text-[16px]">{post.sections.section1}</p>
                                 </section>
                                 {post.logo && (
                                     <section className="max-w-[30%] px-4 flex">
-                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-40" />
+                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-96" />
                                     </section>
                                 )}
                             </section>
                         </section>
 
+
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px] ">{post.secciones.section2}</p>
+                            <p className="font-RobotoRegular text-[16px] ">{post.sections.section2}</p>
                         </section>
 
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px]">{post.secciones.section3}</p>
+                            <p className="font-RobotoRegular text-[16px]">{post.sections.section3}</p>
                         </section>
 
                         <section className="flex-[0_0_100%] max-w-full relative w-full px-4 mt-10">
-                            <p className="font-RobotoRegular text-[16px]">{post.secciones.section4}</p>
+                            <p className="font-RobotoRegular text-[16px]">{post.sections.section4}</p>
                         </section>
 
                         <section className="flex flex-wrap mx-[-15px] mt-10">

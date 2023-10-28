@@ -1,19 +1,48 @@
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 import Projects from "../components/Projects/Carousel/Projects";
 
-import Sponsors from '../components/sponsors'
-import ContactoForm from "../components/contactHome";
-import Info from "../components/info";
+import Sponsors from '../components/Sponsors'
+import ContactoForm from "../components/ContactHome";
+import Info from "../components/Info";
 import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
 import image from './assets/varios/image1.png'
 import Image from "next/image";
 import Collaborator from '../components/Collaborators'
-import Partners from "../components/partners";
+import Partners from "../components/Partners";
 
 
 export default function Home() {
+  useEffect(() => {
+    // Función para incrementar el valor de experiencia
+    const increaseExperience = (elementId, finalValue) => {
+      const element = document.getElementById(elementId);
+      let currentValue = 0;
+
+      const updateValue = () => {
+        if (currentValue < finalValue) {
+          currentValue++;
+          element.innerText = currentValue;
+          setTimeout(updateValue, 50);
+        }
+      };
+
+      updateValue();
+    };
+
+    // Incrementar la experiencia
+    increaseExperience("experience", 5);
+
+    // Incrementar la satisfacción
+    increaseExperience("satisfaction", 100);
+
+    // Incrementar la calidad
+    increaseExperience("quality", 100);
+
+    // Incrementar el profesionalismo
+    increaseExperience("profesionality", 100);
+  }, []);
   return (
     <main>
       <title>You I Lab | Home</title>
@@ -39,7 +68,7 @@ export default function Home() {
 
           </div>
 
-          <div className="flex flex-col sm:flex-row w-full px-4 sm:px-16 py-0">
+          <div className="flex flex-col sm:flex-row w-full px-4 sm:px-16 py-10">
             <div className="w-full sm:w-1/2 p-4">
               <ContactoForm />
             </div>
@@ -52,10 +81,11 @@ export default function Home() {
 
           {/* End Carousel Sponsors */}
           <div
-            className="h-96 w-auto flex justify-center items-center md:h-full mb-10"
+            className="h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10"
             style={{
               backgroundImage: `url(${collaborators.src})`,
               backgroundSize: "35% ",
+              
 
             }}
           >
@@ -68,12 +98,42 @@ export default function Home() {
 
           {/* <Collaborator /> */}
           <Partners />
+          
 
           
 
           {/* End Section Collage Collaborators */}
         </div>
       </div>
+      <section id="call-to-action" className="wow fadeIn bg-cover px-0 py-[60px]" style={{ visibility: 'visible', animationName: 'fadeIn', backgroundImage: `url('https://www.macisa.com.mx/assets/img/facts-bg2.jpg')` }}>
+  <div className="w-full mx-auto px-[15px] text-center animate-fade-down animate-ease-linear">
+    <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
+      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
+        <span id="experience" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
+        <p className="text-white font-MontserratBold">AÑOS DE EXPERIENCIA</p>
+      </div>
+      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
+        <span id="satisfaction" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
+        <p className="text-white font-MontserratBold">SATISFACCIÓN</p>
+      </div>
+
+      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
+        <span id="quality" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
+        <p className="text-white font-MontserratBold">CALIDAD</p>
+      </div>
+
+      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
+        <span id="profesionality" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
+        <p className="text-white font-MontserratBold">PROFESIONALISMO</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     </main>
   );
 };
+
+
