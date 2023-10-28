@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import Projects from "../components/Projects/Carousel/Projects";
 
-import Sponsors from '../components/Sponsors'
-import ContactoForm from "../components/ContactHome";
+import Sponsors from '../components/sponsors'
+import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
