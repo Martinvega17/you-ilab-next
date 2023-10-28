@@ -4,7 +4,7 @@ import Projects from "../components/Projects/Carousel/Projects";
 
 import Sponsors from '../components/Sponsors'
 import ContactoForm from "../components/ContactHome";
-import Info from "../components/Info";
+import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.jpg'
 import image from './assets/varios/image1.png'
