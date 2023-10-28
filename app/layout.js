@@ -1,6 +1,7 @@
 import './globals.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import ScrollTopToButton from '../components/ScrollToTopButton'
 import Provider from './providers'
 import { Inter } from 'next/font/google'
 import './styles/slick/slick.min.css'
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <Provider>
           <NavBar />
           {children}
+          <ScrollTopToButton />
           <Footer />
         </Provider>
       </body>
