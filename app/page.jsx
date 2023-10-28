@@ -10,7 +10,7 @@ import collaborators from './assets/team/Collage_colab_.jpg'
 import image from './assets/varios/image1.png'
 import Image from "next/image";
 import Collaborator from '../components/Collaborators'
-import Partners from "../components/Partners";
+import Partners from "../components/partners";
 
 
 export default function Home() {
