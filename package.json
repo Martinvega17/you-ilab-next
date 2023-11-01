@@ -21,7 +21,6 @@
     "axios": "^1.5.1",
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.6",
-    "mongoose": "^7.6.3",
     "next": "13.5.6",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
@@ -43,7 +42,6 @@
     "swiper": "^10.3.1",
     "swr": "^2.2.4",
     "tailwindcss-animated": "^1.0.1",
-    "uninstall": "^0.0.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {

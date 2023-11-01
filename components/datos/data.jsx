@@ -1,4 +1,4 @@
-import salvador from '@/assets/team/salvador.jpg';
+import salvador from '@/assets/team/salvador.webp';
 import viridiana from '@/assets/team/viridiana.jpg';
 import lourdes from '@/assets/team/lourdes.jpg';
 import miguel from '@/assets/team/miguel.jpg';

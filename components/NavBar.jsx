@@ -127,7 +127,7 @@ className="sm:hidden cursor-pointer pl-24">
             <Link href="https://twitter.com/youi_lab?lang=en" target="_blanck">
               <BsTwitter size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
-            <Link href="https://www.pinterest.com" target="_blanck">
+            <Link href="#" target="_blanck">
               <BsLinkedin size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
           </div>

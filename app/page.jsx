@@ -6,7 +6,7 @@ import Sponsors from '../components/sponsors'
 import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
-import collaborators from './assets/team/Collage_colab_.jpg'
+import collaborators from './assets/team/Collage_colab_.webp'
 import image from './assets/varios/image1.png'
 import Image from "next/image";
 import Collaborator from '../components/Collaborators'
