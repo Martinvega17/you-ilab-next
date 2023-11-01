@@ -130,18 +130,17 @@ body {
   text-decoration: none;
 }
 
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Cuando la pantalla sea pequeña */
+@media (max-width: 768px) {
+  .h-96 {
+    background-size: 70%;
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Cuando la pantalla sea grande */
+@media (min-width: 769px) {
+  .h-96 {
+    background-size: 30%;
   }
-} */
+}
 

@@ -1,5 +1,5 @@
 "use client"
-import React  from "react";
+import React from "react";
 import Projects from "../components/Projects/Carousel/Projects";
 
 import Sponsors from '../components/sponsors'
@@ -54,12 +54,9 @@ export default function Home() {
 
           {/* End Carousel Sponsors */}
           <div
-            className="h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10"
+            className="h-96 xl:h-[32rem]  w-full flex justify-center items-center md:h-full mb-10"
             style={{
               backgroundImage: `url(${collaborators.src})`,
-              backgroundSize: "35% ",
-
-
             }}
           >
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">
@@ -68,6 +65,7 @@ export default function Home() {
               <h1 className="text-white text-2xl lg:text-5xl font-bold">COLLABORATORS!</h1>
             </div>
           </div>
+
 
           {/* <Collaborator /> */}
           <Partners />
