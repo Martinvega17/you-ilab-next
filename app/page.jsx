@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React  from "react";
 import Projects from "../components/Projects/Carousel/Projects";
 
 import Sponsors from '../components/sponsors'
@@ -14,35 +14,8 @@ import Partners from "../components/partners";
 
 
 export default function Home() {
-  useEffect(() => {
-    // Función para incrementar el valor de experiencia
-    const increaseExperience = (elementId, finalValue) => {
-      const element = document.getElementById(elementId);
-      let currentValue = 0;
 
-      const updateValue = () => {
-        if (currentValue < finalValue) {
-          currentValue++;
-          element.innerText = currentValue;
-          setTimeout(updateValue, 50);
-        }
-      };
 
-      updateValue();
-    };
-
-    // Incrementar la experiencia
-    increaseExperience("experience", 5);
-
-    // Incrementar la satisfacción
-    increaseExperience("satisfaction", 100);
-
-    // Incrementar la calidad
-    increaseExperience("quality", 100);
-
-    // Incrementar el profesionalismo
-    increaseExperience("profesionality", 100);
-  }, []);
   return (
     <main>
       <title>You I Lab | Home</title>
@@ -85,7 +58,7 @@ export default function Home() {
             style={{
               backgroundImage: `url(${collaborators.src})`,
               backgroundSize: "35% ",
-              
+
 
             }}
           >
@@ -98,38 +71,14 @@ export default function Home() {
 
           {/* <Collaborator /> */}
           <Partners />
-          
 
-          
+
+
 
           {/* End Section Collage Collaborators */}
         </div>
       </div>
-      <section id="call-to-action" className="wow fadeIn bg-cover px-0 py-[60px]" style={{ visibility: 'visible', animationName: 'fadeIn', backgroundImage: `url('https://www.macisa.com.mx/assets/img/facts-bg2.jpg')` }}>
-  <div className="w-full mx-auto px-[15px] text-center animate-fade-down animate-ease-linear">
-    <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
-      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
-        <span id="experience" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
-        <p className="text-white font-MontserratBold">AÑOS DE EXPERIENCIA</p>
-      </div>
-      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
-        <span id="satisfaction" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
-        <p className="text-white font-MontserratBold">SATISFACCIÓN</p>
-      </div>
 
-      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
-        <span id="quality" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
-        <p className="text-white font-MontserratBold">CALIDAD</p>
-      </div>
-
-      <div className="flex-[0_0_50%] max-w-[50%] relative w-full px-[15px] text-center">
-        <span id="profesionality" className="text-[#50CDC4] font-MontserratBold text-5xl block">0</span>
-        <p className="text-white font-MontserratBold">PROFESIONALISMO</p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
     </main>

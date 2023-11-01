@@ -194,9 +194,7 @@ export default function ContactForm() {
                         />
                     </div>
 
-                    <div className="mb-4 text-red-600">
-                        Por favor verifica que no eres un robot
-                    </div>
+
                     <div>
                         <Toaster richColors />
                         <button
