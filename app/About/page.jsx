@@ -1,5 +1,4 @@
 import Card from '../../components/SwiperCarousel';
-import logo from '@/assets/logos/logo.png'
 import about from '@/assets/footer/about.webp';
 import Image from 'next/image';
 import team from '@/assets/team/team.webp';

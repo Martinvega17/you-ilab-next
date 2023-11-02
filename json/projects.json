@@ -119,8 +119,10 @@
     },
     {
         "id": "muframex",
-        "title": "MUFRAMEX.",
-        "mainSection": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19.",
+        "title": "Muframex",
+        "sections": {
+            "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19."
+        },
         "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/Muframex.png",
         "anime": "frieren",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
@@ -205,7 +207,7 @@
     },
     {
         "id": "diplomado-en-inteligencia-artificial-aplicada",
-        "title": "Diplomado en Inteligencia Artificial ",
+        "title": "Diplomado en Inteligencia Artificial Aplicada ",
         "sections": {
             "section1": "El objetivo general del diplomado se centra en hacer que los profesionales y estudiantes participantes adquieran los conceptos teóricos y prácticos que fundamentan la IA, en particular, el aprendizaje de máquina y aprendizaje profundo. Con ellos se pretende que los estudiantes adquieran los conocimientos que les permitan resolver problemas que requieren el procesamiento de datos y el destilado de información, a través de técnicas del uso de sistemas de computación de alto rendimiento.",
             "section2": "La Inteligencia Artificial (IA) es un área en la frontera del conocimiento que tiene aplicaciones que impactan diversos ámbitos de la sociedad humana, incluyendo transformaciones notables en los sectores productivo, manufacturero y de prestación de servicios, entre muchos otros. Solo en el 2016, gigantes tecnológicos como Google y Baidu invirtieron más de 30 billones de dólares en desarrollos de IA. Un estudio de Price Waterhouse Coopers estima que esta tecnología podría agregar 16 trillones de dólares al PIB mundial para finales de la siguiente década. Las ofertas de trabajo en IA y áreas relacionadas como el Aprendizaje de Máquina (AM), la Robótica, la Visión Computacional y las Ciencias de Datos han crecido más del 70% conforme se incrementa la necesidad de personal especializado en el sector empresarial4 y gubernamental. Este panorama sugiere un rediseño de las estrategias científicas y tecnológicas, que fomente la creación e innovación de productos y servicios dirigidos a cubrir las necesidades específicas de la sociedad mexicana y potencialmente las sociedades en América Latina.",

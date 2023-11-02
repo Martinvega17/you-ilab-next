@@ -2,8 +2,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { useState } from "react";
 import { Toaster, toast } from 'sonner'
+import about from '@/assets/footer/about.webp';
+
 
 
 
@@ -52,77 +53,92 @@ export default function ContactForm() {
     }
 
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <div className="">
+            <div className="about">
 
-                <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-                <form action="#" className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
-                    <div>
-                        <label for="name" htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="John Doe" required
-                            {...register("name")} />
-                        {errors?.name && (
-                            <p className="px-1 text-xs text-red-600">
-                                {errors.name.message}
-                            </p>
-                        )}
+                <div
+                    className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
+                    style={{
+                        backgroundImage: `url(${about.src})`,
+                        backgroundSize: "100% ",
+                    }}
+                >
+                    <div className="container text-center sm:px-2 md:px-4 lg:px-8 py-4">
+                        <h1 className="text-white text-3xl lg:text-6xl font-MontserratBold text-center">Contacto</h1>
                     </div>
-                    <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="name@flowbite.com"
-                            required
-                            {...register("email")} />
-                        {errors?.name && (
-                            <p className="px-1 text-xs text-red-600">
-                                {errors.name.message}
-                            </p>
-                        )}
-                    </div>
-                    <div>
-                        <label className="sr-only" htmlFor="phone">
-                            Phone
-                        </label>
+                </div>
+            </div>
+            <section className="bg-white dark:bg-gray-900">
+                <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                    <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
 
-                        <input
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="Phone Number"
-                            type="tel"
-                            id="phone"
-                            {...register("phone")}
-                        />
+                    <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                    <form action="#" className="space-y-8" onSubmit={handleSubmit(onSubmit)}>
+                        <div>
+                            <label for="name" htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                placeholder="John Doe" required
+                                {...register("name")} />
+                            {errors?.name && (
+                                <p className="px-1 text-xs text-red-600">
+                                    {errors.name.message}
+                                </p>
+                            )}
+                        </div>
+                        <div>
+                            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                placeholder="name@flowbite.com"
+                                required
+                                {...register("email")} />
+                            {errors?.name && (
+                                <p className="px-1 text-xs text-red-600">
+                                    {errors.name.message}
+                                </p>
+                            )}
+                        </div>
+                        <div>
+                            <label className="sr-only" htmlFor="phone">
+                                Phone
+                            </label>
 
-                        {errors?.phone && (
-                            <p className="px-1 text-xs text-red-600">
-                                {errors.phone.message}
-                            </p>
-                        )}
-                    </div>
+                            <input
+                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                placeholder="Phone Number"
+                                type="tel"
+                                id="phone"
+                                {...register("phone")}
+                            />
 
-                    <div className="sm:col-span-2">
-                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                        <textarea
-                            id="message"
-                            rows="6"
-                            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                            placeholder="Leave a comment..."
-                            {...register("content")}
-                        />
-                        {errors?.content && (
-                            <p className="px-1 text-xs text-red-600">
-                                {errors.content.message}
-                            </p>
-                        )}
-                    </div>
-                    
+                            {errors?.phone && (
+                                <p className="px-1 text-xs text-red-600">
+                                    {errors.phone.message}
+                                </p>
+                            )}
+                        </div>
+
+                        <div className="sm:col-span-2">
+                            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                            <textarea
+                                id="message"
+                                rows="6"
+                                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Leave a comment..."
+                                {...register("content")}
+                            />
+                            {errors?.content && (
+                                <p className="px-1 text-xs text-red-600">
+                                    {errors.content.message}
+                                </p>
+                            )}
+                        </div>
+
                         <div>
                             <Toaster
                                 richColors
@@ -137,12 +153,13 @@ export default function ContactForm() {
                                 Send message
                             </button>
                         </div>
-                
-
-                </form>
 
 
-            </div>
-        </section>
+                    </form>
+
+
+                </div>
+            </section>
+        </div>
     );
 }

@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.0.18",
     "@hookform/resolvers": "^3.3.2",
     "@react-email/components": "0.0.7",
     "@supercharge/request-ip": "^1.2.0",
@@ -42,9 +43,11 @@
     "swiper": "^10.3.1",
     "swr": "^2.2.4",
     "tailwindcss-animated": "^1.0.1",
+    "use-debounce": "^9.0.4",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/node": "20.8.10",
     "@types/react": "18.2.30",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",

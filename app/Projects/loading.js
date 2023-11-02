@@ -3,9 +3,11 @@ import React from 'react';
 
 const LoadingComponent = () => {
     return (
-        <div className="loading-container">
-            <div className="loading-spinner"></div>
-        </div>
+        <section className='py-24'>
+            <div className='container'>
+                <h2>Loading...</h2>
+            </div>
+        </section>
     );
 };
 

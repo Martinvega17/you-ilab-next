@@ -21,7 +21,7 @@ export default function ScrollToTopButton() {
     return (
         <div className="">
             <CenteredButton
-                smooth
+                behavior="smooth"
                 viewBox="0 0 20 20"
                 height="15px"
                 width="15px"
