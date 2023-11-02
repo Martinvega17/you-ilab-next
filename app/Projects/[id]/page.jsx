@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 
 const fetchSinglePost = (id) => {
 
-    return fetch(`https://you-ilab-next.vercel.app/api/projects//${id}`, {
+    return fetch(`https://you-ilab-next.vercel.app/api/projects/${id}`, {
         next: {
             revalidate: 60
         }
