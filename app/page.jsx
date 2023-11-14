@@ -41,11 +41,11 @@ export default function Home() {
 
           </div>
 
-          <div className="flex flex-col sm:flex-row w-full px-4 sm:px-16 py-10">
-            <div className="w-full sm:w-1/2 p-4">
+          <div className="flex flex-col lg:flex-row w-full px-4 lg:px-16 py-10">
+            
               <ContactoForm />
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
+            
+            <div className="flex flex-col lg:flex-row w-full px-4 sm:px-16 py-10">
               <Info />
             </div>
           </div>
