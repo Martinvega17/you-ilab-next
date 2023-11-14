@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 
 const fetchSinglePost = (id) => {
 
-    return fetch(`https://you-ilab-next.vercel.app/api/projects/${id}`, {
+    return fetch(`http://localhost:3000/api/projects/${id}`, {
         next: {
             revalidate: 60
         }
@@ -29,15 +29,15 @@ export default async function Post({ params }) {
                     <h1 className="mt-20 text-5xl text-center font-MontserratBold text-titleAbout dark:text-neutral-300 py-8">
                         {post.title}
                     </h1>
-                    <section className="px-4 py-8 sm:py-16 lg:px-24 xl:px-[300px] flex flex-wrap">
-                        <section className={`flex-[0_0_${post.logo ? '70' : '100'}%] max-w-[100%] relative w-full px-0`}>
-                            <section className="flex w-full justify-end">
-                                <section className={`max-w-[${post.logo ? '70' : '100'}%] px-4`}>
+                    <section className="px-4 py-8 sm:py-16 lg:px-24 xl:px-[300px] relative w-[100%]">
+                        <section className={`flex-[0_0_${post.logo ? '70' : '100'}%] w-[100%] lg:max-w-[90%] md:max-w-[75%] xl:max-w-[95%] px-0`}>
+                            <section className="lg:flex block h-full w-full ">
+                                <section className={`max-w-[${post.logo ? '70' : '100'}%] px-4 lg:max-w-[60%] xl:max-w-[60%] `} >
                                     <p className="font-RobotoRegular text-[16px]">{post.sections.section1}</p>
                                 </section>
                                 {post.logo && (
-                                    <section className="max-w-[30%] px-4 flex">
-                                        <img src={post.logo} alt={post.title} className="mb-10 max-h-96" />
+                                    <section className="md:w-[60%] lg:w-[60%] xl-w-[100%] w-[70%] px-4 block pt-4 justify-center">
+                                        <img src={post.logo} alt={post.title} className="mb-10 h-auto max-w-full" />
                                     </section>
                                 )}
                             </section>

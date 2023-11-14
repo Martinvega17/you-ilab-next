@@ -5,7 +5,7 @@ import about from '@/assets/footer/about.webp';
 
 
 const fetchPosts = () => {
-  return fetch('https://you-ilab-next.vercel.app/api/projects/')
+  return fetch('http://localhost:3000/api/projects/')
     .then(res => {
       if (!res.ok) {
         throw new Error(`Error ${res.status}: ${res.statusText}`);
@@ -44,15 +44,13 @@ export default async function PostsPage() {
         <section className="mt-2 2xl:mx-[200px] xl:mx-2 md:mx-8 sm:mx-6 mb-10">
           <h1 className="ml-4 text-4xl font-MontserratBold text-center pb-10 mt-10">Conoce nuestros Proyectos</h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:grid-cols-3 gap-4"> {/* Grid que se adapta al tamaño de pantalla */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:grid-cols-3 gap-4 md:items-center"> {/* Grid que se adapta al tamaño de pantalla */}
             {posts.map((post) => (
-              <article key={post.id} className="max-w-md">
+              <article key={post.id} className="md:max-w-md">
                 <Link href='/Projects/[id]/' as={`/Projects/${post.id}`} className="max-w-md">
-                  <Image
+                  <img
                     src={post.imagen}
                     alt=""
-                    width={300}
-                    height={200}
                     className="mb-4 sm:h-60 w-auto rounded-xl ml-2 sm:ml-4 "
                   />
                 </Link>
