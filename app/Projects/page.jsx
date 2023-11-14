@@ -48,9 +48,11 @@ export default async function PostsPage() {
             {posts.map((post) => (
               <article key={post.id} className="md:max-w-md">
                 <Link href='/Projects/[id]/' as={`/Projects/${post.id}`} className="max-w-md">
-                  <img
+                  <Image
                     src={post.imagen}
                     alt=""
+                    width={600}
+                    height={400}
                     className="mb-4 sm:h-60 w-auto rounded-xl ml-2 sm:ml-4 "
                   />
                 </Link>
