@@ -7,8 +7,8 @@ import styled from "styled-components";
 /* Images import */
 import cAire from "@/assets/projects/centinela del aire/Centinela_del_Aire.png";
 import WeNet from "@/assets/projects/wenet/wenet.png";
-import cSalud from "@/assets/projects/centinela de la salud/logo.png";
-import Muframex from "@/assets/projects/muframex/banner.jpg";
+import cSalud from "@/assets/projects/centinela de la salud/cds.webp";
+import Muframex from "@/assets/projects/muframex/Muframex.webp";
 import hSaludable from "@/assets/projects/horizonte saludable/Horizonte_Saludable.png";
 import juventud from "@/assets/projects/juventud al dia/Juventud.png";
 import csef from "@/assets/projects/c-sef/C-SEF.png";

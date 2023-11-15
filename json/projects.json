@@ -123,7 +123,7 @@
         "sections": {
             "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19."
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/Muframex.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/muframex/logo-muframex-white.svg",
         "anime": "frieren",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
         "images": {
