@@ -9,12 +9,9 @@ import HomeSection from "../components/HomeSection";
 import collaborators from './assets/team/Collage_colab_.webp'
 import image from './assets/varios/image1.png'
 import Image from "next/image";
-import Collaborator from '../components/Collaborators'
 import Partners from "../components/partners";
 
-
 export default function Home() {
-
 
   return (
     <main>
@@ -41,20 +38,17 @@ export default function Home() {
 
           </div>
 
-          <div className="flex flex-col md:flex-row w-full px-4 sm:px-16 py-10">
+          <div className="flex flex-col lg:flex-row w-full px-4 sm:px-16 py-10">
 
-            <div className="w-full md:w-1/2">
+            <div className="w-full lg:w-1/2">
               <ContactoForm />
             </div>
 
-            <div className="w-full md:w-1/2 px-4 sm:px-16 py-10">
+            <div className="w-full lg:w-1/2 px-4 sm:px-16 py-10">
               <Info />
             </div>
 
           </div>
-
-
-
 
           {/* End Carousel Sponsors */}
           <div
@@ -70,18 +64,12 @@ export default function Home() {
             </div>
           </div>
 
-
           {/* <Collaborator /> */}
           <Partners />
-
-
-
 
           {/* End Section Collage Collaborators */}
         </div>
       </div>
-
-
 
     </main>
   );
