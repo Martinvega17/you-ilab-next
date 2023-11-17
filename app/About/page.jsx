@@ -3,7 +3,7 @@ import about from '@/assets/footer/about.webp';
 import Image from 'next/image';
 import team from '@/assets/team/team.webp';
 import FlipCard from '../../components/FlipCard';
-import Banner from '../../components/Banner';
+
 
 const About = () => {
     return (
@@ -48,7 +48,11 @@ const About = () => {
             </div>
 
             <FlipCard />
-            <Banner />
+            <div className="flex items-center justify-center h-96 bg-fixed bg-parallax bg-cover font-MontserratBold" style={{ backgroundSize: '100% 100%' }}>
+            <h1 className="text-5xl text-white uppercase">
+                Nuestro Equipo de Trabajo
+            </h1>
+        </div>
 
 
             <div className="md:mr-4 mt-4">
