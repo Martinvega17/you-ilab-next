@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        "parallax": "url('../app/assets/footer/teamwork.jpg')"
+      },
       fontFamily: {
         latoRegular: "Lato-Regular",
         latoBold: "Lato-Bold",

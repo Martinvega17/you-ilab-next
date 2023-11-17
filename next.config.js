@@ -3,7 +3,7 @@ const NextConfig = {
 
     images: {
       domains: ['res.cloudinary.com', 'cdn.dribbble.com', 'static.chollometro.com', 'reqres.in', 'recruiters-zone.com', 'i.pinimg.com,', 
-      'raw.githubusercontent.com', 'raw.githubusercontent.xn--copng-4ka'],
+      'raw.githubusercontent.com'],
     },
     
   };

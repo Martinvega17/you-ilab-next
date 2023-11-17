@@ -3,6 +3,7 @@ import about from '@/assets/footer/about.webp';
 import Image from 'next/image';
 import team from '@/assets/team/team.webp';
 import FlipCard from '../../components/FlipCard';
+import Banner from '../../components/Banner';
 
 const About = () => {
     return (
@@ -47,14 +48,15 @@ const About = () => {
             </div>
 
             <FlipCard />
+            <Banner />
 
 
             <div className="md:mr-4 mt-4">
-                <div className="content">
+                {/* <div className="content">
                     <div className="title_team pb-10">
                         <h2 className="inherit vertical-align text-center text-3xl text-titleAbout dark:text-[#8A26CC] font-MontserratBold">NUESTRO EQUIPO DE TRABAJO</h2>
                     </div>
-                </div>
+                </div> */}
                 {/* cards */}
                 <Card />
             </div>
