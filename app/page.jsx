@@ -51,15 +51,15 @@ export default function Home() {
           </div>
 
           {/* Our Projects */}
-          <div className="mx-4 md:mx-20 flex items-center justify-center min-h-[300px] md:min-h-[400px] lg:min-h-[600px] bg-fixed bg-parallax bg-cover font-MontserratBold" style={{ backgroundSize: '100% 100%' }}>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl text-white uppercase text-center">
-              Nuestro Equipo de Trabajo
+          <div className=" mx-4 flex items-center justify-center h-96 bg-fixed bg-parallax bg-cover font-MontserratBold" style={{ backgroundSize: '100% 100%' }}>
+            <h1 className="text-5xl text-white uppercase">
+                Nuestro Compromiso
             </h1>
-          </div>
+        </div>
 
           {/* End Carousel Sponsors */}
           <div
-            className=" h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10 mt-10"
+            className="mx-4 h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10 mt-10"
             style={{
               backgroundImage: `url(${collaborators.src})`,
             }}
