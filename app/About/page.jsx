@@ -48,19 +48,15 @@ const About = () => {
             </div>
 
             <FlipCard />
-            <div className="mx-4 flex items-center justify-center h-96 bg-fixed bg-parallax bg-cover font-MontserratBold" style={{ backgroundSize: '100% 100%' }}>
-            <h1 className="text-3xl lg:text-6xl xl:text-7xl md:text-4xl text-center text-white uppercase">
-                Nuestro Equipo de Trabajo
-            </h1>
-        </div>
+         
 
 
             <div className="md:mr-4 mt-4">
-                {/* <div className="content">
+                <div className="content">
                     <div className="title_team pb-10">
                         <h2 className="inherit vertical-align text-center text-3xl text-titleAbout dark:text-[#8A26CC] font-MontserratBold">NUESTRO EQUIPO DE TRABAJO</h2>
                     </div>
-                </div> */}
+                </div>
                 {/* cards */}
                 <Card />
             </div>
