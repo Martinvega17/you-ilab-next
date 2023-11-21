@@ -32,7 +32,7 @@ export default function ContactForms() {
           <h2 className="text-[#807BB1] text-5xl py-6">Servicio al Cliente</h2>
           <p className="text-[#a5c8eb]">
             Tel (444) 834 30 00 <br />
-            Ext. 2104 y 2108
+            Ext. 2117 y 2108
           </p>
         </div>
 
