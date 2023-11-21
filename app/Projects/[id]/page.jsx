@@ -88,7 +88,7 @@ export default async function Post({ params }) {
                             </section>
                         </section>
                         <section class="flex flex-col items-center space-y-6">
-                            <h2 class="text-[#003242] text-5xl font-MontserratBold">
+                        <h2 class="text-[#003242] text-5xl lg:text-4xl xl:text-5xl md:text-xl font-MontserratBold">
                                 Descargables
                                 <span class="text-[#765cf6]">.</span>
                             </h2>

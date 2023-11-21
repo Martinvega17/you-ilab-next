@@ -7,7 +7,7 @@ export default function Partners() {
 
     return (
         <div className="">
-            <h3 className="text-center font-MontserratThin dark:text-neutral-300 text-black pt-4">
+            <h3 className="text-center text-lg font-MontserratThin dark:text-neutral-300 text-black pt-4">
                 OUR PARTNERS
             </h3>
             <div className="pt-[5vh] pb-[15vh] 2xl:px-[20vh] xl:px-[20vh] md:px-[6vh] sm:px-[5vh] py-0 flex flex-wrap">
