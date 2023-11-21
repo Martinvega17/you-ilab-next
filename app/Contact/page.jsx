@@ -51,7 +51,7 @@ export default function ContactForms() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto max-h-screen pb-4">
+      <div className="w-full max-w-7xl mx-auto max-h-screen pb-4 mb-52">
         <div className="w-full lg:w-full">
           <ContactHome />
         </div>
