@@ -36,19 +36,19 @@ const About = () => {
                         <p className="font-MontserratRegular mb-4 mt-4">
                             El YouI Lab del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) es un laboratorio de investigación que tiene una rica historia de contribuciones al campo de la informática y las tecnologías de la información en San Luis Potosí y más allá. Fundado en el año 2018, este laboratorio se ha destacado por su enfoque interdisciplinario y su compromiso con la promoción de la ciencia y la tecnología en la región.
                         </p>
-                        
+
                         <Image src={team} alt='' className='h-56 w-auto float-right ml-3' />
                         <p className="font-MontserratRegular">
                             A lo largo de los años, el YouI Lab ha estado involucrado en una amplia variedad de proyectos innovadores que han abarcado tanto el desarrollo web como el backend y frontend, lo que refleja su enfoque integral en el campo de la informática. Desde sus primeros días, el laboratorio ha estado a la vanguardia de la investigación en inteligencia artificial y tecnologías emergentes, lo que le ha permitido mantener una posición líder en el ámbito de la investigación científica y tecnológica.
                         </p>
-                        
+
                     </div>
 
                 </div>
             </div>
 
             <FlipCard />
-         
+
 
 
             <div className="md:mr-4 mt-4">
