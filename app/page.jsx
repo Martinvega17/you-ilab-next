@@ -52,7 +52,7 @@ export default function Home() {
 
           {/* Our Projects */}
           <div className=" mx-4 flex items-center justify-center h-96 bg-fixed bg-parallax bg-cover font-MontserratBold" style={{ backgroundSize: '100% 100%' }}>
-            <h1 className="text-5xl text-white uppercase">
+          <h1 className="text-3xl lg:text-6xl xl:text-7xl md:text-4xl text-center text-white uppercase">
                 Nuestro Compromiso
             </h1>
         </div>
