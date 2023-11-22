@@ -61,7 +61,6 @@ export default function ContactForm() {
 
         e.preventDefault();
 
-
         await fetch("/api/send", {
             method: "POST",
             body: JSON.stringify({
