@@ -11,15 +11,15 @@ export async function POST(request) {
             port: 465,
             secure: true,
             auth: {
-                user: 'martinvega170500@gmail.com',
-                pass: process.env.pass
+                user: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
+                pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD
             }
         })
 
         const mailOption = {
             from: 'martinvega170500@gmail.com',
             to: 'martinvega0313@gmail.com',
-            cc: 'compumartin313@gmail.com',
+            cc: process.env.NEXT_PUBLIC_CC_EMAIL, 
             replyTo: email,
             subject: "Send Email Tutorial",
             html: `
