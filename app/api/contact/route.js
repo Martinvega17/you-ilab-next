@@ -3,10 +3,10 @@ import nodemailer from 'nodemailer'
 
 export async function POST(request) {
     try {
-        const { name, email, message } = await request.json();
+        const { name, email, phone, message } = await request.json();
 
         const transporter = nodemailer.createTransport({
-            
+
             host: 'smtp.gmail.com',
             port: 465,
             secure: true,
@@ -23,8 +23,9 @@ export async function POST(request) {
             replyTo: email,
             subject: "Send Email Tutorial",
             html: `
-        <p>Name: ${name}</p>
+            <p>Name: ${name}</p>
             <p>Email: ${email}</p>
+            <p>Phone: ${phone}</p>
             <p>Message: ${message}</p>
         `
         }

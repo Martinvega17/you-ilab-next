@@ -1,9 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import { Toaster, toast } from "sonner";
+
+
+const reCaptchaKey = process.env.RECAPTCHA_KEY;
+
+
 
 export default function ContactForm() {
     const [loading, setLoading] = useState(false);
+    const [isCaptchaValid, setCaptchaValid] = useState(false); // Estado para el captcha
+
+    const onChange = (value) => {
+        if (value) {
+            setCaptchaValid(true); // Marca el captcha como válido
+        } else {
+            setCaptchaValid(false); // Marca el captcha como no válido
+        }
+    };
 
     async function handleSubmit(event) {
         event.preventDefault();
@@ -37,65 +53,121 @@ export default function ContactForm() {
             setLoading(false);
         }
     }
+
+    function verifyEmpty(e) {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        if (name.trim() === "" || email.trim() === "" || phone.trim() === "" || message.trim() === "" || !isCaptchaValid) {
+            e.preventDefault();
+            toast.error("Por favor llena todos los campos y verifica el captcha");
+        } else {
+            toast.success("Mensaje enviado con éxito");
+
+        }
+    }
+
     return (
-        <form onSubmit={handleSubmit}>
-            <div className="w-full flex flex-col my-4">
-                <label
-                    className="font-bold text-gray-800"
-                    htmlFor="name"
-                >
-                    Name
-                </label>
-                <input
-                    type="text"
-                    minLength={3}
-                    maxLength={150}
-                    required
-                    className=" p-4 bg-gray-50 border border-gray-100 "
-                    autoComplete="off"
-                    id="name"
-                />
+        <section>
+            <div className="pt-2 pb-12 md:px-8 px-4 md:mx-4 mx-auto max-w-screen-md bg-[#F6F6F6] rounded-xl">
+                <h2 className="mt-20 md:mt-20 sm:mt-20 mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-gray-900">
+                    Contacta a un representante
+                </h2>
+
+                <form onSubmit={handleSubmit}>
+
+                    <div>
+                        <label
+                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+                            htmlFor="name"
+                        >
+                            Name
+                        </label>
+                        <input
+                            type="text"
+                            minLength={3}
+                            maxLength={150}
+                            required
+                            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+                            autoComplete="off"
+                            id="name"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+                            htmlFor="email"
+                        >
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            minLength={5}
+                            maxLength={150}
+                            required
+                            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+                            autoComplete="off"
+                            id="email"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+                            htmlFor="phone"
+                        >
+                            Phone
+                        </label>
+                        <input
+                            type="tel"
+                            required
+                            className="hadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+                            autoComplete="off"
+                            id="phone"
+                        />
+                    </div>
+                    <div className="sm:col-span-2">
+                        <label
+                            htmlFor="message"
+                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+                        >
+                            Mensaje
+                        </label>
+                        <textarea
+                            id="message"
+                            rows="6"
+                            className="hadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-6"
+                            placeholder="Deja tu mensaje aqui"
+                            required
+
+                        />
+
+                    </div>
+                    <div className="w-full max-w-screen-md mx-auto mb-4">
+                        <ReCAPTCHA
+
+                            sitekey="6LdTQpAoAAAAAOKsjIrC459kVMW6ZSrxUvJO7KTW"
+                            onChange={onChange}
+                            required
+                        />
+                    </div>
+
+
+                    <div>
+                        <Toaster richColors />
+                        <button
+
+                            type="submit"
+                            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover-bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact"
+                            onClick={verifyEmpty}
+
+                        >
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div className="w-full flex flex-col my-4">
-                <label
-                    className="font-bold text-gray-800"
-                    htmlFor="email"
-                >
-                    Email
-                </label>
-                <input
-                    type="email"
-                    minLength={5}
-                    maxLength={150}
-                    required
-                    className=" p-4 bg-gray-50 border border-gray-100 "
-                    autoComplete="off"
-                    id="email"
-                />
-            </div>
-            <div>
-                <label
-                    className="font-bold text-gray-800"
-                    htmlFor="message"
-                >
-                    Message
-                </label>
-                <textarea
-                    rows={4}
-                    required
-                    minLength={10}
-                    maxLength={500}
-                    name="message"
-                    className="w-full p-4 bg-gray-50 border border-gray-100 "
-                />
-            </div>
-            <button
-                type="submit"
-                disabled={loading}
-                className="px-4 py-2 w-40 bg-gray-700 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4"
-            >
-                Send Message
-            </button>
-        </form>
+        </section>
     );
 }
