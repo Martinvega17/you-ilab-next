@@ -8,38 +8,39 @@ import GCIC from '@/assets/sponsors/GCIC.png';
 export default function Sponsors() {
     return (
         <div className="bg-gradient-to-r from-purple-500 to-teal-500 py-8 pb-4 relative mb-8">
-            <div className="container text-center sm:px-4 md:px-8 lg:px-12 xl:px-20 mx-auto">
-                <div className="flex flex-col sm:flex-row justify-center sm:justify-around mx-4 sm:mx-8 md:mx-12 lg:mx-20">
-                    <div className="mb-4 sm:mb-0">
-                        <div className="mr-3 ml-4">
-                            <a href="http://youilab.ipicyt.edu.mx/" target="_blanck">
-                                <Image src={YIL} alt="" className="w-20 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="mb-4 sm:mb-0">
-                        <div className="mr-3 ml-4">
-                            <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php" target="_blanck">
-                                <Image src={DBM} alt="" className="sponsors w-44 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="mb-4 sm:mb-0">
-                        <div className="mr-3 ml-4">
-                            <a href="https://cic.ipicyt.edu.mx/" target="_blanck">
-                                <Image src={GCIC} alt="" className="sponsors w-64 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="mb-4 sm:mb-0">
-                        <div className="mr-3 ml-4 ">
-                            <a href="https://www.ipicyt.edu.mx/" target="_blanck">
-                                <Image src={IPICYT} alt="" className=" w-52 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
-                            </a>
-                        </div>
-                    </div>
+    <div className="container text-center sm:px-4 md:px-8 lg:px-12 xl:px-20 mx-auto">
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-around mx-4 sm:mx-8 md:mx-12 lg:mx-20">
+            <div className="mb-4 sm:mb-0">
+                <div className="mr-3 ml-4">
+                    <a href="http://youilab.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a Youilab">
+                        <Image src={YIL} alt="Youilab" className="w-20 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
+                </div>
+            </div>
+            <div className="mb-4 sm:mb-0">
+                <div className="mr-3 ml-4">
+                    <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php" target="_blank" aria-label="Enlace a Biología Molecular en IPICYT">
+                        <Image src={DBM} alt="Biología Molecular" className="sponsors w-44 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
+                </div>
+            </div>
+            <div className="mb-4 sm:mb-0">
+                <div className="mr-3 ml-4">
+                    <a href="https://cic.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a CIC IPICYT">
+                        <Image src={GCIC} alt="CIC IPICYT" className="sponsors w-64 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
+                </div>
+            </div>
+            <div className="mb-4 sm:mb-0">
+                <div className="mr-3 ml-4 ">
+                    <a href="https://www.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a IPICYT">
+                        <Image src={IPICYT} alt="IPICYT" className=" w-52 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
     )
 }

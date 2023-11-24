@@ -36,7 +36,7 @@ function NavBar() {
 
   return (
     <header>
-      <nav className="absolute top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-20 z-50 ">
+      <nav className="fixed top-0 w-full py-5 bg-blue-400 bg-opacity-40 backdrop-filter backdrop-blur-md h-20 z-50  ">
         {/* Desktop Menu */}
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
@@ -49,7 +49,7 @@ function NavBar() {
             />
           </Link>
           <div className="text-[#FFFCFC] hidden sm:flex flex-1 justify-center"> {/* Modificación: Agregamos flex-1 y justify-center */}
-            <ul className="hidden sm:flex text-neutral-100 dark:text-white">
+            <ul className="hidden sm:flex text-[#000] dark:text-white">
               <li className={`${styles.navLinks} ${styles.navLinksHover}`}>
                 <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
                   Inicio
@@ -81,9 +81,9 @@ function NavBar() {
           </div>
           {/* Mobile Menu */}
           <div onClick={toggleMenu}
-className="sm:hidden cursor-pointer pl-24">
-  <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
-</div>
+            className="sm:hidden cursor-pointer pl-24">
+            <BsList className="h-8 w-8 text-black dark:text-white fixed -ml-5" />
+          </div>
 
         </div>
         <div className={menuOpen
@@ -121,16 +121,17 @@ className="sm:hidden cursor-pointer pl-24">
           {/* Socia Media Links */}
 
           <div className="flex flex-row justify-around pt-10 items-center">
-            <Link href="https://www.facebook.com/youilab/" target="_blanck">
+            <Link href="https://www.facebook.com/youilab/" target="_blank" aria-label="Facebook">
               <BsFacebook size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
-            <Link href="https://twitter.com/youi_lab?lang=en" target="_blanck">
+            <Link href="https://twitter.com/youi_lab?lang=en" target="_blank" aria-label="Twitter">
               <BsTwitter size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
-            <Link href="#" target="_blanck">
+            <Link href="#" target="_blank" aria-label="LinkedIn">
               <BsLinkedin size={30} className="cursor-pointer hover:text-[#F6B519] ease-in-out duration-300 " />
             </Link>
           </div>
+
           <Image
             src={logo_org}
             alt="logo"

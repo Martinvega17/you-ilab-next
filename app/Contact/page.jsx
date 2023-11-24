@@ -22,15 +22,15 @@ export default function ContactForms() {
         <div className="w-full lg:w-1/2">
           {/* Información de Dirección */}
           <h2 className="text-[#807BB1] text-5xl pb-6">Dirección</h2>
-          <p className="text-[#a5c8eb]">
+          <p className="dark:text-[#a5c8eb] text-[#183157] pb-12 font-MontserratRegular">
             Camino a la Presa San José 2055. <br />
             Col. Lomas 4a sección, C.P. 78218 <br />
             San Luis Potosí, S.L.P.
           </p>
 
           {/* Información de Servicio al Cliente */}
-          <h2 className="text-[#807BB1] text-5xl py-6">Servicio al Cliente</h2>
-          <p className="text-[#a5c8eb]">
+          <h2 className="text-[#807BB1] text-5xl py-6 w-80">Servicio al Cliente</h2>
+          <p className="dark:text-[#a5c8eb] text-[#183157] font-MontserratRegular">
             Tel (444) 834 30 00 <br />
             Ext. 2117 y 2108
           </p>

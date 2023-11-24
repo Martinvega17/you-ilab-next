@@ -78,97 +78,94 @@ export default function ContactForm() {
                     Contacta a un representante
                 </h2>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
+    <div>
+        <label
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+            htmlFor="name"
+        >
+            Nombre
+        </label>
+        <input
+            type="text"
+            minLength={3}
+            maxLength={150}
+            required
+            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+            autoComplete="off"
+            id="name"
+            placeholder="Nombre"
+        />
+    </div>
+    <div>
+        <label
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+            htmlFor="email"
+        >
+            Correo
+        </label>
+        <input
+            type="email"
+            minLength={5}
+            maxLength={150}
+            required
+            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+            autoComplete="off"
+            id="email"
+            placeholder="Correo"
+        />
+    </div>
+    <div>
+        <label
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+            htmlFor="phone"
+        >
+            Telefono
+        </label>
+        <input
+            type="tel"
+            required
+            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
+            autoComplete="off"
+            id="phone"
+            placeholder="Telefono"
+        />
+    </div>
+    
+    <div className="col-span-2">
+        <label
+            htmlFor="message"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
+        >
+            Mensaje
+        </label>
+        <textarea
+            id="message"
+            rows="6"
+            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-6"
+            placeholder="Deja tu mensaje aqui"
+            required
+        />
+    </div>
+    <div className="col-span-2">
+        <ReCAPTCHA
+            sitekey="6LdTQpAoAAAAAOKsjIrC459kVMW6ZSrxUvJO7KTW"
+            onChange={onChange}
+            required
+        />
+    </div>
+    <div className="col-span-2">
+        <Toaster richColors />
+        <button
+            type="submit"
+            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover-bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact"
+            onClick={verifyEmpty}
+        >
+            Enviar mensaje
+        </button>
+    </div>
+</form>
 
-                    <div>
-                        <label
-                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
-                            htmlFor="name"
-                        >
-                            Name
-                        </label>
-                        <input
-                            type="text"
-                            minLength={3}
-                            maxLength={150}
-                            required
-                            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
-                            autoComplete="off"
-                            id="name"
-                        />
-                    </div>
-                    <div>
-                        <label
-                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
-                            htmlFor="email"
-                        >
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            minLength={5}
-                            maxLength={150}
-                            required
-                            className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
-                            autoComplete="off"
-                            id="email"
-                        />
-                    </div>
-                    <div>
-                        <label
-                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
-                            htmlFor="phone"
-                        >
-                            Phone
-                        </label>
-                        <input
-                            type="tel"
-                            required
-                            className="hadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
-                            autoComplete="off"
-                            id="phone"
-                        />
-                    </div>
-                    <div className="sm:col-span-2">
-                        <label
-                            htmlFor="message"
-                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
-                        >
-                            Mensaje
-                        </label>
-                        <textarea
-                            id="message"
-                            rows="6"
-                            className="hadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-6"
-                            placeholder="Deja tu mensaje aqui"
-                            required
-
-                        />
-
-                    </div>
-                    <div className="w-full max-w-screen-md mx-auto mb-4">
-                        <ReCAPTCHA
-
-                            sitekey="6LdTQpAoAAAAAOKsjIrC459kVMW6ZSrxUvJO7KTW"
-                            onChange={onChange}
-                            required
-                        />
-                    </div>
-
-
-                    <div>
-                        <Toaster richColors />
-                        <button
-
-                            type="submit"
-                            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover-bg-primary-700 dark:focus:ring-primary-800 bg-buttonContact"
-                            onClick={verifyEmpty}
-
-                        >
-                            Enviar mensaje
-                        </button>
-                    </div>
-                </form>
             </div>
         </section>
     );

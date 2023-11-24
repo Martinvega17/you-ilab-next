@@ -139,13 +139,22 @@ const SliderComp = () => {
         {sliderProject}
       </Slider>
       <Buttons>
-        <button onClick={() => arrowRef.current.slickPrev()} className="back">
-          <IoIosArrowBack />
-        </button>
-        <button onClick={() => arrowRef.current.slickNext()} className="next">
-          <IoIosArrowForward />
-        </button>
-      </Buttons>
+    <button
+        onClick={() => arrowRef.current.slickPrev()}
+        className="back"
+        aria-label="Previous"
+    >
+        <IoIosArrowBack />
+    </button>
+    <button
+        onClick={() => arrowRef.current.slickNext()}
+        className="next"
+        aria-label="Next"
+    >
+        <IoIosArrowForward />
+    </button>
+</Buttons>
+
     </Container>
   );
 };
