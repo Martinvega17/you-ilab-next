@@ -28,6 +28,7 @@ export default function ContactForm() {
         const data = {
             name: String(event.target.name.value),
             email: String(event.target.email.value),
+            phone: String(event.target.phone.value),
             message: String(event.target.message.value),
         };
 
@@ -46,6 +47,7 @@ export default function ContactForm() {
             // reset the form
             event.target.name.value = "";
             event.target.email.value = "";
+            event.target.phone.value = "";
             event.target.message.value = "";
         }
         if (!response.ok) {
