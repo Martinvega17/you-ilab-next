@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { Toaster, toast } from "sonner";
 
 
-const reCaptchaKey = process.env.RECAPTCHA_KEY;
+const reCaptchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 
 
