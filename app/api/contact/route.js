@@ -12,24 +12,26 @@ export async function POST(request) {
             port: 465,
             secure: true,
             auth: {
-                user: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
-                pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD
+                user: process.env.NODEMAILER_USER,
+                pass: process.env.NODEMAILER_PASSWORD
             }
         })
 
         const mailOption = {
-            from: 'martinvega170500@gmail.com',
-            to: 'martinvega0313@gmail.com',
-            cc: process.env.NEXT_PUBLIC_CC_EMAIL, 
-            replyTo: email,
-            subject: "Send Email Tutorial",
+            from: 'You I Lab <martinvega170500@gmail.com>',
+            to: process.env.NODEMAILER_EMAIL,
+            cc: process.env.NODEMAILER_CC, 
+            subject: "You I Lab",
             html: `
-            <p>Name: ${name}</p>
-            <p>Email: ${email}</p>
-            <p>Phone: ${phone}</p>
-            <p>Message: ${message}</p>
-        `
-        }
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: #092843;">Contact Form Submission</h2>
+                <p style="font-size: 16px;">Name: ${name}</p>
+                <p style="font-size: 16px;">Email: ${email}</p>
+                <p style="font-size: 16px;">Phone: ${phone}</p>
+                <p style="font-size: 16px;">Message: ${message}</p>
+            </div>
+        `,
+        };
 
         await transporter.sendMail(mailOption)
 
