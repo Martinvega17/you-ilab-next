@@ -85,7 +85,7 @@ export default function ContactForm() {
                             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-600"
                             htmlFor="name"
                         >
-                            Nombre
+                            Nombre Completo
                         </label>
                         <input
                             type="text"
@@ -125,6 +125,8 @@ export default function ContactForm() {
                         </label>
                         <input
                             type="tel"
+                            pattern="[0-9]*"
+                            maxLength="10"
                             required
                             className="shadow-sm bg-[#D9D9D9] border border-[#8A8A8A] text-[#8A8A8A] font-semibold text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light mb-2"
                             autoComplete="off"
@@ -132,6 +134,7 @@ export default function ContactForm() {
                             placeholder="Telefono"
                         />
                     </div>
+
 
                     <div className="col-span-2">
                         <label
