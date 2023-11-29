@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import wenet from '@/assets/partners/wenet.png'
-import balvi from '@/assets/partners/balvi.png'
-import idiap from '@/assets/partners/idiap.png'
-import universitie from '@/assets/partners/universitie.png'
-import salud from '@/assets/partners/salud.png'
-import cse from '@/assets/partners/CSE.png'
 
 import '@/styles/slider.css';
 
@@ -87,17 +81,17 @@ class App extends Component {
                 <Slider {...settings}>
                     <div className="container ">
                         <a href="https://www.internetofus.eu/" target="_blanck">
-                        <Image src={wenet}  alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
+                        <Image src='/assets/partners/wenet.png' width={811} height={308}  alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
                         </a>
                     </div>
                     <div className="container">
                         <a href="https://www.balvi.io/" target="_blanck">
-                        <Image src={balvi}  alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
+                        <Image src='/assets/partners/balvi.png' width={731} height={341} alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
                         </a>
                     </div>
                     <div className="container">
                         <a href="https://www.idiap.ch/en" target="_blanck">
-                        <Image src={idiap}  alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
+                        <Image src='/assets/partners/idiap.png' width={500} height={300}  alt="" className="grayscale hover:grayscale-0 h-[6em] max-w-[200px]" />
                         </a>
                     </div>
                     <div className="container">

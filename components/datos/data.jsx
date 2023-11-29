@@ -1,9 +1,3 @@
-import salvador from '@/assets/team/salvador.webp';
-import viridiana from '@/assets/team/viridiana.jpg';
-import lourdes from '@/assets/team/lourdes.jpg';
-import miguel from '@/assets/team/miguel.jpg';
-import juanjo from '@/assets/team/juanjo.jpg';
-import ricardo from '@/assets/team/ricardo.jpg';
 
 const dataDigital = [
     {
@@ -15,7 +9,7 @@ const dataDigital = [
         email: 'salvador.ruiz@ipicyt.edu.mx',
         linkedin: '',
         showMore: false,
-        image: salvador,
+        image: '/assets/team/salvador.webp',
     },
     {
         id: 2,
@@ -26,7 +20,7 @@ const dataDigital = [
         email: 'viridiana.c.robledo@gmail.com',
         linkedin: 'https://www.linkedin.com/in/viridiana-del-carmen-robledo-2280b398/',
         showMore: false,
-        image: viridiana,
+        image: '/assets/team/viridiana.jpg',
     },
     {
         id: 3,
@@ -37,7 +31,7 @@ const dataDigital = [
         email: '',
         linkedin: '',
         showMore: false,
-        image: lourdes,
+        image: '/assets/team/lourdes.jpg',
     },
     {
         id: 4,
@@ -49,7 +43,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/miguelmhz/',
         github: 'https://github.com/miguelmhz',
         showMore: false,
-        image: miguel,
+        image: '/assets/team/miguel.jpg',
     },
     {
         id: 5,
@@ -61,7 +55,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/juanjo-dominguezp/',
         github: 'https://github.com/juanjodmz',
         showMore: false,
-        image: juanjo,
+        image: '/assets/team/juanjo.jpg',
     },
     {
         id: 6,
@@ -73,7 +67,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: ricardo,
+        image: '/assets/team/ricardo.jpg',
     },
     {
         id: 7,
@@ -85,7 +79,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: ricardo,
+        image: '/assets/team/ricardo.jpg',
     },
     {
         id: 8,
@@ -97,7 +91,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: ricardo,
+        image: '/assets/team/ricardo.jpg',
     },
     {
         id: 9,
@@ -109,7 +103,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: ricardo,
+        image: '/assets/team/ricardo.jpg',
     },
     {
         id: 10,
@@ -121,7 +115,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: ricardo,
+        image: '/assets/team/ricardo.jpg',
     },
 
 ];

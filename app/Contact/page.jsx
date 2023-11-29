@@ -1,5 +1,4 @@
 import ContactHome from "../../components/contactHome";
-import about from '@/assets/footer/about.webp';
 
 export default function ContactForms() {
   return (
@@ -8,7 +7,7 @@ export default function ContactForms() {
         <div
           className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
           style={{
-            backgroundImage: `url(${about.src})`,
+            backgroundImage: `url('/assets/footer/about.webp')`,
             backgroundSize: "100%",
           }}
         >

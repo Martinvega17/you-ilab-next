@@ -6,8 +6,6 @@ import Sponsors from '../components/sponsors'
 import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
-import collaborators from './assets/team/Collage_colab_.webp'
-import image from './assets/varios/image1.png'
 import Image from "next/image";
 import Partners from "../components/partners";
 
@@ -32,7 +30,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="w-full h-96 lg:h-[450px] flex items-center justify-center overflow-hidden mx-auto ">
-                <Image src={image} alt='Imagen trabajo en equipo' className="" />
+                <Image src='/assets/varios/image1.png' width={1080} height={720} alt='Imagen trabajo en equipo' className="" />
               </div>
             </div>
 
@@ -61,7 +59,7 @@ export default function Home() {
           <div
             className="mx-4 h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10 mt-10"
             style={{
-              backgroundImage: `url(${collaborators.src})`,
+              backgroundImage: `url('/assets/team/Collage_colab_.webp')`,
             }}
           >
             <div className="container text-center sm:px-8 md:px-12 lg:px-20 py-16">

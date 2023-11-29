@@ -1,9 +1,4 @@
 import Image from "next/image";
-// Images
-import YIL from '@/assets/sponsors/YOU-I-LAB-LOGO-IPICYT.png';
-import DBM from '@/assets/sponsors/DBM.png';
-import IPICYT from '@/assets/sponsors/IPICYT.png';
-import GCIC from '@/assets/sponsors/GCIC.png';
 
 export default function Sponsors() {
     return (
@@ -13,28 +8,28 @@ export default function Sponsors() {
             <div className="mb-4 sm:mb-0">
                 <div className="mr-3 ml-4">
                     <a href="http://youilab.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a Youilab">
-                        <Image src={YIL} alt="Youilab" className="w-20 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                        <Image src='/assets/sponsors/YOU-I-LAB-LOGO-IPICYT.png' width={508} height={491} alt="Youilab" className="w-20 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                     </a>
                 </div>
             </div>
             <div className="mb-4 sm:mb-0">
                 <div className="mr-3 ml-4">
                     <a href="https://ipicyt.edu.mx/Biologia_Molecular/areas_biologia_molecular.php" target="_blank" aria-label="Enlace a Biología Molecular en IPICYT">
-                        <Image src={DBM} alt="Biología Molecular" className="sponsors w-44 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                        <Image src='/assets/sponsors/DBM.png' alt="Biología Molecular" width={2427} height={908} className="sponsors w-44 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                     </a>
                 </div>
             </div>
             <div className="mb-4 sm:mb-0">
                 <div className="mr-3 ml-4">
                     <a href="https://cic.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a CIC IPICYT">
-                        <Image src={GCIC} alt="CIC IPICYT" className="sponsors w-64 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                        <Image src='/assets/sponsors/GCIC.png' alt="CIC IPICYT" width={2032} height={538} className="sponsors w-64 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                     </a>
                 </div>
             </div>
             <div className="mb-4 sm:mb-0">
                 <div className="mr-3 ml-4 ">
                     <a href="https://www.ipicyt.edu.mx/" target="_blank" aria-label="Enlace a IPICYT">
-                        <Image src={IPICYT} alt="IPICYT" className=" w-52 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
+                        <Image src='/assets/sponsors/IPICYT.png' alt="IPICYT" width={1564} height={529} className=" w-52 h-auto filter grayscale transition duration-500 hover:grayscale-0" />
                     </a>
                 </div>
             </div>

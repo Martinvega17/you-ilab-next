@@ -69,7 +69,7 @@ const SwiperCarousel = () => {
                 {dataDigital.map((card) => (
                     <div key={card.id} className="card swiper-slide">
                         <div className="card__image">
-                            <Image src={card.image} alt="card image" />
+                            <Image src={card.image} width={500} height={500} alt="card image" />
                         </div>
 
                         <div className="card__content" onClick={() => handleViewMore(card)}>
@@ -103,7 +103,7 @@ const SwiperCarousel = () => {
                                 </button>
                             </div>
                             <div className="card__image">
-                                <Image src={expandedCard.image} alt="card image" />
+                                <Image src={expandedCard.image} width={500} height={500} alt="card image" />
                                 <div className="modal__links-container">
                                     {expandedCard.cv && (
                                         <Link href={expandedCard.cv} target="_blank" rel="noopener noreferrer">

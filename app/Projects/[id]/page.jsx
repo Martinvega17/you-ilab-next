@@ -22,8 +22,8 @@ export default async function Post({ params }) {
         if (post) {
             return (
                 <article className="ml-2">
-                        {/* Gallery */}
-                        
+                    {/* Gallery */}
+
 
 
                     <h1 className="mt-20 text-5xl text-center font-MontserratBold text-titleAbout dark:text-neutral-300 py-8">
@@ -37,7 +37,7 @@ export default async function Post({ params }) {
                                 </section>
                                 {post.logo && (
                                     <section className="md:w-[60%] lg:w-[60%] xl-w-[100%] w-[70%] px-4 block pt-4 justify-center">
-                                        <img src={post.logo} alt={post.title} className="mb-10 h-auto max-w-full" />
+                                        <Image src={post.logo} alt={post.title} width={1149} height={421} className="mb-10 h-auto max-w-full" />
                                     </section>
                                 )}
                             </section>
@@ -61,12 +61,12 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia1} alt='' className="mb-10 max-w-full h-auto align-middle" />
+                                            <Image src={post.images.evidencia1} alt='Evidencia de proyecto' title='Evidencia' width={1500} height={1125} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia2} alt='' className="mb-10 max-w-full h-auto align-middle" />
+                                            <Image src={post.images.evidencia2} alt='Evidencia de proyecto' title='Evidencia' width={1500} height={1125} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
@@ -76,19 +76,19 @@ export default async function Post({ params }) {
                                 <section className="flex flex-wrap px-[-15px]">
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia3} alt='' className="mb-10 max-w-full h-auto align-middle" />
+                                            <Image src={post.images.evidencia3} alt='Evidencia de proyecto' title='Evidencia' width={1500} height={1125} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                     <section className="flex-[0_0_100%] max-w-full relative w-full px-4">
                                         <section className="w-full">
-                                            <img src={post.images.evidencia4} alt='' className="mb-10 max-w-full h-auto align-middle" />
+                                            <Image src={post.images.evidencia4} alt='Evidencia de proyecto' title='Evidencia' width={1500} height={1125} className="mb-10 max-w-full h-auto align-middle" />
                                         </section>
                                     </section>
                                 </section>
                             </section>
                         </section>
                         <section class="flex flex-col items-center space-y-6">
-                        <h2 class="text-[#003242] text-5xl lg:text-4xl xl:text-5xl md:text-xl font-MontserratBold">
+                            <h2 class="text-[#003242] text-5xl lg:text-4xl xl:text-5xl md:text-xl font-MontserratBold">
                                 Descargables
                                 <span class="text-[#765cf6]">.</span>
                             </h2>

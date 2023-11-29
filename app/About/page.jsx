@@ -1,7 +1,5 @@
 import Card from '../../components/SwiperCarousel';
-import about from '@/assets/footer/about.webp';
 import Image from 'next/image';
-import team from '@/assets/team/team.webp';
 import FlipCard from '../../components/FlipCard';
 
 
@@ -15,7 +13,7 @@ const About = () => {
                 <div
                     className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"
                     style={{
-                        backgroundImage: `url(${about.src})`,
+                        backgroundImage: `url('/assets/footer/about.webp')`,
                         backgroundSize: "100% ",
                     }}
                 >
@@ -37,7 +35,7 @@ const About = () => {
                             El YouI Lab del IPICYT (Instituto Potosino de Investigación Científica y Tecnológica) es un laboratorio de investigación que tiene una rica historia de contribuciones al campo de la informática y las tecnologías de la información en San Luis Potosí y más allá. Fundado en el año 2018, este laboratorio se ha destacado por su enfoque interdisciplinario y su compromiso con la promoción de la ciencia y la tecnología en la región.
                         </p>
 
-                        <Image src={team} alt='' className='h-56 w-auto float-right ml-3' />
+                        <Image src='/assets/team/team.webp' width={1920} height={1080} alt='' className='h-56 w-auto float-right ml-3' />
                         <p className="font-MontserratRegular">
                             A lo largo de los años, el YouI Lab ha estado involucrado en una amplia variedad de proyectos innovadores que han abarcado tanto el desarrollo web como el backend y frontend, lo que refleja su enfoque integral en el campo de la informática. Desde sus primeros días, el laboratorio ha estado a la vanguardia de la investigación en inteligencia artificial y tecnologías emergentes, lo que le ha permitido mantener una posición líder en el ámbito de la investigación científica y tecnológica.
                         </p>

@@ -1,4 +1,4 @@
-// Partners.js
+
 import Image from "next/image";
 import React from "react";
 import PartnerLogos from "./datos/DatosPartners";
@@ -22,6 +22,8 @@ export default function Partners() {
                             <Image
                                 src={partner.src}
                                 alt=""
+                                height={partner.height}
+                                width={partner.width}
                                 className="hover:opacity-[1] max-w-[10em] opacity-[.3] cursor-pointer"
                             />
                         </a>

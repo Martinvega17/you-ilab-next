@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import logo_org from '@/assets/logos/Logo-Original.png'
 import Image from "next/image";
 import Link from "next/link";
 import { BsList, BsFacebook, BsX, BsTwitter, BsLinkedin } from "react-icons/bs"
@@ -41,7 +40,7 @@ function NavBar() {
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
             <Image
-              src={logo_org}
+              src='/assets/logos/Logo-Original.png'
               alt="Logo You i Lab"
               width={130}
               height={75}
@@ -133,7 +132,7 @@ function NavBar() {
           </div>
 
           <Image
-            src={logo_org}
+            src='/assets/logos/Logo-Original.png'
             alt="logo"
             width={205}
             height={75}
