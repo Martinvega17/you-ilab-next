@@ -20,7 +20,7 @@ const dataDigital = [
         email: 'viridiana.c.robledo@gmail.com',
         linkedin: 'https://www.linkedin.com/in/viridiana-del-carmen-robledo-2280b398/',
         showMore: false,
-        image: '/assets/team/viridiana.jpg',
+        image: '/assets/team/viridiana.webp',
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const dataDigital = [
         email: '',
         linkedin: '',
         showMore: false,
-        image: '/assets/team/lourdes.jpg',
+        image: '/assets/team/lourdes.webp',
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/miguelmhz/',
         github: 'https://github.com/miguelmhz',
         showMore: false,
-        image: '/assets/team/miguel.jpg',
+        image: '/assets/team/miguel.webp',
     },
     {
         id: 5,
@@ -51,11 +51,11 @@ const dataDigital = [
         profession: 'Ingeniero en Sistemas Inteligentes',
         text: 'Juan José Domínguez Pérez tiene el grado de Ingeniería de Sistemas Inteligentes por la Universidad Autónoma de San Luis Potosí. Es asociado de investigación y programador del You-i Lab del IPICYT.',
         cv: '',
-        email: 'contacto@juanjodmz.com​',
+        email: 'contacto@juanjodmz.com',
         linkedin: 'https://www.linkedin.com/in/juanjo-dominguezp/',
         github: 'https://github.com/juanjodmz',
         showMore: false,
-        image: '/assets/team/juanjo.jpg',
+        image: '/assets/team/juanjo.webp',
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: '/assets/team/ricardo.jpg',
+        image: '/assets/team/ricardo.webp',
     },
     {
         id: 7,
@@ -79,7 +79,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: '/assets/team/ricardo.jpg',
+        image: '/assets/team/ricardo.webp',
     },
     {
         id: 8,
@@ -91,7 +91,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: '/assets/team/ricardo.jpg',
+        image: '/assets/team/ricardo.webp',
     },
     {
         id: 9,
@@ -103,7 +103,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: '/assets/team/ricardo.jpg',
+        image: '/assets/team/ricardo.webp',
     },
     {
         id: 10,
@@ -115,7 +115,7 @@ const dataDigital = [
         linkedin: 'https://www.linkedin.com/in/ricardobarba17/',
         github: 'https://github.com/Richb17',
         showMore: false,
-        image: '/assets/team/ricardo.jpg',
+        image: '/assets/team/ricardo.webp',
     },
 
 ];

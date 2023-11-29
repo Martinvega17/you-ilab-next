@@ -1,12 +1,11 @@
 "use client"
 import React from "react";
+import Image from "next/image";
 import Projects from "../components/Projects/Carousel/Projects";
-
 import Sponsors from '../components/sponsors'
 import ContactoForm from "../components/contactHome";
 import Info from "../components/info";
 import HomeSection from "../components/HomeSection";
-import Image from "next/image";
 import Partners from "../components/partners";
 
 export default function Home() {
@@ -30,7 +29,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2 p-4">
               <div className="w-full h-96 lg:h-[450px] flex items-center justify-center overflow-hidden mx-auto ">
-                <Image src='/assets/varios/image1.png' width={1080} height={720} alt='Imagen trabajo en equipo' className="" />
+                <Image src='/assets/varios/image1.webp' width={1080} height={720} alt='Imagen trabajo en equipo' className="" />
               </div>
             </div>
 

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        "parallax": "url('/assets/footer/teamwork.jpg')"
+        "parallax": "url('/assets/footer/teamwork.webp')"
       },
       fontFamily: {
         latoRegular: "Lato-Regular",

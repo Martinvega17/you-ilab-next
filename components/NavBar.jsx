@@ -40,7 +40,7 @@ function NavBar() {
         <div className="flex items-center justify-between h-full px-4 w-full">
           <Link href="/">
             <Image
-              src='/assets/logos/Logo-Original.png'
+              src='/assets/logos/Logo-Original.webp'
               alt="Logo You i Lab"
               width={130}
               height={75}
@@ -132,7 +132,7 @@ function NavBar() {
           </div>
 
           <Image
-            src='/assets/logos/Logo-Original.png'
+            src='/assets/logos/Logo-Original.webp'
             alt="logo"
             width={205}
             height={75}
