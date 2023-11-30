@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         {/* link manifest.json */}
-        <meta httpEquiv="Content-Security-Policy" content={createCSP()} />
 
         <link rel="icon" type="image/svg+xml" href="/youilab_logo.svg" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -51,16 +50,4 @@ export default function RootLayout({ children }) {
   )
 }
 
-function createCSP() {
-  return `
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data:;
-    connect-src 'self';
-    font-src 'self' https: data:;
-    object-src 'none';
-    media-src 'self';
-    frame-src 'self';
-  `;
-}
+

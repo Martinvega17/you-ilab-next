@@ -37,7 +37,7 @@ export default async function Post({ params }) {
                                 </section>
                                 {post.logo && (
                                     <section className="md:w-[60%] lg:w-[60%] xl-w-[100%] w-[70%] px-4 block pt-4 justify-center">
-                                        <Image src={post.logo} alt={post.title} width={1149} height={421} className="mb-10 h-auto max-w-full" />
+                                        <Image src={post.logo} alt={post.title} width={250} height={250} className="mb-10 h-auto max-w-full" />
                                     </section>
                                 )}
                             </section>

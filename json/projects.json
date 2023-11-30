@@ -10,7 +10,7 @@
             "section3": "Los riesgos asociados a la mala calidad del aire interior son causados principalmente por microorganismos patógenos y sustancias derivadas de las actividades humanas. Aunque la pandemia de COVID-19 ha puesto la mala calidad del aire interior en el centro de atención, la revolución necesaria para mejorarla está muy atrasada. Debemos ser activistas en este tema durante los próximos años, en los que el progreso podrá ser lento y desigual, como ha ocurrido con la contaminación del aire exterior, en la que --aunque los problemas siguen siendo enormes-- se ha avanzado mucho.",
             "section4": "Centinela del Aire incluye el diseño, construcción e instalación de una red de monitores remotos inteligentes y el desarrollo de una plataforma digital de monitoreo móvil que extrae la información espaciotemporal de la red y la integra en un sistema de información geográfica. Permitirá obtener una muestra estadística estratificada de los espacios interiores de escuelas de la ZMSLP para guiar la aplicación de intervenciones que prevengan el contagio de COVID-19 y otras infecciones de transmisión aérea en las escuelas."
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/centinela%20del%20aire/Centinela_del_Aire.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/centinela%20del%20aire/Centinela_del_Aire.png",
         "banner": "",
         "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
@@ -21,7 +21,7 @@
         "logo": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/logo.png",
         "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
-            "title1": "App Web",
+            "title1": "public Web",
             "descargable2": "",
             "title2": "",
             "descargable3": "",
@@ -40,7 +40,7 @@
             "section3": "Para el efecto, en este estudio se pretende realizar grupos focales en donde participarán expertos en salud pública y un grupo de cuatro voluntarios. Los grupos focales serán grabados en formato de video a partir del cual se generarán transcripciones de texto, que no contendrán información personal. Los voluntarios participantes también llenarán un cuestionario y generarán material gráfico durante el grupo focal en donde no se solicitará información personal. Los videos, las transcripciones y el material gráfico generado en el grupo focal serán almacenadas en el Centro Nacional de Supercómputo del IPICYT por un período de tres años y serán posteriormente borrados.",
             "section4": ""
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/wenet/wenet.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/wenet/wenet.png",
         "banner": "",
         "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/wenet/evidencia1.jpg",
@@ -70,7 +70,7 @@
             "section3": "La plataforma CDS, que ya demostró su eficacia para la detección precoz de clústeres de COVID-19, podría aplicarse también a la vigilancia epidemiológica de las infecciones por los virus de influenza, sincicial respiratorio y dengue que generan síndromes similares y producen clústeres con características espaciales distintivas de diseminación temprana, diseminación comunitaria y brotes en gran escala.",
             "section4": ""
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/centinela%20de%20la%20salud/cds.webp",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/centinela%20de%20la%20salud/cds.webp",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/banner.png",
         "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20de%20la%20salud/evidencia1.jpg",
@@ -97,7 +97,7 @@
         "sections": {
             "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19."
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/c-sef/C-SEF.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/c-sef/C-SEF.png",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/c-sef/banner.png",
         "images": {
             "evidencia1": "",
@@ -124,7 +124,7 @@
         "sections": {
             "section1": "Centinela de la Salud (CDS) es una plataforma de salud móvil que incluye una aplicación para teléfonos celulares inteligentes, cuyo desarrollo fue financiado con fondos del You-i Lab y del Consejo Potosino de Investigación Científica y Tecnológica. CDS se basa en una aplicación ciudadana móvil que genera información oportuna para la vigilancia epidemiológica sindrómica de infecciones por virus transmitidos por el aire (p.ej. SARS-CoV-2, influenza, virus sincicial respiratorio), o por vectores (p.ej. dengue) y ya fue aplicada exitosamente en la Zona Metropolitana de San Luis Potosí al inicio de la pandemia de COVID-19."
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/muframex/Muframex.webp",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/muframex/Muframex.webp",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/muframex/banner.jpg",
         "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia1.jpeg",
@@ -132,7 +132,7 @@
             "evidencia3": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia3.jpeg",
             "evidencia4": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/centinela%20del%20aire/evidencia4.jpeg"
         },
-        "logo": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/muframex/muframex-logo.jpg",
+        "logo": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/muframex/muframex-logo.jpg",
         "downloads": {
             "descargable1": "https://mhc.ipicyt.edu.mx/cda/login",
             "title1": "Descargar Programa Completo",
@@ -154,7 +154,7 @@
             "section3": "",
             "section4": ""
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/juventud%20al%20dia/Juventud.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/juventud%20al%20dia/Juventud.webp",
         "banner": "",
         "images": {
             "evidencia1": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/juventud%20al%20dia/evidencia1.png",
@@ -184,7 +184,7 @@
             "section3": "",
             "section4": ""
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/horizonte%20saludable/Horizonte_Saludable.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/horizonte%20saludable/Horizonte_Saludable.png",
         "banner": "https://raw.githubusercontent.com/Martinvega17/json-db/main/assets/projects/horizonte%20saludable/banner.jpg",
         "images": {
             "evidencia1": "",
@@ -214,7 +214,7 @@
             "section3": "Por estas razones, el Grupo de Ciencia e Ingeniería Computacionales (GCIC) del IPICYT tiene como propósito formar recursos humanos calificados que sean capaces de aplicar de manera efectiva las nuevas tecnologías en IA, para la solución de problemas nacionales del México actual. El GCIC ha diseñado un diplomado que aborda los fundamentos de la IA para atender la demanda en la formación de estudiantes y profesionales interesados en aplicaciones prácticas en esta área del conocimiento, a través del uso de un sistema de computación de alto rendimiento disponible en el Centro Nacional de Supercómputo (CNS) del IPICYT.",
             "section4": ""
         },
-        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/app/assets/projects/juventud%20al%20dia/Juventud.png",
+        "imagen": "https://raw.githubusercontent.com/Martinvega17/you-ilab-next/main/public/assets/projects/juventud%20al%20dia/Juventud.png",
         "banner": "",
         "images": {
             "evidencia1": "",
