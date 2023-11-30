@@ -56,7 +56,7 @@ export default function Home() {
 
           {/* End Carousel Sponsors */}
           <div
-            className="mx-4 h-96 xl:h-[32rem] w-full flex justify-center items-center md:h-full mb-10 mt-10"
+            className="mx-4 flex justify-center items-center h-96 xl:h-[32rem] md:h-full mb-10 mt-10"
             style={{
               backgroundImage: `url('/assets/team/Collage_colab_.webp')`,
             }}
