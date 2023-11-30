@@ -82,7 +82,7 @@ const Footer = () => {
                             <a href="https://www.facebook.com/youilab/" aria-label="logo-facebook" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    class="h-6 w-6 rounded-full inline-grid"
+                                    className="h-6 w-6 rounded-full inline-grid"
                                     fill="currentColor"
                                     style={{ color: "#ffffff" }}
                                     viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ const Footer = () => {
                             <a href="https://twitter.com/youi_lab/" aria-label="logo-twiter" target="_blank" rel="noopener noreferrer" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    class="h-6 w-6 rounded-full inline-grid"
+                                    className="h-6 w-6 rounded-full inline-grid"
                                     fill="currentColor"
                                     style={{ color: "#ffffff" }}
                                     viewBox="0 0 24 24">
@@ -105,7 +105,7 @@ const Footer = () => {
                             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="logo-linkedin" className="border-2 border-white rounded-full p-1 hover:border-blue-400 hover:bg-blue-400">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    class="h-6 w-6"
+                                    className="h-6 w-6"
                                     fill="currentColor"
                                     viewBox="0 0 24 24">
                                     <path

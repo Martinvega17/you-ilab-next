@@ -87,13 +87,13 @@ export default async function Post({ params }) {
                                 </section>
                             </section>
                         </section>
-                        <section class="flex flex-col items-center space-y-6">
-                            <h2 class="text-[#003242] text-5xl lg:text-4xl xl:text-5xl md:text-xl font-MontserratBold">
+                        <section className="flex flex-col items-center space-y-6">
+                            <h2 className="text-[#003242] text-5xl lg:text-4xl xl:text-5xl md:text-xl font-MontserratBold">
                                 Descargables
-                                <span class="text-[#765cf6]">.</span>
+                                <span className="text-[#765cf6]">.</span>
                             </h2>
 
-                            <div class="flex space-x-4">
+                            <div className="flex space-x-4">
                                 {post.downloads.descargable1 && ( // Verifica si descargable1 tiene un valor
                                     <Link href={post.downloads.descargable1} target='_blank' className='font-bold text-white capitalize text-base inline-block relative z-[1] transition-all duration-[0.3s] ease-[ease-in-out] shadow-[0px_8px_16px_0px_rgba(4,142,197,0.3)] pl-10 pr-14 p-4 rounded-[40px] border-0 bg-gradient text-center'>
                                         <span className="flex">
