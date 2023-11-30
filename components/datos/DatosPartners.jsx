@@ -46,7 +46,7 @@ const PartnerLogos = [
 
     {
         id: 7,
-        src: '/assets/partners/ipicyt_web.png',
+        src: '/assets/partners/ipicyt_web.webp',
         href: 'https://www.ipicyt.edu.mx/',
         width: 731,
         height: 341
