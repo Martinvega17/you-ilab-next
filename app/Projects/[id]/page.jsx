@@ -22,9 +22,9 @@ export default async function Post({ params }) {
         if (post) {
             return (
                 <article className="ml-2">
+                    <title>You I Lab | Projects</title>
+
                     {/* Gallery */}
-
-
 
                     <h1 className="mt-20 text-5xl text-center font-MontserratBold text-titleAbout dark:text-neutral-300 py-8">
                         {post.title}

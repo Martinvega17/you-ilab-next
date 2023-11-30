@@ -3,6 +3,7 @@ import ContactHome from "../../components/contactHome";
 export default function ContactForms() {
   return (
     <div>
+      <title>You I Lab | Contact</title>
       <div className="about">
         <div
           className="h-[23rem] sm:h-[20rem] md:h-[18rem] lg:h-[20rem] xl:h-[25rem] w-full flex justify-center items-center"

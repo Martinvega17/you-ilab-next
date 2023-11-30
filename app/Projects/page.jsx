@@ -24,6 +24,7 @@ export default async function PostsPage() {
 
     return (
       <div className="">
+        <title>You I Lab | Projects</title>
         <div className="about">
 
           <div
@@ -38,7 +39,7 @@ export default async function PostsPage() {
             </div>
           </div>
         </div>
-        
+
 
         <section className="mt-2 2xl:mx-[200px] xl:mx-2 md:mx-8 sm:mx-6 mb-10">
           <h1 className="ml-4 text-4xl font-MontserratBold text-center pb-10 mt-10">Conoce nuestros Proyectos</h1>
